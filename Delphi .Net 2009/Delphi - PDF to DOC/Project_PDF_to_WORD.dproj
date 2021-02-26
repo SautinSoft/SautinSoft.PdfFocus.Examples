@@ -1,0 +1,195 @@
+﻿	<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+		<PropertyGroup>
+			<ProjectGuid>{5163E5DE-6C62-400B-A035-F4847CF996E4}</ProjectGuid>
+			<ProjectVersion>12.0</ProjectVersion>
+			<MainSource>Project_PDF_to_WORD.dpr</MainSource>
+			<Config Condition="'$(Config)'==''">Debug</Config>
+			<DCC_DCCCompiler>DCCIL</DCC_DCCCompiler>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Config)'=='Base' or '$(Base)'!=''">
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Config)'=='Release' or '$(Cfg_1)'!=''">
+			<Cfg_1>true</Cfg_1>
+			<CfgParent>Base</CfgParent>
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Config)'=='Debug' or '$(Cfg_2)'!=''">
+			<Cfg_2>true</Cfg_2>
+			<CfgParent>Base</CfgParent>
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Base)'!=''">
+			<DCC_DependencyCheckOutputName>Project_PDF_to_WORD.exe</DCC_DependencyCheckOutputName>
+			<DCC_ImageBase>00400000</DCC_ImageBase>
+			<DCC_UnitSearchPath>C:\Windows\Microsoft.NET\Framework\v2.0.50727;C:\Program Files (x86)\RADStudio_2009_Lite\bin;D:\Download\Delphi - PDF to WORD;D:\Office\Code Samples\Delphi - PDF to WORD;$(DCC_UnitSearchPath)</DCC_UnitSearchPath>
+			<DCC_UnitAlias>WinTypes=Borland.Vcl.Windows;WinProcs=Borland.Vcl.Windows;DbiTypes=BDE;DbiProcs=BDE;DbiErrs=BDE;$(DCC_UnitAlias)</DCC_UnitAlias>
+			<UsePackages>true</UsePackages>
+			<DCC_UsePackage>D:\Office\Code Samples\Delphi - PDF to WORD\SautinSoft.PdfFocus.dll;Borland.VclRtl;Borland.Delphi;Borland.Vcl;C:\Windows\Microsoft.NET\Framework\v2.0.50727\System.XML.dll;C:\Windows\Microsoft.NET\Framework\v2.0.50727\System.Drawing.dll;C:\Windows\Microsoft.NET\Framework\v2.0.50727\System.Configuration.Install.dll;C:\Windows\Microsoft.NET\Framework\v2.0.50727\System.Data.dll;C:\Windows\Microsoft.NET\Framework\v2.0.50727\System.dll</DCC_UsePackage>
+			<DCC_N>false</DCC_N>
+			<DCC_S>false</DCC_S>
+			<DCC_K>false</DCC_K>
+			<DCC_E>false</DCC_E>
+			<DCC_F>false</DCC_F>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Cfg_1)'!=''">
+			<DCC_LocalDebugSymbols>false</DCC_LocalDebugSymbols>
+			<DCC_Define>RELEASE;$(DCC_Define)</DCC_Define>
+			<DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+			<DCC_DebugInformation>false</DCC_DebugInformation>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Cfg_2)'!=''">
+			<DCC_UnitSearchPath>D:\Office\Code Samples\Delphi - PDF to WORD;$(DCC_UnitSearchPath)</DCC_UnitSearchPath>
+			<DCC_Platform>x86</DCC_Platform>
+			<DCC_Define>DEBUG;$(DCC_Define)</DCC_Define>
+			<DCC_DebugInfoInExe>true</DCC_DebugInfoInExe>
+		</PropertyGroup>
+		<ItemGroup>
+			<DelphiCompile Include="Project_PDF_to_WORD.dpr">
+				<MainSource>MainSource</MainSource>
+			</DelphiCompile>
+			<DCCReference Include="Unit3.pas">
+				<Form>WinForm</Form>
+			</DCCReference>
+			<BuildConfiguration Include="Base">
+				<Key>Base</Key>
+			</BuildConfiguration>
+			<BuildConfiguration Include="Debug">
+				<Key>Cfg_2</Key>
+				<CfgParent>Base</CfgParent>
+			</BuildConfiguration>
+			<BuildConfiguration Include="Release">
+				<Key>Cfg_1</Key>
+				<CfgParent>Base</CfgParent>
+			</BuildConfiguration>
+		</ItemGroup>
+		<ItemGroup>
+			<Reference Include="$(SystemRoot)\Microsoft.NET\Framework\v2.0.50727\System.dll">
+				<ContainerId>DelphiDotNetAssemblyCompiler</ContainerId>
+				<ContainerId>DelphiDotNetAssemblyCompiler</ContainerId>
+				<AssemblyName>System</AssemblyName>
+				<Version>2.0.0.0</Version>
+				<HintPath>$(SystemRoot)\Microsoft.NET\Framework\v2.0.50727\System.dll</HintPath>
+				<AssemblyTag>$(SystemRoot)\Microsoft.NET\Framework\v2.0.50727\System.dll</AssemblyTag>
+				<LinkUnits>False</LinkUnits>
+			</Reference>
+			<Reference Include="$(SystemRoot)\Microsoft.NET\Framework\v2.0.50727\System.Data.dll">
+				<ContainerId>DelphiDotNetAssemblyCompiler</ContainerId>
+				<ContainerId>DelphiDotNetAssemblyCompiler</ContainerId>
+				<AssemblyName>System.Data</AssemblyName>
+				<Version>2.0.0.0</Version>
+				<HintPath>$(SystemRoot)\Microsoft.NET\Framework\v2.0.50727\System.Data.dll</HintPath>
+				<AssemblyTag>$(SystemRoot)\Microsoft.NET\Framework\v2.0.50727\System.Data.dll</AssemblyTag>
+				<LinkUnits>False</LinkUnits>
+			</Reference>
+			<Reference Include="$(SystemRoot)\Microsoft.NET\Framework\v2.0.50727\System.Configuration.Install.dll">
+				<ContainerId>DelphiDotNetAssemblyCompiler</ContainerId>
+				<ContainerId>DelphiDotNetAssemblyCompiler</ContainerId>
+				<AssemblyName>System.Configuration.Install</AssemblyName>
+				<Version>2.0.0.0</Version>
+				<HintPath>$(SystemRoot)\Microsoft.NET\Framework\v2.0.50727\System.Configuration.Install.dll</HintPath>
+				<AssemblyTag>$(SystemRoot)\Microsoft.NET\Framework\v2.0.50727\System.Configuration.Install.dll</AssemblyTag>
+				<LinkUnits>False</LinkUnits>
+			</Reference>
+			<Reference Include="$(SystemRoot)\Microsoft.NET\Framework\v2.0.50727\System.Drawing.dll">
+				<ContainerId>DelphiDotNetAssemblyCompiler</ContainerId>
+				<ContainerId>DelphiDotNetAssemblyCompiler</ContainerId>
+				<AssemblyName>System.Drawing</AssemblyName>
+				<Version>2.0.0.0</Version>
+				<HintPath>$(SystemRoot)\Microsoft.NET\Framework\v2.0.50727\System.Drawing.dll</HintPath>
+				<AssemblyTag>$(SystemRoot)\Microsoft.NET\Framework\v2.0.50727\System.Drawing.dll</AssemblyTag>
+				<LinkUnits>False</LinkUnits>
+			</Reference>
+			<Reference Include="$(SystemRoot)\Microsoft.NET\Framework\v2.0.50727\System.XML.dll">
+				<ContainerId>DelphiDotNetAssemblyCompiler</ContainerId>
+				<ContainerId>DelphiDotNetAssemblyCompiler</ContainerId>
+				<AssemblyName>System.XML</AssemblyName>
+				<Version>2.0.0.0</Version>
+				<HintPath>$(SystemRoot)\Microsoft.NET\Framework\v2.0.50727\System.XML.dll</HintPath>
+				<AssemblyTag>$(SystemRoot)\Microsoft.NET\Framework\v2.0.50727\System.XML.dll</AssemblyTag>
+				<LinkUnits>False</LinkUnits>
+			</Reference>
+			<Reference Include="C:\Program Files (x86)\RADStudio_2009_Lite\bin\Borland.Vcl.dll">
+				<ContainerId>DelphiDotNetAssemblyCompiler</ContainerId>
+				<ContainerId>DelphiDotNetAssemblyCompiler</ContainerId>
+				<AssemblyName>Borland.Vcl</AssemblyName>
+				<Version>12.0.0.0</Version>
+				<HintPath>C:\Program Files (x86)\RADStudio_2009_Lite\bin\Borland.Vcl.dll</HintPath>
+				<AssemblyTag>C:\Program Files (x86)\RADStudio_2009_Lite\bin\Borland.Vcl.dll</AssemblyTag>
+				<LinkUnits>False</LinkUnits>
+			</Reference>
+			<Reference Include="C:\Program Files (x86)\RADStudio_2009_Lite\bin\Borland.Delphi.dll">
+				<ContainerId>DelphiDotNetAssemblyCompiler</ContainerId>
+				<ContainerId>DelphiDotNetAssemblyCompiler</ContainerId>
+				<AssemblyName>Borland.Delphi</AssemblyName>
+				<Version>12.0.0.0</Version>
+				<HintPath>C:\Program Files (x86)\RADStudio_2009_Lite\bin\Borland.Delphi.dll</HintPath>
+				<AssemblyTag>C:\Program Files (x86)\RADStudio_2009_Lite\bin\Borland.Delphi.dll</AssemblyTag>
+				<LinkUnits>False</LinkUnits>
+			</Reference>
+			<Reference Include="C:\Program Files (x86)\RADStudio_2009_Lite\bin\Borland.VclRtl.dll">
+				<ContainerId>DelphiDotNetAssemblyCompiler</ContainerId>
+				<ContainerId>DelphiDotNetAssemblyCompiler</ContainerId>
+				<AssemblyName>Borland.VclRtl</AssemblyName>
+				<Version>12.0.0.0</Version>
+				<HintPath>C:\Program Files (x86)\RADStudio_2009_Lite\bin\Borland.VclRtl.dll</HintPath>
+				<AssemblyTag>C:\Program Files (x86)\RADStudio_2009_Lite\bin\Borland.VclRtl.dll</AssemblyTag>
+				<LinkUnits>False</LinkUnits>
+			</Reference>
+			<Reference Include="..\Delphi - PDF to WORD\SautinSoft.PdfFocus.dll">
+				<ContainerId>DelphiDotNetAssemblyCompiler</ContainerId>
+				<ContainerId>DelphiDotNetAssemblyCompiler</ContainerId>
+				<AssemblyName>SautinSoft.PdfFocus</AssemblyName>
+				<Version>4.1.5.29</Version>
+				<HintPath>..\Delphi - PDF to WORD\SautinSoft.PdfFocus.dll</HintPath>
+				<AssemblyTag>..\Delphi - PDF to WORD\SautinSoft.PdfFocus.dll</AssemblyTag>
+				<LinkUnits>False</LinkUnits>
+			</Reference>
+		</ItemGroup>
+		<Import Project="$(BDS)\Bin\CodeGear.Delphi.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Delphi.Targets')"/>
+		<ProjectExtensions>
+			<Borland.Personality>DelphiDotNet.Personality.12</Borland.Personality>
+			<Borland.ProjectType>VCLApplication</Borland.ProjectType>
+			<BorlandProject>
+				<DelphiDotNet.Personality>
+					<Parameters>
+						<Parameters Name="UseLauncher">False</Parameters>
+						<Parameters Name="LoadAllSymbols">True</Parameters>
+						<Parameters Name="LoadUnspecifiedSymbols">False</Parameters>
+					</Parameters>
+					<VersionInfo>
+						<VersionInfo Name="IncludeVerInfo">False</VersionInfo>
+						<VersionInfo Name="AutoIncBuild">False</VersionInfo>
+						<VersionInfo Name="MajorVer">1</VersionInfo>
+						<VersionInfo Name="MinorVer">0</VersionInfo>
+						<VersionInfo Name="Release">0</VersionInfo>
+						<VersionInfo Name="Build">0</VersionInfo>
+						<VersionInfo Name="Debug">False</VersionInfo>
+						<VersionInfo Name="PreRelease">False</VersionInfo>
+						<VersionInfo Name="Special">False</VersionInfo>
+						<VersionInfo Name="Private">False</VersionInfo>
+						<VersionInfo Name="DLL">False</VersionInfo>
+						<VersionInfo Name="Locale">1033</VersionInfo>
+						<VersionInfo Name="CodePage">1252</VersionInfo>
+					</VersionInfo>
+					<VersionInfoKeys>
+						<VersionInfoKeys Name="CompanyName"/>
+						<VersionInfoKeys Name="FileDescription"/>
+						<VersionInfoKeys Name="FileVersion">1.0.0.0</VersionInfoKeys>
+						<VersionInfoKeys Name="InternalName"/>
+						<VersionInfoKeys Name="LegalCopyright"/>
+						<VersionInfoKeys Name="LegalTrademarks"/>
+						<VersionInfoKeys Name="OriginalFilename"/>
+						<VersionInfoKeys Name="ProductName"/>
+						<VersionInfoKeys Name="ProductVersion">1.0.0.0</VersionInfoKeys>
+						<VersionInfoKeys Name="Comments"/>
+					</VersionInfoKeys>
+					<Source>
+						<Source Name="MainSource">Project_PDF_to_WORD.dpr</Source>
+					</Source>
+				</DelphiDotNet.Personality>
+				<ModelSupport>False</ModelSupport>
+			</BorlandProject>
+			<ProjectFileVersion>12</ProjectFileVersion>
+		</ProjectExtensions>
+	</Project>

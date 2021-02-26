@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2014/07/03 14:23:54.943.pas,C:\Users\Dmitry\Documents\RAD Studio\Projects\Unit3.pas=D:\Download\Delphi - PDF to WORD\Unit3.pas</Transaction>
+    <Transaction>2014/07/03 14:23:54.943.nfm,C:\Users\Dmitry\Documents\RAD Studio\Projects\Unit3.nfm=D:\Download\Delphi - PDF to WORD\Unit3.nfm</Transaction>
+    <Transaction>2014/07/03 14:23:56.305.dproj,C:\Users\Dmitry\Documents\RAD Studio\Projects\Project3.dproj=D:\Download\Delphi - PDF to WORD\Project3.dproj</Transaction>
+    <Transaction>2014/07/14 11:32:40.145.dproj,D:\Office\Code Samples\Delphi - PDF to WORD\Project3.dproj=D:\Office\Code Samples\Delphi - PDF to DOC\Project_PDF_to_WORD.dproj</Transaction>
+    <Transaction>2014/07/14 11:32:47.565.pas,D:\Office\Code Samples\Delphi - PDF to WORD\Unit3.pas=D:\Office\Code Samples\Delphi - PDF to DOC\Unit3.pas</Transaction>
+    <Transaction>2014/07/14 11:32:47.565.nfm,D:\Office\Code Samples\Delphi - PDF to WORD\Unit3.nfm=D:\Office\Code Samples\Delphi - PDF to DOC\Unit3.nfm</Transaction>
+  </Transactions>
+</BorlandProject>

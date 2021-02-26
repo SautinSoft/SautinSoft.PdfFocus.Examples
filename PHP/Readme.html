@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>How to use SautinSoft.PdfFocus through COM technology in VBA</title>
+<style type="text/css">
+.SimpleText {
+    color: #000;    
+	//color: #4c4c4c;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+	font-size: 16.5px;
+	font-weight: normal;	
+}
+.SimpleBoldText {
+    color: #000;    
+	//color: #4c4c4c;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+	font-size: 16.5px;
+	font-weight: bold;	
+}
+h1{
+	font-family: "Helvetica Neue", Arial, sans-serif;
+	font-weight: bold;
+	font-size: 26px;
+}
+
+h2,h3,h4,h5,h6 {
+	font-family: "Helvetica Neue", Arial, sans-serif;
+	font-weight: bold;
+	font-size: 22px;
+}
+</style>
+</head>
+
+<body style="margin-left: 15px;">
+<h1>How to use SautinSoft.PdfFocus through COM technology in PHP (IIS)</h1>
+<div><img src="images/pdffocus-scheme.png" /></div>
+<h2>Introduction</h2>
+<p class="SimpleText">PDF Focus .Net is .Net assembly but it's compiled with ComVisible attribute, therefore you may use it easily as COM component.</p>
+<h2>First step - Register SautinSoft.PdfFocus.dll <strong>for COM Interop</strong></h2>
+<p class="SimpleText">Here we'll show the steps how to use PDF Focus .Net in PHP:</p>
+
+<p class="SimpleText">To make steps at once:<br /><br />
+1. Execute "install.bat" as Administrator. <br /><br />
+
+<b>Or:</b><br /><br />
+
+1. Right click by &quot;Start&quot; button and run Command prompt (Admin):<br/>
+<img src="images/launch-command-prompt.png" /></p>
+<p class="SimpleText">  
+  2. Add the Assembly to the Registry, launch:<br /><br />
+  Regasm.exe "A Drive:\A Path\SautinSoft.PdfFocus.dll" /tlb /codebase
+<br /><br />
+<img src="images/launch-regasm.png" />
+</p>
+<p class="SimpleText">Well done! Now we've registered SautinSoft.PdfFocus library. Now you may use the component in VBA, PHP.</p>
+<h2>What's is "RegAsm.exe"?</h2>
+<p class="SimpleText">RegAsm.exe - Assembly Registration Tool: <a href="http://msdn.microsoft.com/en-us/library/tzat5yw6%28v=vs.71%29.aspx" target="_blank">http://msdn.microsoft.com/en-us/library/tzat5yw6%28v=vs.71%29.aspx.</a></p>
+
+<p class="SimpleText">
+We've placed the "RegAsm.exe" inside the "Code samples\PHP" for your convenience.
+<br /><br />
+If you have any questions, ask us online at: http://www.sautinsoft.com or email: support@sautinsoft.com</p>
+<h2>Create a sample PHP application - Convert PDF to Word</h2>
+<p class="SimpleText">1. Please be sure, that you have registered SautinSoft.PdfFocus.dll for COM Interop as shown above at this page.</p>
+<p class="SimpleText">2. You must run the IIS server, and set up a simple website.</p>
+<p class="SimpleText"><img src="images/IIS-new-website.png" width="425" height="358"></p>
+<p class="SimpleText">3.  In our example, we will create the project: www.pdffocus.test . Create a folder at: C: \ inetpub \ wwwroot \ pdffocus.test</p>
+<p class="SimpleText"><img src="images/IIS-pdffocus.png" width="835" height="512"></p>
+<p class="SimpleText">4. Make sure that you have installed php package (the current version is 7.0) and included php_com_dotnet.dll (Enabled)</p>
+<p class="SimpleText"><img src="images/IIS-php-com-dotnet-enabled.png" width="273" height="585"></p>
+<p class="SimpleText">5. Create a php-file (test_com.php) and paste the contents:</p>
+<p>&lt;?php</p>
+<p>try<br>
+  {<br>
+  $f = new COM(&quot;SautinSoft.PdfFocus&quot;);<br>
+  echo &quot;Successfully created a COM object of PDF Focus .Net!\n&quot;;<br>
+  }<br>
+  catch (Exception $e)<br>
+  {<br>
+  die ('Component is not registered!');<br>
+  }</p>
+<p>/* Convert PDF file to DOCX file */</p>
+<p>$f-&gt;OpenPdf_3(&quot;d:\\simple text.pdf&quot;);<br>
+  if ($f-&gt;PageCount&gt;0)<br>
+  {<br>
+  $f-&gt;ToWord_2(&quot;d:\\simple text.docx&quot;);<br>
+  echo &quot;Converted successfully!&quot;;<br>
+  }</p>
+<p>?&gt;</p>
+<p class="SimpleText"><img src="images/IIS-test-com.png" width="814" height="488"></p>
+<p class="SimpleText">6. The last step, run the project to the IIS server. If you did everything right, you will see the inscription: Converted Successfully.</p>
+<p class="SimpleText"><img src="images/IIS-successfully.png" width="389" height="94"></p>
+<p class="SimpleText">Well Done! Now you can convert your PDF file to All formats in PHP!
+</body>
+</html>

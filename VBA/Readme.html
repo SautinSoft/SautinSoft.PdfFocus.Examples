@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>How to use SautinSoft.PdfFocus through COM technology in VBA</title>
+<style type="text/css">
+.SimpleText {
+    color: #000;    
+	//color: #4c4c4c;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+	font-size: 16.5px;
+	font-weight: normal;	
+}
+.SimpleBoldText {
+    color: #000;    
+	//color: #4c4c4c;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+	font-size: 16.5px;
+	font-weight: bold;	
+}
+h1{
+	font-family: "Helvetica Neue", Arial, sans-serif;
+	font-weight: bold;
+	font-size: 26px;
+}
+
+h2,h3,h4,h5,h6 {
+	font-family: "Helvetica Neue", Arial, sans-serif;
+	font-weight: bold;
+	font-size: 22px;
+}
+</style>
+</head>
+
+<body style="margin-left: 15px;">
+<h1>How to use SautinSoft.PdfFocus through COM technology in VBA</h1>
+<div><img src="images/pdffocus-scheme.png" /></div>
+<h2>Introduction</h2>
+<p class="SimpleText">PDF Focus .Net is .Net assembly but it's compiled with ComVisible attribute, therefore you may use it easily as COM component.</p>
+<h2>First step - Register SautinSoft.PdfFocus.dll <strong>for COM Interop</strong></h2>
+<p class="SimpleText">Here we'll show the steps how to use PDF Focus .Net in VBA:</p>
+
+<p class="SimpleText">To make steps at once:<br /><br />
+1. Execute "install.bat" as Administrator. <br /><br />
+
+<b>Or:</b><br /><br />
+
+1. Right click by &quot;Start&quot; button and run Command prompt (Admin):<br/>
+<img src="images/launch-command-prompt.png" /></p>
+<p class="SimpleText">  
+  2. Add the Assembly to the Registry, launch:<br /><br />
+  Regasm.exe "A Drive:\A Path\SautinSoft.PdfFocus.dll" /tlb /codebase
+<br /><br />
+<img src="images/launch-regasm.png" />
+</p>
+<p class="SimpleText">Well done! Now we've registered SautinSoft.PdfFocus library. Now you may use the component in VBA, PHP.</p>
+<h2>What's is "RegAsm.exe"?</h2>
+<p class="SimpleText">RegAsm.exe - Assembly Registration Tool: <a href="http://msdn.microsoft.com/en-us/library/tzat5yw6%28v=vs.71%29.aspx" target="_blank">http://msdn.microsoft.com/en-us/library/tzat5yw6%28v=vs.71%29.aspx.</a></p>
+
+<p class="SimpleText">
+We've placed the "RegAsm.exe" inside the "Code samples\VBA" for your convenience.
+<br /><br />
+If you have any questions, ask us online at: http://www.sautinsoft.com or email: support@sautinsoft.com</p>
+<h2>Create a sample VBA application - Convert PDF to Word</h2>
+<p class="SimpleText">1. Please be sure, that you have registered SautinSoft.PdfFocus.dll for COM Interop as shown above at this page.</p>
+<p class="SimpleText">2. Launch MS Word and create a "Blank document".</p>
+<p class="SimpleText">3. Follow to the "Developer" tab. If you don't see "Developer" at your Ribbon, add it as shown:<br /><br />
+File->Options->Customize Ribbon ... Check "Developer".</p>
+<p><img src="images/add-developer-tab.png" /></p>
+<p class="SimpleText">4. Insert a new button and double click by it:</p>
+<p><img src="images/add-button.png" /></p>
+<p class="SimpleText">5. After double-clicking by the button you will appear in "Microsoft Visual Basic for Application" area.<br />
+Add reference to the SautinSoft.PdfFocus:<br />
+Tools->References... (Find and select SautinSoft.PdfFocus and click "OK"):
+</p>
+<p><img src="images/vba-add-reference-sautinsoft-pdffocus.png" /></p>
+<p class="SimpleText">6. The last step, add VBA code to convert PDF to Word:
+<pre>
+    Dim f As New SautinSoft_PdfFocus.PdfFocus
+    f.OpenPdf_3 ("d:\Sample.pdf")
+    f.ToWord_2 ("d:\Sample.docx")
+</pre>
+</p>
+<p><img src="images/vba-code-focus.png" /></p>
+<p class="SimpleText">Well Done! Now you can convert your PDF file to All formats in VBA!</p>
+</body>
+</html>

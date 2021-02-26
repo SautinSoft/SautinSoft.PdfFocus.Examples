@@ -1,13 +1,13 @@
 [PDF Focus .Net by SautinSoft](https://sautinsoft.com/products/pdf-focus/) is designed to help you in development of applications where is necessary to convert any PDF documents. Let's see what API functions PDF Focus .Net can provide for you:
 
 PDF to Word: DOCX.</br>
-PDF to Word: RTF.
-PDF to Images: JPG/Jpeg, PNG, multipage TIFF, Black&White TIFF and System.Drawing.Image.
-PDF to Excel, XLS.
-PDF to HTML.
-PDF to XML.
-PDF to Text.
-OCR Support.
+PDF to Word: RTF.</br>
+PDF to Images: JPG/Jpeg, PNG, multipage TIFF, Black&White TIFF and System.Drawing.Image.</br>
+PDF to Excel, XLS.</br>
+PDF to HTML.</br>
+PDF to XML.</br>
+PDF to Text.</br>
+OCR Support.</br>
 
 This repository contains [Examples for PDF Focus .Net](https://sautinsoft.com/products/pdf-focus/examples/) to help you learn and write your own applications.
 

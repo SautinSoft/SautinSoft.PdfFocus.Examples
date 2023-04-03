@@ -43,6 +43,7 @@ Partial Public Class _Default
         Dim f As New PdfFocus()
         f.OpenPdf(uplPDF.FileBytes)
         Session("focus") = f
+        Session("page") = 1
         ShowPdf()
 
     End Sub

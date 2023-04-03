@@ -91,7 +91,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="SautinSoft.PdfFocus">
-      <HintPath>..\..\..\..\Bin\.NET Framework 4.6\SautinSoft.PdfFocus.dll</HintPath>
+      <HintPath>..\..\..\..\Bin\.NET Framework 4.5.2\SautinSoft.PdfFocus.dll</HintPath>
     </Reference>
     <Reference Include="System">
       <Name>System</Name>

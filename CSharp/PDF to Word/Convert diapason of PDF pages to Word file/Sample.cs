@@ -7,28 +7,35 @@ namespace Sample
     {
         static void Main(string[] args)
         {
-            string pathToPdf = @"..\..\Potato Beetle.pdf";
-            string pathToWord = "Result.rtf";
-
-            // Convert diapason of PDF pages to a Word file.
+            string inpFile = @"..\..\Potato Beetle.pdf";
+            string outFile = "Result.rtf";
+            
             SautinSoft.PdfFocus f = new SautinSoft.PdfFocus();
             // this property is necessary only for registered version.
             //f.Serial = "XXXXXXXXXXX";
 
-            f.OpenPdf(pathToPdf);
+            f.OpenPdf(inpFile);
 
             if (f.PageCount > 0)
             {
                 // You may set an output format to docx or rtf.
                 f.WordOptions.Format = SautinSoft.PdfFocus.CWordOptions.eWordDocument.Rtf;
 
-                // Convert only pages 2 - 4 to Word.
-                int result = f.ToWord(pathToWord, 2, 4);
+                // Specify to convert these pages: 2 - 4  and 6.
 
-                // Show Word document
+                // Way 1:
+                f.RenderPagesString = "2-4, 6";
+
+                // Way 2 (do the same as Way 1):
+                f.RenderPages = new int[][] {new int[] {2, 4},
+                                             new int[] {6, 6}};
+
+                int result = f.ToWord(outFile);
+
+                // Open the result.
                 if (result == 0)
                 {
-                    System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo(pathToWord) { UseShellExecute = true });
+                    System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo(outFile) { UseShellExecute = true });
                 }
             }
         }

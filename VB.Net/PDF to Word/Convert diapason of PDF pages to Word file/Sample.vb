@@ -6,27 +6,36 @@ Imports SautinSoft
 Module Sample
 
     Sub Main()
-        Dim pathToPdf As String = "..\Potato Beetle.pdf"
-        Dim pathToWord As String = "Result.rtf"
+		Dim inpFile As String = "..\Potato Beetle.pdf"
+		Dim outFile As String = "Result.rtf"
 
-        ' Convert diapason of PDF pages to a Word file.
-        Dim f As New SautinSoft.PdfFocus()
-        ' this property is necessary only for registered version.
-        'f.Serial = "XXXXXXXXXXX"
+		Dim f As New SautinSoft.PdfFocus()
+		' this property is necessary only for registered version.
+		'f.Serial = "XXXXXXXXXXX";
 
-        f.OpenPdf(pathToPdf)
+		f.OpenPdf(inpFile)
 
-        If f.PageCount > 0 Then
-            ' You may set an output format to docx or rtf.
-            f.WordOptions.Format = SautinSoft.PdfFocus.CWordOptions.eWordDocument.Rtf
+		If f.PageCount > 0 Then
+			' You may set an output format to docx or rtf.
+			f.WordOptions.Format = SautinSoft.PdfFocus.CWordOptions.eWordDocument.Rtf
 
-            ' Convert only pages 2 - 4 to Word.
-            Dim result As Integer = f.ToWord(pathToWord, 2, 4)
+			' Specify to convert these pages: 2 - 4  and 6.
 
-            ' Show Word document
-            If result = 0 Then
-                System.Diagnostics.Process.Start(New System.Diagnostics.ProcessStartInfo(pathToWord) With {.UseShellExecute = True})
-            End If
-        End If
-    End Sub
+			' Way 1:
+			f.RenderPagesString = "2-4, 6"
+
+			' Way 2 (do the same as Way 1):
+			f.RenderPages = New Integer()() {
+					New Integer() {2, 4},
+					New Integer() {6, 6}
+				}
+
+			Dim result As Integer = f.ToWord(outFile)
+
+			' Open the result.
+			If result = 0 Then
+				System.Diagnostics.Process.Start(New System.Diagnostics.ProcessStartInfo(outFile) With {.UseShellExecute = True})
+			End If
+		End If
+	End Sub
 End Module

@@ -46,6 +46,7 @@ public partial class _Default : System.Web.UI.Page
         PdfFocus f = new PdfFocus();
         f.OpenPdf(uplPDF.FileBytes);
         Session["focus"] = f;
+        Session["page"] = 1;		
         ShowPdf();
 
     }

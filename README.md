@@ -1,7 +1,7 @@
 ![Nuget](https://img.shields.io/nuget/v/sautinsoft.pdffocus) ![Nuget](https://img.shields.io/nuget/dt/sautinsoft.pdffocus) 
 # .NET SDK to convert PDF to ALL
 
-![SautinSoft.PDFFocus](https://camo.githubusercontent.com/cc2eec5de5e95c29016fc2410d99e1ca9095b35d6895b5e1e42dff7602273f53/68747470733a2f2f7777772e73617574696e736f66742e636f6d2f6d656469612f6769746875622f762e706e67)
+![focus](https://user-images.githubusercontent.com/79837963/229720453-ce02ba06-19af-4a69-995a-351e7ac60257.png)
 
 [SautinSoft.PdfFocus](https://sautinsoft.com/products/pdf-focus/) is .NET assembly (SDK) which gives API  to convert PDF to All formats: DOCX, RTF, HTML, XML, Text, Excel, Images.
 
@@ -86,7 +86,7 @@ f.ToImage(iamgeFile);
 
 ## Resources
 
-+ **Website:** [www.sautinsoft.com](http://www.sautinsoft.com)
++ **Website:** [www.sautinsoft.com](https://www.sautinsoft.com)
 + **Product Home:** [PDF Focus .Net](https://sautinsoft.com/products/pdf-focus/)
 + [Download SautinSoft.PDFFocus](https://sautinsoft.com/products/pdf-focus/download.php)
 + [Developer Guide](https://sautinsoft.com/products/pdf-focus/help/net/)

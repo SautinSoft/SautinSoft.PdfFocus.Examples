@@ -32,7 +32,7 @@ Namespace Example
 			' 3. Be sure that the folder "tessdata" also contains "pdf.ttf" file.
 
 			' Let's start:
-			Dim inpFile As String = "..\scan.pdf"
+			Dim inpFile As String = "..\..\scan.pdf"
 			Dim outFile As String = "Result.docx"
 
 			Dim f As New PdfFocus()
@@ -62,7 +62,7 @@ Namespace Example
 			' or
 			' Best and slow: https://github.com/tesseract-ocr/tessdata_best
 			' Also this folder must have write permissions.
-			Dim tesseractData As String = Path.GetFullPath("..\tessdata\")
+			Dim tesseractData As String = Path.GetFullPath("..\..\tessdata\")
 
 			' A path for a temporary PDF file (because Tesseract returns OCR result as PDF document)
 			Dim tempFile As String = Path.Combine(tesseractData, Path.GetRandomFileName())

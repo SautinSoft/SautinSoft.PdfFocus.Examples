@@ -11,7 +11,7 @@ Namespace Sample
         Private Shared Sub ConvertPdfBytesToHtml()
             ' We need files only for demonstration purposes.
             ' The whole conversion process will be done in memory.
-            Dim pdfFile As String = "..\simple text.pdf"
+            Dim pdfFile As String = Path.GetFullPath("..\..\..\simple text.pdf")
             Dim htmlFile As String = "Result.html"
 
             ' Convert PDF to HTML in memory
@@ -48,7 +48,7 @@ Namespace Sample
         Private Shared Sub ConvertPdfStreamToHtml()
             ' We need files only for demonstration purposes.
             ' The whole conversion process will be done in memory.
-            Dim pdfFile As String = "..\simple text.pdf"
+            Dim pdfFile As String = Path.GetFullPath("..\..\..\simple text.pdf")
             Dim htmlFile As String = "Result.html"
 
             ' Convert PDF to HTML in memory

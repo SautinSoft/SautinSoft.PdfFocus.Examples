@@ -10,7 +10,7 @@ Module Sample
         'ConvertPdfToRtfStream()
     End Sub
     Private Sub ConvertPdfToDocxBytes()
-        Dim pdfFile As String = "..\simple text.pdf"
+        Dim pdfFile As String = Path.GetFullPath("..\..\..\simple text.pdf")
 
         ' Assume that we already have a PDF document as array of bytes.
         Dim pdf() As Byte = File.ReadAllBytes(pdfFile)
@@ -37,7 +37,7 @@ Module Sample
         End If
     End Sub
     Private Sub ConvertPdfToRtfStream()
-        Dim pdfFile As String = "..\simple text.pdf"
+        Dim pdfFile As String = Path.GetFullPath("..\..\..\simple text.pdf")
         Dim rtfStream As New MemoryStream()
         ' Convert PDF to word in memory
         Dim f As New SautinSoft.PdfFocus()

@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "ASP.Net - Extract Text from PDF", ".", "{58B44E19-29D1-44BE-8B7A-BF0C4413FBED}"
 	ProjectSection(WebsiteProperties) = preProject
-		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.6"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.6.1"
 		Debug.AspNetCompiler.VirtualPath = "/ASP.Net - Extract Text from PDF"
 		Debug.AspNetCompiler.PhysicalPath = "..\ASP.Net - Extract Text from PDF\"
 		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\ASP.Net - Extract Text from PDF\"

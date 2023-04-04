@@ -13,7 +13,7 @@ namespace Sample
 
         private static void ConvertPdfToDocx()
         {
-            string pdfFile = @"..\..\text and graphics.pdf";
+            string pdfFile = Path.GetFullPath(@"..\..\..\text and graphics.pdf");
             string wordFile = "Result.docx";
 
             SautinSoft.PdfFocus f = new SautinSoft.PdfFocus();
@@ -37,7 +37,7 @@ namespace Sample
         }
         private static void ConvertPdfToRtf()
         {
-            string pdfFile = @"..\..\text and graphics.pdf";
+            string pdfFile = Path.GetFullPath(@"..\..\..\text and graphics.pdf");
             string wordFile = "Result.rtf";
 
             SautinSoft.PdfFocus f = new SautinSoft.PdfFocus();

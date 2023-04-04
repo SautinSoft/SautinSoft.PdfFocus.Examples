@@ -7,7 +7,7 @@ namespace Sample
     {
         static void Main(string[] args)
         {
-            string inpFile = @"..\..\Potato Beetle.pdf";
+            string inpFile = Path.GetFullPath(@"..\..\..\Potato Beetle.pdf");
             string outFile = "Result.rtf";
             
             SautinSoft.PdfFocus f = new SautinSoft.PdfFocus();

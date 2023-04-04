@@ -9,7 +9,7 @@ namespace Sample
         static void Main(string[] args)
         {
 
-            string pdfPath = @"..\..\simple text.pdf";
+            string pdfPath = Path.GetFullPath(@"..\..\..\Excel.pdf");
             string imagePath = "Result.gif";
 
             SautinSoft.PdfFocus f = new SautinSoft.PdfFocus();

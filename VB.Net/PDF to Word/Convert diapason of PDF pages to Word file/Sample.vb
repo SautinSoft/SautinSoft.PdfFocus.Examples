@@ -6,7 +6,7 @@ Imports SautinSoft
 Module Sample
 
     Sub Main()
-		Dim inpFile As String = "..\Potato Beetle.pdf"
+		Dim inpFile As String = Path.GetFullPath("..\..\..\Potato Beetle.pdf")
 		Dim outFile As String = "Result.rtf"
 
 		Dim f As New SautinSoft.PdfFocus()

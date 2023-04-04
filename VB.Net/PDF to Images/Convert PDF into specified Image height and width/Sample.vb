@@ -13,7 +13,7 @@ Module Sample
         'f.Serial = "XXXXXXXXXXX"
 
         ' Set initial values
-        Dim pdfPath As String = "..\simple text.pdf"
+        Dim pdfPath As String = Path.GetFullPath("..\..\..\Potato Beetle.pdf")
         Dim imageFolder As String = (New DirectoryInfo(Directory.GetCurrentDirectory())).CreateSubdirectory("Result").FullName
         Dim width As Integer = 1600 ' Width in Px
         Dim height As Integer = 1900 ' Height in Px

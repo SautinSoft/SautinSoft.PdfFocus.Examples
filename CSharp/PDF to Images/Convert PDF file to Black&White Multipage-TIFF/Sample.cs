@@ -15,7 +15,7 @@ namespace Sample
 	    	// This property is necessary only for registered version.
 		    //f.Serial = "XXXXXXXXXXX";
 
-            string pdfPath = @"..\..\simple text.pdf";
+            string pdfPath = Path.GetFullPath(@"..\..\..\Excel.pdf");
             string tiffPath = "Result.tiff";
 
             f.OpenPdf(pdfPath);

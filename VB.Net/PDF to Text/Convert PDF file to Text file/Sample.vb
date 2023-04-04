@@ -6,7 +6,7 @@ Imports SautinSoft
 Module Sample
 
     Sub Main()
-        Dim pdfFile As String = "..\Potato Beetle.pdf"
+        Dim pdfFile As String = Path.GetFullPath("..\..\..\Potato Beetle.pdf")
         Dim textFile As String = "Result.txt"
 
         'Convert PDF file to Text file

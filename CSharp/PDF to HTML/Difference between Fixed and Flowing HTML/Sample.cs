@@ -20,7 +20,7 @@ namespace Sample
             // It's very simple for understanding by a human. 
             // But the resulting HTML document doesn't look exactly the same as input PDF pixel by pixel.
 
-            string pdfFile = @"..\..\License.pdf";
+            string pdfFile = Path.GetFullPath(@"..\..\..\License.pdf");
             string htmlFileFixed = "Fixed.html";
             string htmlFileFlowing = "Flowing.html";
 

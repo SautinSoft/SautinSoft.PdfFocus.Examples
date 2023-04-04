@@ -6,7 +6,7 @@ Imports SautinSoft
 Module Sample
 
     Sub Main()
-        Dim pdfFile As String = "..\text and graphics.pdf"
+        Dim pdfFile As String = Path.GetFullPath("..\..\..\text and graphics.pdf")
         Dim wordFile As String = "Result.docx"
 
         ' Convert a PDF file to a Word file

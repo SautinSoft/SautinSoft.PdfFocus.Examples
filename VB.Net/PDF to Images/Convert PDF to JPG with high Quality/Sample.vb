@@ -11,7 +11,7 @@ Module Sample
 
         ' This property is necessary only for registered version
         ' f.Serial = "XXXXXXXXXXX"
-        Dim pdfFile As String = "..\simple text.pdf"
+        Dim pdfFile As String = Path.GetFullPath("..\..\..\Potato Beetle.pdf")
         Dim jpegDir As String = (New DirectoryInfo(Directory.GetCurrentDirectory())).CreateSubdirectory("Result").FullName
 
         f.OpenPdf(pdfFile)

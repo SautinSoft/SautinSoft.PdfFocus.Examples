@@ -7,7 +7,7 @@ namespace Sample
     {
         static void Main(string[] args)
         {
-            string pdfFile = @"..\..\text and graphics.pdf";
+            string pdfFile = Path.GetFullPath(@"..\..\..\text and graphics.pdf");
             string wordFile = "Result.docx";
 
             // Convert a PDF file to a Word file

@@ -10,7 +10,7 @@ Module Sample
         ' Each PDF page will be converted to a single Word document.
 
         ' Path to a PDF file.
-        Dim pdfPath As String = Path.GetFullPath("..\simple text.pdf")
+        Dim pdfPath As String = Path.GetFullPath("..\..\..\simple text.pdf")
 
         ' Directory to store Word documents.
         Dim docxDir As String = Directory.GetCurrentDirectory()

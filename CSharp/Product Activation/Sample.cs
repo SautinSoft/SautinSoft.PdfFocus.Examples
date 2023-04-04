@@ -16,7 +16,7 @@ namespace Sample
             // Let us say, you have this key: 1234567890.            
             f.Serial = "1234567890";
 
-            string pdfPath = @"..\..\simple text.pdf";
+            string pdfPath = Path.GetFullPath(@"..\..\..\simple text.pdf");
             string tiffPath = "Result.tiff";
 
             // Open PDF

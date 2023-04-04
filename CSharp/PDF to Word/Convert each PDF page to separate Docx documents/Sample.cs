@@ -11,7 +11,7 @@ namespace Sample
             // Each PDF page will be converted to a single Word document.
 
             // Path to a PDF file.
-            string pdfPath = Path.GetFullPath(@"..\..\simple text.pdf");
+            string pdfPath = Path.GetFullPath(@"..\..\..\simple text.pdf");
 
             // Directory to store Word documents.
             string docxDir = Directory.GetCurrentDirectory();

@@ -6,7 +6,7 @@ Imports SautinSoft
 Module Sample
 
     Sub Main()
-        Dim pdfPath As String = "..\simple text.pdf"
+        Dim pdfPath As String = Path.GetFullPath("..\..\..\Excel.pdf")
         Dim imagePath As String = "Result.png"
 
         Dim f As New SautinSoft.PdfFocus()

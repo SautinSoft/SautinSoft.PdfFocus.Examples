@@ -10,7 +10,7 @@ Namespace Sample
             ' Let us say, you have this key: 1234567890.
             f.Serial = "1234567890"
 
-            Dim pdfPath As String = "..\simple text.pdf"
+            Dim pdfPath As String = Path.GetFullPath("..\..\..\simple text.pdf")
             Dim tiffPath As String = ".tiff"
 
             ' Open PDF

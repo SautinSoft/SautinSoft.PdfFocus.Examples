@@ -19,7 +19,7 @@ namespace Sample
         }
         public static void ConvertPdfToExcelInThread()
         {
-            string pdfs = @"..\..\";
+            string pdfs = Path.GetFullPath(@"..\..\..\");
             string[] files = Directory.GetFiles(pdfs, "*.pdf");
 
             List<Thread> threads = new List<Thread>();

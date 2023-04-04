@@ -9,7 +9,7 @@ namespace Sample
         {
             // Convert PDF to separate HTMLs.
             // Each PDF page will be converted to a single HTML document.
-            string pdfFile = @"..\..\simple text.pdf";            
+            string pdfFile = Path.GetFullPath(@"..\..\..\simple text.pdf");            
             DirectoryInfo htmlDir = new DirectoryInfo("htmls");
             if (!htmlDir.Exists)
                 htmlDir.Create();

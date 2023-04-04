@@ -20,7 +20,7 @@ namespace Sample
         }
         public static void ConvertPdfToHtmlInThread()
         {
-            string pdfDir = @"..\..\";
+            string pdfDir = Path.GetFullPath(@"..\..\..\");
             string[] pdfFiles = Directory.GetFiles(pdfDir, "*.pdf");
             DirectoryInfo htmlDir = new DirectoryInfo("HTML results");
             if (!htmlDir.Exists)

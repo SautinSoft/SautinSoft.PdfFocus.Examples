@@ -6,7 +6,7 @@ Imports SautinSoft
 Module Sample
 
     Sub Main()
-        Dim pdfFile As String = "..\simple text.pdf"
+        Dim pdfFile As String = Path.GetFullPath("..\..\..\simple text.pdf")
         Dim wordFile As String = "Result.docx"
 
         ' In this sample you will find a short overview of all properties of WordOptions.

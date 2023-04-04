@@ -6,7 +6,7 @@ Imports SautinSoft
 Module Sample
 
     Sub Main()
-        Dim pdfFile As String = "..\Potato Beetle.pdf"
+        Dim pdfFile As String = Path.GetFullPath("..\..\..\Potato Beetle.pdf")
 
         ' Assume that we already have PDF as byte array
         Dim pdfBytes() As Byte = File.ReadAllBytes(pdfFile)

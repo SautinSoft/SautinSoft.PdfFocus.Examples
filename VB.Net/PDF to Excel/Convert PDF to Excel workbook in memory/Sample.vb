@@ -6,7 +6,7 @@ Imports SautinSoft
 Module Sample
 
     Sub Main()
-        Dim pathToPdf As String = "..\Table.pdf"
+        Dim pathToPdf As String = Path.GetFullPath("..\..\..\Table.pdf")
         Dim pathToExcel As String = "Result.xls"
 
         ' Here we have our PDF and Excel docs as byte arrays

@@ -11,7 +11,7 @@ Module Sample
         'this property is necessary only for registered version
         'f.Serial = "XXXXXXXXXXX"
 
-        Dim pdfFiles() As String = Directory.GetFiles("..\", "*.pdf")
+        Dim pdfFiles() As String = Directory.GetFiles("..\..\..\", "*.pdf")
         Dim folderWithTiffs As String = (New DirectoryInfo(Directory.GetCurrentDirectory())).CreateSubdirectory("Result").FullName
 
         For Each pdffile As String In pdfFiles

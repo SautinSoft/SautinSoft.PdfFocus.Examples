@@ -6,7 +6,7 @@ Imports SautinSoft
 Module Sample
 
     Sub Main()
-        Dim pdfFile As String = "..\Potato Beetle.pdf"
+        Dim pdfFile As String = Path.GetFullPath("..\..\..\Potato Beetle.pdf")
         Dim textFile As String = "Result.txt"
 
         'Extract Text from 2nd-3rd pages of PDF

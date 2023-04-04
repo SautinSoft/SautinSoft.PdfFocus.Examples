@@ -7,7 +7,7 @@ namespace Sample
     {
         static void Main(string[] args)
         {
-            string pathToPdf = @"..\..\Table.pdf";
+            string pathToPdf = Path.GetFullPath(@"..\..\..\Table.pdf");
             string pathToXml = "Result.xml";
 
             // Convert PDF file to XML file.

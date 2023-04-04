@@ -14,7 +14,7 @@ namespace Sample
 	    	//this property is necessary only for registered version
 		    //f.Serial = "XXXXXXXXXXX";
 
-            string[] pdfFiles = Directory.GetFiles(@"..\..\", "*.pdf");
+            string[] pdfFiles = Directory.GetFiles(@"..\..\..\", "*.pdf");
             string folderWithTiffs = new DirectoryInfo(Directory.GetCurrentDirectory()).CreateSubdirectory("Result").FullName;
 
             foreach (string pdffile in pdfFiles)

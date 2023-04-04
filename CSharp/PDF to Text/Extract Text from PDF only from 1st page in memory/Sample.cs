@@ -7,7 +7,7 @@ namespace Sample
     {
         static void Main(string[] args)
         {
-            string pdfFile = @"..\..\Potato Beetle.pdf";
+            string pdfFile = Path.GetFullPath(@"..\..\..\Potato Beetle.pdf");
 
             // Assume that we already have PDF as byte array
             byte[] pdfBytes = File.ReadAllBytes(pdfFile);            

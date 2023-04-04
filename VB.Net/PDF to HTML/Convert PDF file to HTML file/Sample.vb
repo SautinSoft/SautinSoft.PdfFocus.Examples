@@ -5,7 +5,7 @@ Imports SautinSoft
 Namespace Sample
     Friend Class Sample
         Shared Sub Main(ByVal args() As String)
-            Dim pdfFile As String = "..\simple text.pdf"
+            Dim pdfFile As String = Path.GetFullPath("..\..\..\simple text.pdf")
             Dim htmlFile As String = "Result.html"
 
             ' Convert PDF file to HTML file

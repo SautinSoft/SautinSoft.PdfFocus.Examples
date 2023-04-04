@@ -18,7 +18,7 @@ Namespace Sample
             Public Property PageNumber() As Integer
         End Class
         Public Shared Sub ConvertPdfToHtmlInThread()
-            Dim pdfDir As String = "..\"
+            Dim pdfDir As String = Path.GetFullPath("..\..\..\")
             Dim pdfFiles() As String = Directory.GetFiles(pdfDir, "*.pdf")
             Dim htmlDir As New DirectoryInfo("HTML results")
             If Not htmlDir.Exists Then

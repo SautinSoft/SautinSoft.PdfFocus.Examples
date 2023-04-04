@@ -13,7 +13,7 @@ namespace Sample
 
         private static void ConvertPdfToDocxBytes()
         {
-            string pdfFile = @"..\..\simple text.pdf";
+            string pdfFile = Path.GetFullPath(@"..\..\..\simple text.pdf");
 
             // Assume that we already have a PDF document as array of bytes.
             byte[] pdf = File.ReadAllBytes(pdfFile);
@@ -43,7 +43,7 @@ namespace Sample
         }
         private static void ConvertPdfToRtfStream()
         {
-            string pdfFile = @"..\..\simple text.pdf";
+            string pdfFile = Path.GetFullPath(@"..\..\..\simple text.pdf");
             MemoryStream rtfStream = new MemoryStream();
             // Convert PDF to word in memory
             SautinSoft.PdfFocus f = new SautinSoft.PdfFocus();

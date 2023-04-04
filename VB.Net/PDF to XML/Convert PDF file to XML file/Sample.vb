@@ -6,7 +6,7 @@ Imports SautinSoft
 Module Sample
 
     Sub Main()
-        Dim pathToPdf As String = "..\Table.pdf"
+        Dim pathToPdf As String = Path.GetFullPath("..\..\..\Table.pdf")
         Dim pathToXml As String = "Result.xml"
 
         ' Convert PDF file to XML file.

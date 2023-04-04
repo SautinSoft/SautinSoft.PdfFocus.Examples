@@ -15,7 +15,7 @@ namespace Sample
             //f.Serial = "XXXXXXXXXXX";
 
             // Set initial values
-            string pdfPath = @"..\..\simple text.pdf";
+            string pdfPath = Path.GetFullPath(@"..\..\..\Potato Beetle.pdf");
             string imageFolder = new DirectoryInfo(Directory.GetCurrentDirectory()).CreateSubdirectory("Result").FullName;
             int width = 1600; // Width in Px
             int height = 1900; // Height in Px

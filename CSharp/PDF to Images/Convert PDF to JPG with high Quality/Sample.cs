@@ -12,7 +12,7 @@ namespace Sample
 
             // This property is necessary only for registered version
             // f.Serial = "XXXXXXXXXXX";
-            string pdfFile = @"..\..\simple text.pdf";
+            string pdfFile = Path.GetFullPath(@"..\..\..\Potato Beetle.pdf");
             string jpegDir = new DirectoryInfo(Directory.GetCurrentDirectory()).CreateSubdirectory("Result").FullName;
 
             f.OpenPdf(pdfFile);

@@ -8,7 +8,7 @@ namespace Sample
     {
         static void Main(string[] args)
         {
-            string pdfFile = @"..\..\simple text.pdf";
+            string pdfFile = Path.GetFullPath(@"..\..\..\simple text.pdf");
             string htmlFile = "Result.html";
 
             // Convert PDF file to HTML file

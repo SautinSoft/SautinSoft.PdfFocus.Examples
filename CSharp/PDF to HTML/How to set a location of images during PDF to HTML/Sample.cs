@@ -9,7 +9,7 @@ namespace Sample
         static void Main(string[] args)
         {
             // Here you will find how to keep images in the resulting HTML document.
-            string pdfFile = @"..\..\simple text.pdf";
+            string pdfFile = Path.GetFullPath(@"..\..\..\simple text.pdf");
             string htmlFile = "Result.html";
 
             // Convert PDF file to HTML file

@@ -20,7 +20,7 @@ namespace Sample
         static void ConvertMultiplePdfToHtmls()
         {
             // Directory with *.pdf files.
-            string pdfDirectory = Path.GetFullPath(@"..\..\");
+            string pdfDirectory = Path.GetFullPath(@"..\..\..\");
             string[] pdfFiles = Directory.GetFiles(pdfDirectory, "*.pdf");
             DirectoryInfo htmlDirectory = new DirectoryInfo(@"htmls");
             if (!htmlDirectory.Exists)
@@ -81,7 +81,7 @@ namespace Sample
         static void ConvertMultiplePdfToSingleHtml()
         {
             // Directory with *.pdf files.
-            string pdfDirectory = Path.GetFullPath(@"..\..\");
+            string pdfDirectory = Path.GetFullPath(@"..\..\..\");
             string htmlFile = "Result.html";
 
             string[] pdfFiles = Directory.GetFiles(pdfDirectory, "*.pdf");

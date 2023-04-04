@@ -17,7 +17,7 @@ Namespace Sample
         ''' </summary>
         Private Shared Sub ConvertMultiplePdfToHtmls()
             ' Directory with *.pdf files.
-            Dim pdfDirectory As String = Path.GetFullPath("..\")
+            Dim pdfDirectory As String = Path.GetFullPath("..\..\..\")
             Dim pdfFiles() As String = Directory.GetFiles(pdfDirectory, "*.pdf")
             Dim htmlDirectory As New DirectoryInfo("htmls")
             If Not htmlDirectory.Exists Then

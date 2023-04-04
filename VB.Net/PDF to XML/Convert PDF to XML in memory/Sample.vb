@@ -6,7 +6,7 @@ Imports SautinSoft
 Module Sample
 
     Sub Main()
-        Dim pathToPdf As String = "..\Table.pdf"
+        Dim pathToPdf As String = Path.GetFullPath("..\..\..\Table.pdf")
         Dim pathToXml As String = "Result.xml"
 
         Dim pdf() As Byte = File.ReadAllBytes(pathToPdf)

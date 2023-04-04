@@ -34,7 +34,7 @@ namespace Example
             // 3. Be sure that the folder "tessdata" also contains "pdf.ttf" file.
 
             // Let's start:
-            string inpFile = @"..\..\scan.pdf";
+            string inpFile = Path.GetFullPath(@"..\..\..\scan.pdf");
             string outFile = "Result.docx";
 
             PdfFocus f = new PdfFocus();
@@ -67,7 +67,7 @@ namespace Example
             // or
             // Best and slow: https://github.com/tesseract-ocr/tessdata_best
             // Also this folder must have write permissions.
-            string tesseractData = Path.GetFullPath(@"..\..\tessdata\");
+            string tesseractData = Path.GetFullPath(@"..\..\..\tessdata\");
 
             // A path for a temporary PDF file (because Tesseract returns OCR result as PDF document)
             string tempFile = Path.Combine(tesseractData, Path.GetRandomFileName());

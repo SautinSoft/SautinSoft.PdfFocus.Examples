@@ -6,7 +6,7 @@ Namespace Sample
         Shared Sub Main(ByVal args() As String)
             ' Convert PDF to separate HTMLs.
             ' Each PDF page will be converted to a single HTML document.
-            Dim pdfFile As String = "..\simple text.pdf"
+            Dim pdfFile As String = Path.GetFullPath("..\..\..\simple text.pdf")
             Dim htmlDir As New DirectoryInfo("htmls")
             If Not htmlDir.Exists Then
                 htmlDir.Create()

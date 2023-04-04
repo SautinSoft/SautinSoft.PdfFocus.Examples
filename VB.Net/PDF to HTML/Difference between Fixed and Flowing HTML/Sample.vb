@@ -17,7 +17,7 @@ Namespace Sample
             ' It's very simple for understanding by a human. 
             ' But the resulting HTML document doesn't look exactly the same as input PDF pixel by pixel.
 
-            Dim pdfFile As String = "..\License.pdf"
+            Dim pdfFile As String = Path.GetFullPath("..\..\..\License.pdf")
             Dim htmlFileFixed As String = "Fixed.html"
             Dim htmlFileFlowing As String = "Flowing.html"
 

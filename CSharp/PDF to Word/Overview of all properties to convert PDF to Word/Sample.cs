@@ -7,7 +7,7 @@ namespace Sample
     {
         static void Main(string[] args)
         {
-            string pdfFile = @"..\..\simple text.pdf";
+            string pdfFile = Path.GetFullPath(@"..\..\..\simple text.pdf");
             string wordFile = "Result.docx";
 
             // In this sample you will find a short overview of all properties of WordOptions.

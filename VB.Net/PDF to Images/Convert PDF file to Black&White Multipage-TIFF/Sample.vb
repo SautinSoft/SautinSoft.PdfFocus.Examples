@@ -12,7 +12,7 @@ Module Sample
         ' This property is necessary only for registered version.
         'f.Serial = "XXXXXXXXXXX"
 
-        Dim pdfPath As String = "..\simple text.pdf"
+        Dim pdfPath As String = Path.GetFullPath("..\..\..\Excel.pdf")
         Dim tiffPath As String = "Result.tiff"
 
         f.OpenPdf(pdfPath)

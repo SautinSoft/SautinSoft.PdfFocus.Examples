@@ -14,7 +14,7 @@ Module Sample
         Public Property PageNumber() As Integer
     End Class
     Public Sub ConvertPdfToPngInThread()
-        Dim pdfs As String = "..\"
+        Dim pdfs As String = Path.GetFullPath("..\..\..")
         Dim files() As String = Directory.GetFiles(pdfs, "*.pdf")
 
         Dim threads As New List(Of Thread)()

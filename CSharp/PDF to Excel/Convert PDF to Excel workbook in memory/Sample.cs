@@ -7,7 +7,7 @@ namespace Sample
     {
         static void Main(string[] args)
         {
-            string pathToPdf = @"..\..\Table.pdf";
+            string pathToPdf = Path.GetFullPath(@"..\..\..\Table.pdf");
             string pathToExcel = "Result.xls";
 
             // Here we have our PDF and Excel docs as byte arrays

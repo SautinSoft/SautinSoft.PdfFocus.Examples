@@ -11,7 +11,7 @@ Module Sample
     End Sub
 
     Private Sub ConvertPdfToDocx()
-        Dim pdfFile As String = "..\text and graphics.pdf"
+        Dim pdfFile As String = Path.GetFullPath("..\..\..\text and graphics.pdf")
         Dim wordFile As String = "Result.docx"
 
         Dim f As New SautinSoft.PdfFocus()
@@ -32,7 +32,7 @@ Module Sample
         End If
     End Sub
     Private Sub ConvertPdfToRtf()
-        Dim pdfFile As String = "..\text and graphics.pdf"
+        Dim pdfFile As String = Path.GetFullPath("..\..\..\text and graphics.pdf")
         Dim wordFile As String = "Result.rtf"
 
         Dim f As New SautinSoft.PdfFocus()

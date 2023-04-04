@@ -2,7 +2,7 @@
 
 try
 {
-	$f = new DOTNET("SautinSoft.PdfFocus, Version=6.1.1.30, Culture=neutral, PublicKeyToken=0b79b934109b3e9e","SautinSoft.PdfFocus");
+	$f = new DOTNET("SautinSoft.PdfFocus, Version=8.6.3.17, Culture=neutral, PublicKeyToken=0b79b934109b3e9e","SautinSoft.PdfFocus");
 	echo "Successfully created an object of PDF Focus .Net!\n";
 }
 catch (Exception $e)

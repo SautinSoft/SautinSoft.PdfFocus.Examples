@@ -7,7 +7,7 @@ namespace Sample
     {
         static void Main(string[] args)
         {
-            string pdfFile = @"..\..\Potato Beetle.pdf";
+            string pdfFile = Path.GetFullPath(@"..\..\..\Potato Beetle.pdf");
             string textFile = "Result.txt";
 
             //Convert PDF file to Text file

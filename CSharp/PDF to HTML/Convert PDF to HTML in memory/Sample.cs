@@ -15,7 +15,7 @@ namespace Sample
         {
             // We need files only for demonstration purposes.
             // The whole conversion process will be done in memory.
-            string pdfFile = @"..\..\simple text.pdf";
+            string pdfFile = Path.GetFullPath(@"..\..\..\simple text.pdf");
             string htmlFile = "Result.html";
 
             // Convert PDF to HTML in memory
@@ -55,7 +55,7 @@ namespace Sample
         {
             // We need files only for demonstration purposes.
             // The whole conversion process will be done in memory.
-            string pdfFile = @"..\..\simple text.pdf";
+            string pdfFile = Path.GetFullPath(@"..\..\..\simple text.pdf");
             string htmlFile = "Result.html";
 
             // Convert PDF to HTML in memory

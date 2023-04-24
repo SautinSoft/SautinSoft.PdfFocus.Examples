@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27428.2002
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Sample", "Convert PDF files to 300-dpi TIFF files.vbproj", "{752105B4-C360-4943-B992-C11C944E5384}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Sample", "Convert PDF files to 300-dpi JPG files.vbproj", "{752105B4-C360-4943-B992-C11C944E5384}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

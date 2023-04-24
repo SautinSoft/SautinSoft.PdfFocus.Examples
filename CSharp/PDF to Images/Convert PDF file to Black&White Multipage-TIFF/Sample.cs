@@ -25,7 +25,9 @@ namespace Sample
                 f.ImageOptions.Dpi = 200;
                 f.ImageOptions.ColorDepth = SautinSoft.PdfFocus.CImageOptions.eColorDepth.BlackWhite1bpp;
                 // EncoderValue.CompressionCCITT4 - also makes image black&white 1 bit
-                if (f.ToMultipageTiff(tiffPath, EncoderValue.CompressionCCITT4) == 0)
+                f.ImageOptions.TIFFCompressionType = SautinSoft.PdfFocus.eTIFFCompressionType.CCITTFAX4;
+                
+                if (f.ToMultipageTiff(tiffPath) == 0)
                 {
                     System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo(tiffPath) { UseShellExecute = true });
                 }

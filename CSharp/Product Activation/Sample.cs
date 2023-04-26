@@ -1,3 +1,4 @@
+using SautinSoft;
 using System;
 using System.IO;
 
@@ -7,14 +8,15 @@ namespace Sample
     {
         static void Main(string[] args)
         {
-            // Activation of PDF Focus .Net after purchasing.
-            SautinSoft.PdfFocus f = new SautinSoft.PdfFocus();
 
             // You will get own serial number after purchasing the license.
             // If you will have any questions, email us to sales@sautinsoft.com or ask at online chat https://www.sautinsoft.com.
 
             // Let us say, you have this key: 1234567890.            
-            f.Serial = "1234567890";
+
+            PdfFocus.SetLicense("1234567890");
+            // Activation of PDF Focus .Net after purchasing.
+            SautinSoft.PdfFocus f = new SautinSoft.PdfFocus();
 
             string pdfPath = Path.GetFullPath(@"..\..\..\simple text.pdf");
             string tiffPath = "Result.tiff";

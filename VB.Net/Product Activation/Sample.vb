@@ -1,14 +1,19 @@
 Imports System
 Imports System.IO
+Imports SautinSoft
 
 Namespace Sample
     Friend Class Sample
         Shared Sub Main(ByVal args() As String)
-            ' Activation of PDF Focus .Net after purchasing.
-            Dim f As New SautinSoft.PdfFocus()
 
-            ' Let us say, you have this key: 1234567890.
-            f.Serial = "1234567890"
+            ' You will get own serial number after purchasing the license.
+            ' If you will have any questions, email us to sales@sautinsoft.com or ask at online chat https://www.sautinsoft.com.
+
+            ' Let us say, you have this key: 1234567890.            
+            PdfFocus.SetLicense("1234567890")
+            ' Activation of PDF Focus .Net after purchasing.
+
+            Dim f As New SautinSoft.PdfFocus()
 
             Dim pdfPath As String = Path.GetFullPath("..\..\..\simple text.pdf")
             Dim tiffPath As String = ".tiff"

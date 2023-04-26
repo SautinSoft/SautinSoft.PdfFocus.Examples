@@ -6,11 +6,12 @@ Namespace Sample
 		Shared Sub Main(ByVal args() As String)
 			Dim pdfFile As String = Path.GetFullPath("..\..\..\Example.pdf")
 			Dim wordFile As String = "Result.docx"
-
+			' Activate your license here
+			' SautinSoft.PdfFocus.SetLicense("1234567890")
+			
 			'Convert PDF file to Text file
 			Dim f As New SautinSoft.PdfFocus()
-			'this property is necessary only for registered version
-			'f.Serial = "XXXXXXXXXXX";
+
 
 			'Set a password for password-protected PDF documents. You need to set this option before "f.OpenPdf"
 			f.Password = "123456789"

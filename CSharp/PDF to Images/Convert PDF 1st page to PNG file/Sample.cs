@@ -7,10 +7,12 @@ namespace Sample
     {
         static void Main(string[] args)
         {
-            // Convert PDF 1st page to PNG file.
+			// Activate your license here
+			// SautinSoft.PdfFocus.SetLicense("1234567890");          
+
+		   // Convert PDF 1st page to PNG file.
             SautinSoft.PdfFocus f = new SautinSoft.PdfFocus();
-            // this property is necessary only for registered version.
-            //f.Serial = "XXXXXXXXXXX";
+          
 
             string pdfPath = Path.GetFullPath(@"..\..\..\Excel.pdf");
             string imagePath = "Result.png";

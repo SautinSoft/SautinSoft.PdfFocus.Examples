@@ -12,10 +12,11 @@ Partial Public Class _Default
 			Return
 		End If
 		Dim excel() As Byte = Nothing
-
+		' Activate your license here
+		' SautinSoft.PdfFocus.SetLicense("1234567890")
+			
 		Dim f As New SautinSoft.PdfFocus()
-		'this property is necessary only for registered version
-		'f.Serial = "XXXXXXXXXXX";
+
 		f.OpenPdf(FileUpload1.FileBytes)
 		f.ExcelOptions.ConvertNonTabularDataToSpreadsheet = True
 

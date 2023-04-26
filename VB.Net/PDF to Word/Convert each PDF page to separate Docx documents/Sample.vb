@@ -14,7 +14,9 @@ Module Sample
 
         ' Directory to store Word documents.
         Dim docxDir As String = Directory.GetCurrentDirectory()
-
+		' Activate your license here
+		' SautinSoft.PdfFocus.SetLicense("1234567890")
+		
         Dim f As New SautinSoft.PdfFocus()
 
         f.OpenPdf(pdfPath)

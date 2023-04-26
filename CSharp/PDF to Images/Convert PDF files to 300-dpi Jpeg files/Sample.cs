@@ -9,10 +9,11 @@ namespace Sample
     {
         static void Main(string[] args)
         {
+			// Activate your license here
+			// SautinSoft.PdfFocus.SetLicense("1234567890");
+			
             //Convert PDF files to 300-dpi JPG files
             SautinSoft.PdfFocus f = new SautinSoft.PdfFocus();
-	    	//this property is necessary only for registered version
-		    //f.Serial = "XXXXXXXXXXX";
 
             string[] pdfFiles = Directory.GetFiles(@"..\..\..\", "*.pdf");
             string folderWithJPGs = new DirectoryInfo(Directory.GetCurrentDirectory()).CreateSubdirectory("Result").FullName;

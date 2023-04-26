@@ -9,11 +9,12 @@ namespace Sample
         {
             string remotePdfUrl = @"https://www.sautinsoft.net/samples/simple%20text.pdf";
             string pathToWord = @"Result.docx";
-
+			// Activate your license here
+			// SautinSoft.PdfFocus.SetLicense("1234567890");
+			
             //Convert URL-PDF from Internet to a Word file
             SautinSoft.PdfFocus f = new SautinSoft.PdfFocus();
-            //this property is necessary only for registered version
-            //f.Serial = "XXXXXXXXXXX";
+            
 
             Uri uri = new Uri(remotePdfUrl);
 

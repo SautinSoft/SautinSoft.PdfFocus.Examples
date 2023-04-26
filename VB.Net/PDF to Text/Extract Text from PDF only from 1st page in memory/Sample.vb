@@ -1,4 +1,4 @@
-Imports System.IO
+mports System.IO
 Imports System.Drawing.Imaging
 Imports System.Collections.Generic
 Imports SautinSoft
@@ -10,11 +10,11 @@ Module Sample
 
         ' Assume that we already have PDF as byte array
         Dim pdfBytes() As Byte = File.ReadAllBytes(pdfFile)
-
+		' Activate your license here
+		' SautinSoft.PdfFocus.SetLicense("1234567890")
+		
         ' Extract Text from PDF only from 1st page
         Dim f As New SautinSoft.PdfFocus()
-        'this property is necessary only for registered version
-        'f.Serial = "XXXXXXXXXXX"
 
         f.OpenPdf(pdfFile)
 

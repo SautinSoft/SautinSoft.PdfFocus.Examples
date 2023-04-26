@@ -8,12 +8,11 @@ Module Sample
     Sub Main()
         Dim pathToPdf As String = Path.GetFullPath("..\..\..\Table.pdf")
         Dim pathToXml As String = "Result.xml"
-
+		' Activate your license here
+		' SautinSoft.PdfFocus.SetLicense("1234567890")
+		
         ' Convert PDF file to XML file.
         Dim f As New SautinSoft.PdfFocus()
-
-        ' This property is necessary only for registered version.
-        'f.Serial = "XXXXXXXXXXX"
 
         ' Let's convert only tables to XML and skip all textual data.
         f.XmlOptions.ConvertNonTabularDataToSpreadsheet = False

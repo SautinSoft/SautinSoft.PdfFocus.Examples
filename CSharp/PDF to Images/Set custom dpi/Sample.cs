@@ -11,10 +11,11 @@ namespace Sample
 
             string pdfPath = Path.GetFullPath(@"..\..\..\Excel.pdf");
             string imagePath = "Result.png";
-
+			// Activate your license here
+			// SautinSoft.PdfFocus.SetLicense("1234567890");
+			
             SautinSoft.PdfFocus f = new SautinSoft.PdfFocus();
-	    	//this property is necessary only for registered version
-		    //f.Serial = "XXXXXXXXXXX";
+	    	
             f.OpenPdf(pdfPath);
 
             if (f.PageCount > 0)

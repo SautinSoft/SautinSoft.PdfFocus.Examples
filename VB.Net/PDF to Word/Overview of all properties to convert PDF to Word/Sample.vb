@@ -8,11 +8,12 @@ Module Sample
     Sub Main()
         Dim pdfFile As String = Path.GetFullPath("..\..\..\simple text.pdf")
         Dim wordFile As String = "Result.docx"
-
+		' Activate your license here
+		' SautinSoft.PdfFocus.SetLicense("1234567890")
+		
         ' In this sample you will find a short overview of all properties of WordOptions.
         Dim f As New SautinSoft.PdfFocus()
-        'this property is necessary only for registered version
-        'f.Serial = "XXXXXXXXXXX"
+
 
         f.OpenPdf(pdfFile)
 

@@ -9,11 +9,12 @@ namespace Sample
         {
             string pdfFile = Path.GetFullPath(@"..\..\..\Potato Beetle.pdf");
             string textFile = "Result.txt";
-
+			// Activate your license here
+			// SautinSoft.PdfFocus.SetLicense("1234567890");
+			
             //Convert PDF file to Text file
             SautinSoft.PdfFocus f = new SautinSoft.PdfFocus();
-            //this property is necessary only for registered version
-            //f.Serial = "XXXXXXXXXXX";
+            
 
             f.OpenPdf(pdfFile);
 

@@ -7,10 +7,12 @@ Imports SautinSoft
 Module Sample
 
     Sub Main()
+		' Activate your license here
+		' SautinSoft.PdfFocus.SetLicense("1234567890")
+
         'Convert PDF into specified Image height & width
         Dim f As New SautinSoft.PdfFocus()
-        'this property is necessary only for registered version
-        'f.Serial = "XXXXXXXXXXX"
+
 
         ' Set initial values
         Dim pdfPath As String = Path.GetFullPath("..\..\..\Potato Beetle.pdf")

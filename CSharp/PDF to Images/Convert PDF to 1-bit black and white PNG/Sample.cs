@@ -7,10 +7,12 @@ namespace Sample
     {
         static void Main(string[] args)
         {
+			// Activate your license here
+			// SautinSoft.PdfFocus.SetLicense("1234567890");
+			
             //How to convert PDF to 1-bit black and white PNG
             SautinSoft.PdfFocus f = new SautinSoft.PdfFocus();
-	    	//this property is necessary only for registered version
-		    //f.Serial = "XXXXXXXXXXX";
+	    	
 
             string pdfPath = Path.GetFullPath(@"..\..\..\Potato Beetle.pdf");
             string imagePath = "Result.png";

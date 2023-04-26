@@ -11,11 +11,12 @@ namespace Sample
 
             // Assume that we already have PDF as byte array
             byte[] pdfBytes = File.ReadAllBytes(pdfFile);            
-
+			// Activate your license here
+			// SautinSoft.PdfFocus.SetLicense("1234567890");
+			
             // Extract Text from PDF only from 1st page
             SautinSoft.PdfFocus f = new SautinSoft.PdfFocus();
-	    	//this property is necessary only for registered version
-		    //f.Serial = "XXXXXXXXXXX";
+	    	
 
             f.OpenPdf(pdfFile);
 

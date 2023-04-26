@@ -9,12 +9,10 @@ namespace Sample
         {
             string pathToPdf = Path.GetFullPath(@"..\..\..\Table.pdf");
             string pathToExcel = "Result.xls";
-
+			// Activate your license here
+			// SautinSoft.PdfFocus.SetLicense("1234567890");
             // Convert only tables from PDF to XLS spreadsheet and skip all textual data.
             SautinSoft.PdfFocus f = new SautinSoft.PdfFocus();
-            
-	    	// This property is necessary only for registered version
-		    //f.Serial = "XXXXXXXXXXX";
 
             // 'true' = Convert all data to spreadsheet (tabular and even textual).
             // 'false' = Skip textual data and convert only tabular (tables) data.

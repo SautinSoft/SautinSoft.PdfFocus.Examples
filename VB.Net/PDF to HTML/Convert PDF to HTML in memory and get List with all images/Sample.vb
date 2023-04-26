@@ -19,13 +19,11 @@ Namespace Sample
             ' This is the list with extracted images.
             ' It will be filled by images after the conversion.
             Dim imgCollection As New List(Of Image)()
-
+			' Activate your license here
+			' SautinSoft.PdfFocus.SetLicense("1234567890")
+		
             ' Convert PDF to HTML in memory
             Dim f As New SautinSoft.PdfFocus()
-
-            ' This property is necessary only for licensed version.
-            'f.Serial = "XXXXXXXXXXX"
-
             ' Let's force the component to store images inside HTML document
             ' using base-64 encoding.
             ' Thus the component will not use HDD.

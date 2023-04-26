@@ -6,11 +6,12 @@ Namespace Sample
 		Shared Sub Main(ByVal args() As String)
 			Dim pdfFile As String = Path.GetFullPath("..\..\..\text and graphics.pdf")
 			Dim wordFile As String = "Result.docx"
-
+			' Activate your license here
+			' SautinSoft.PdfFocus.SetLicense("1234567890")
+			
 			'Convert PDF file to Text file
 			Dim f As New SautinSoft.PdfFocus()
-			'this property is necessary only for registered version
-			'f.Serial = "XXXXXXXXXXX";
+
 
 			f.OpenPdf(pdfFile)
 

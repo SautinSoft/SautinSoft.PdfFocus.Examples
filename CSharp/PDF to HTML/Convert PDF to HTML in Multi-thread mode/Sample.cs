@@ -57,6 +57,9 @@ namespace Sample
 
             string htmlFile = targum.HtmlFile;
 
+			// Activate your license here
+			// SautinSoft.PdfFocus.SetLicense("1234567890");
+			
             SautinSoft.PdfFocus f = new SautinSoft.PdfFocus();
 
             f.EmbeddedImagesFormat = PdfFocus.eImageFormat.Auto;

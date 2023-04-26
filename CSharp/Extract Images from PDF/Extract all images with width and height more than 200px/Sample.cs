@@ -9,11 +9,11 @@ namespace Sample
     {
         static void Main(string[] args)
         {
+			// Activate your license here
+			// SautinSoft.PdfFocus.SetLicense("1234567890");
             // Extract all images with width and height more than 200px
             SautinSoft.PdfFocus f = new SautinSoft.PdfFocus();
 
-            // This property is necessary only for registered version
-            // f.Serial = "XXXXXXXXXXX";
             string pdfFile = Path.GetFullPath(@"..\..\..\simple text.pdf");
             string imageDir = new DirectoryInfo(Directory.GetCurrentDirectory()).CreateSubdirectory("images").FullName;
 

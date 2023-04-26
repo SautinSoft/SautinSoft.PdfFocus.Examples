@@ -20,12 +20,11 @@ Namespace Sample
             Dim pdfFile As String = Path.GetFullPath("..\..\..\License.pdf")
             Dim htmlFileFixed As String = "Fixed.html"
             Dim htmlFileFlowing As String = "Flowing.html"
-
+			' Activate your license here
+			' SautinSoft.PdfFocus.SetLicense("1234567890")
+		
             ' Convert PDF file to HTML (Fixed and Flowing) file
             Dim f As New SautinSoft.PdfFocus()
-
-            ' After purchasing the license, please insert your serial number here to activate the component:
-            'f.Serial = "XXXXXXXXXXX"
 
             ' How to store images: Inside HTML document as base64 images or as linked separate image files.
             f.HtmlOptions.IncludeImageInHtml = True

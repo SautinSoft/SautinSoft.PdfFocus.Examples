@@ -9,11 +9,12 @@ namespace Sample
         {
             string pdfFile = Path.GetFullPath(@"..\..\..\simple text.pdf");
             string wordFile = "Result.docx";
-
+			// Activate your license here
+			// SautinSoft.PdfFocus.SetLicense("1234567890");
+			
             // In this sample you will find a short overview of all properties of WordOptions.
             SautinSoft.PdfFocus f = new SautinSoft.PdfFocus();
-            //this property is necessary only for registered version
-            //f.Serial = "XXXXXXXXXXX";
+            
 
             f.OpenPdf(pdfFile);
 

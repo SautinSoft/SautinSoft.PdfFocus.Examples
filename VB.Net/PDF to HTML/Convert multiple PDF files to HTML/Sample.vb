@@ -23,7 +23,9 @@ Namespace Sample
             If Not htmlDirectory.Exists Then
                 htmlDirectory.Create()
             End If
-
+			' Activate your license here
+			' SautinSoft.PdfFocus.SetLicense("1234567890")
+		
             Dim f As New PdfFocus()
             ' After purchasing the license, please insert your serial number here to activate the component:
             'f.Serial = "XXXXXXXXXXX"
@@ -85,9 +87,10 @@ Namespace Sample
             singleHtml.Append("<html>" & vbCrLf & "<head>" & vbCrLf)
             singleHtml.Append("<meta http-equiv = ""Content-Type"" content=""text/html; charset=utf-8"" />")
             singleHtml.Append(vbCrLf & "</head>" & vbCrLf & "<body>")
-
+			' Activate your license here
+			' SautinSoft.PdfFocus.SetLicense("1234567890")
+		
             Dim f As New PdfFocus()
-            'f.Serial = "XXXXXXXXXXX"
 
             Dim success As Integer = 0
             Dim total As Integer = 0

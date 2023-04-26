@@ -7,12 +7,12 @@ Namespace Sample
         Shared Sub Main(ByVal args() As String)
             Dim pdfFile As String = Path.GetFullPath("..\..\..\simple text.pdf")
             Dim htmlFile As String = "Result.html"
-
+			
+			' Activate your license here
+		    ' SautinSoft.PdfFocus.SetLicense("1234567890")
+		
             ' Convert PDF file to HTML file
             Dim f As New SautinSoft.PdfFocus()
-
-            ' After purchasing the license, please insert your serial number here to activate the component:
-            'f.Serial = "XXXXXXXXXXX"
 
             ' Path (must exist) to a directory to store images after converting. Notice also to the property "ImageSubFolder".
             f.HtmlOptions.ImageFolder = Path.GetDirectoryName(htmlFile)

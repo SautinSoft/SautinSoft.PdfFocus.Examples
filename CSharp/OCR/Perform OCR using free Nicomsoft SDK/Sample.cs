@@ -33,7 +33,8 @@ namespace Sample
             NsOCR = new NSOCRLib.NSOCRClass();
             NsOCR.Engine_SetLicenseKey("AB2A4DD5FF2A"); //required for licensed version only
             NsOCR.Engine_InitializeAdvanced(out CfgObj, out OcrObj, out ImgObj);
-
+			// Activate your license here
+			// SautinSoft.PdfFocus.SetLicense("1234567890");
             SautinSoft.PdfFocus f = new SautinSoft.PdfFocus();
             f.OCROptions.Method += PerformOCRNicomsoft;
             f.OCROptions.Mode = PdfFocus.COCROptions.eOCRMode.AllImages;

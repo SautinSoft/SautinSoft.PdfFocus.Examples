@@ -6,10 +6,12 @@ Imports SautinSoft
 Module Sample
 
     Sub Main()
+		' Activate your license here
+		' SautinSoft.PdfFocus.SetLicense("1234567890")
+		
         'Convert custom PDF page to Image object
         Dim f As New SautinSoft.PdfFocus()
-        'this property is necessary only for registered version
-        'f.Serial = "XXXXXXXXXXX"
+
 
         Dim pdfPath As String = Path.GetFullPath("..\..\..\Excel.pdf")
         Dim imagePath As String = "Result.png"

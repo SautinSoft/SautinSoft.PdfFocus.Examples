@@ -10,9 +10,10 @@ namespace Sample
             string inpFile = Path.GetFullPath(@"..\..\..\Potato Beetle.pdf");
             string outFile = "Result.rtf";
             
+			// Activate your license here
+			// SautinSoft.PdfFocus.SetLicense("1234567890");
+			
             SautinSoft.PdfFocus f = new SautinSoft.PdfFocus();
-            // this property is necessary only for registered version.
-            //f.Serial = "XXXXXXXXXXX";
 
             f.OpenPdf(inpFile);
 

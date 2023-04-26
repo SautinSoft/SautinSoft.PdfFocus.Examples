@@ -6,11 +6,12 @@ Imports SautinSoft
 Module Sample
 
     Sub Main()
+		' Activate your license here
+		' SautinSoft.PdfFocus.SetLicense("1234567890")
+			
         ' Extract all images from PDF
         Dim f As New SautinSoft.PdfFocus()
 
-        ' This property is necessary only for registered version
-        ' f.Serial = "XXXXXXXXXXX"
         Dim pdfFile As String = Path.GetFullPath("..\..\..\simple text.pdf")
         Dim imageDir As String = (New DirectoryInfo(Directory.GetCurrentDirectory())).CreateSubdirectory("images").FullName
 

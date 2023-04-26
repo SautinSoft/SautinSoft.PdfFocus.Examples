@@ -25,11 +25,11 @@ namespace Sample
             DirectoryInfo htmlDirectory = new DirectoryInfo(@"htmls");
             if (!htmlDirectory.Exists)
                 htmlDirectory.Create();
-
-            PdfFocus f = new PdfFocus();
-            // After purchasing the license, please insert your serial number here to activate the component:
-            //f.Serial = "XXXXXXXXXXX";
-
+			// Activate your license here
+			// SautinSoft.PdfFocus.SetLicense("1234567890");
+            
+			PdfFocus f = new PdfFocus();
+            
             int success = 0;
             int total = 0;
 

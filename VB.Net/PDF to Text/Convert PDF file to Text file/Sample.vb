@@ -8,11 +8,11 @@ Module Sample
     Sub Main()
         Dim pdfFile As String = Path.GetFullPath("..\..\..\Potato Beetle.pdf")
         Dim textFile As String = "Result.txt"
-
+		' Activate your license here
+		' SautinSoft.PdfFocus.SetLicense("1234567890")
+		
         'Convert PDF file to Text file
         Dim f As New SautinSoft.PdfFocus()
-        'this property is necessary only for registered version
-        'f.Serial = "XXXXXXXXXXX"
 
         f.OpenPdf(pdfFile)
 

@@ -48,7 +48,8 @@ namespace Sample
             int page = targum.PageNumber;
 
             string excelFile = Path.GetFileNameWithoutExtension(pdfFile) + ".xls";
-
+			// Activate your license here
+			// SautinSoft.PdfFocus.SetLicense("1234567890");
             SautinSoft.PdfFocus f = new SautinSoft.PdfFocus();
 
             // 'true' = Convert all data to spreadsheet (tabular and even textual).

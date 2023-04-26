@@ -11,11 +11,10 @@ Namespace Sample
             If Not htmlDir.Exists Then
                 htmlDir.Create()
             End If
-
+			' Activate your license here
+		    ' SautinSoft.PdfFocus.SetLicense("1234567890")
             Dim f As New SautinSoft.PdfFocus()
 
-            ' This property is necessary only for licensed version.
-            'f.Serial = "XXXXXXXXXXX"
             f.HtmlOptions.IncludeImageInHtml = False
 
             ' Path (must exist) to a directory to store images after converting.             

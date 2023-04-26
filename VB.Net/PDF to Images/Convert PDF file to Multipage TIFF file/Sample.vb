@@ -6,10 +6,12 @@ Imports SautinSoft
 Module Sample
 
     Sub Main()
+		' Activate your license here
+		' SautinSoft.PdfFocus.SetLicense("1234567890")
+		
         'Convert PDF file to Multipage TIFF file
         Dim f As New SautinSoft.PdfFocus()
-        'this property is necessary only for registered version
-        'f.Serial = "XXXXXXXXXXX"
+
 
         Dim pdfPath As String = Path.GetFullPath("..\..\..\Excel.pdf")
         Dim tiffPath As String = "Result.tiff"

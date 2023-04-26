@@ -15,11 +15,12 @@ namespace Sample
         {
             string pdfFile = Path.GetFullPath(@"..\..\..\text and graphics.pdf");
             string wordFile = "Result.docx";
-
+			// Activate your license here
+			// SautinSoft.PdfFocus.SetLicense("1234567890");
+			
             SautinSoft.PdfFocus f = new SautinSoft.PdfFocus();
 
-            //this property is necessary only for registered version
-            //f.Serial = "XXXXXXXXXXX";
+            
 
             f.OpenPdf(pdfFile);
 
@@ -39,11 +40,12 @@ namespace Sample
         {
             string pdfFile = Path.GetFullPath(@"..\..\..\text and graphics.pdf");
             string wordFile = "Result.rtf";
-
+			// Activate your license here
+			// SautinSoft.PdfFocus.SetLicense("1234567890");
+			
             SautinSoft.PdfFocus f = new SautinSoft.PdfFocus();
 
-            //this property is necessary only for registered version
-            //f.Serial = "XXXXXXXXXXX";
+            
 
             f.OpenPdf(pdfFile);
 

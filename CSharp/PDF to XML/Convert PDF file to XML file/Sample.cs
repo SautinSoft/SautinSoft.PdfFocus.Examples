@@ -9,12 +9,12 @@ namespace Sample
         {
             string pathToPdf = Path.GetFullPath(@"..\..\..\Table.pdf");
             string pathToXml = "Result.xml";
-
+			// Activate your license here
+			// SautinSoft.PdfFocus.SetLicense("1234567890");
+			
             // Convert PDF file to XML file.
             SautinSoft.PdfFocus f = new SautinSoft.PdfFocus();
 
-	    	// This property is necessary only for registered version.
-		    //f.Serial = "XXXXXXXXXXX";
 
             // Let's convert only tables to XML and skip all textual data.
             f.XmlOptions.ConvertNonTabularDataToSpreadsheet = false;

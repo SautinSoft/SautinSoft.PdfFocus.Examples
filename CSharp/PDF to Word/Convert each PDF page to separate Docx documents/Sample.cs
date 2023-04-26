@@ -15,7 +15,9 @@ namespace Sample
 
             // Directory to store Word documents.
             string docxDir = Directory.GetCurrentDirectory();
-            
+            // Activate your license here
+			// SautinSoft.PdfFocus.SetLicense("1234567890");
+			
             SautinSoft.PdfFocus f = new SautinSoft.PdfFocus();
 
             f.OpenPdf(pdfPath);

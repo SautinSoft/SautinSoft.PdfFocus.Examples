@@ -14,6 +14,8 @@ namespace Sample
             byte[] pdf = File.ReadAllBytes(pathToPdf);
             byte[] xls = null;
 
+			// Activate your license here
+			// SautinSoft.PdfFocus.SetLicense("1234567890");
             // Convert PDF document to Excel workbook in memory
             SautinSoft.PdfFocus f = new SautinSoft.PdfFocus();
             

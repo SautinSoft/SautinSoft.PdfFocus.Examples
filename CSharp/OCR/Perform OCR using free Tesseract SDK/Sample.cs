@@ -36,7 +36,8 @@ namespace Example
             // Let's start:
             string inpFile = Path.GetFullPath(@"..\..\..\scan.pdf");
             string outFile = "Result.docx";
-
+			// Activate your license here
+			// SautinSoft.PdfFocus.SetLicense("1234567890");
             PdfFocus f = new PdfFocus();
             f.OCROptions.Mode = PdfFocus.COCROptions.eOCRMode.AllImages;
             f.OCROptions.Method += PerformOCRTesseract;

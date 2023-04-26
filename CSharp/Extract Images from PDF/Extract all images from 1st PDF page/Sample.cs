@@ -10,10 +10,10 @@ namespace Sample
         static void Main(string[] args)
         {
             // Extract all images from 1st PDF page
+			// Activate your license here
+			// SautinSoft.PdfFocus.SetLicense("1234567890");
             SautinSoft.PdfFocus f = new SautinSoft.PdfFocus();
 
-            // This property is necessary only for registered version
-            // f.Serial = "XXXXXXXXXXX";
             string pdfFile = Path.GetFullPath(@"..\..\..\simple text.pdf");
             string imageDir = new DirectoryInfo(Directory.GetCurrentDirectory()).CreateSubdirectory("images").FullName;
 

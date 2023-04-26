@@ -18,11 +18,12 @@ namespace Sample
             string pdfFile = Path.GetFullPath(@"..\..\..\simple text.pdf");
             string htmlFile = "Result.html";
 
+			// Activate your license here
+			// SautinSoft.PdfFocus.SetLicense("1234567890");
+			
             // Convert PDF to HTML in memory
             SautinSoft.PdfFocus f = new SautinSoft.PdfFocus();
 
-            // This property is necessary only for licensed version.
-            //f.Serial = "XXXXXXXXXXX";
 
             // Let's force the component to store images inside HTML document
             // using base-64 encoding.
@@ -58,11 +59,12 @@ namespace Sample
             string pdfFile = Path.GetFullPath(@"..\..\..\simple text.pdf");
             string htmlFile = "Result.html";
 
+			// Activate your license here
+			// SautinSoft.PdfFocus.SetLicense("1234567890");
+			
             // Convert PDF to HTML in memory
             SautinSoft.PdfFocus f = new SautinSoft.PdfFocus();
 
-            // This property is necessary only for licensed version.
-            //f.Serial = "XXXXXXXXXXX";
 
             // Let's force the component to store images inside HTML document
             // using base-64 encoding.

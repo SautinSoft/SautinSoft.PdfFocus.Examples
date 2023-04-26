@@ -48,7 +48,9 @@ namespace Sample
             int page = targum.PageNumber;
 
             string docxFile = Path.GetFileNameWithoutExtension(pdfFile) + ".docx";
-
+			// Activate your license here
+			// SautinSoft.PdfFocus.SetLicense("1234567890");
+			
             SautinSoft.PdfFocus f = new SautinSoft.PdfFocus();
 
             f.WordOptions.Format = PdfFocus.CWordOptions.eWordDocument.Docx;

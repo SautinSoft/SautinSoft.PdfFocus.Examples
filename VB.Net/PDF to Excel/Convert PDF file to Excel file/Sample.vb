@@ -8,12 +8,12 @@ Module Sample
     Sub Main()
         Dim pathToPdf As String = Path.GetFullPath("..\..\..\Table.pdf")
 		Dim pathToExcel As String = "Result.xls"
-
+		' Activate your license here
+		' SautinSoft.PdfFocus.SetLicense("1234567890")
+		
 		' Convert PDF file to Excel file
 		Dim f As New SautinSoft.PdfFocus()
 
-			' This property is necessary only for registered version
-			'f.Serial = "XXXXXXXXXXX"
 
 			' 'true' = Convert all data to spreadsheet (tabular and even textual).
 			' 'false' = Skip textual data and convert only tabular (tables) data.

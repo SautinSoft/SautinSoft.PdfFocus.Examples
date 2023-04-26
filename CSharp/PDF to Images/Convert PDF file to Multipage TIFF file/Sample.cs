@@ -9,10 +9,12 @@ namespace Sample
     {
         static void Main(string[] args)
         {
+			// Activate your license here
+			// SautinSoft.PdfFocus.SetLicense("1234567890");
+			
             //Convert PDF file to Multipage TIFF file
             SautinSoft.PdfFocus f = new SautinSoft.PdfFocus();
-	    	//this property is necessary only for registered version
-		    //f.Serial = "XXXXXXXXXXX";
+	    	
 
             string pdfPath = Path.GetFullPath(@"..\..\..\Excel.pdf");
             string tiffPath = "Result.tiff";

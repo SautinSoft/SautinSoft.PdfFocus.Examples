@@ -22,10 +22,10 @@ public partial class _Default : System.Web.UI.Page
             TextBox1.Text = "Please select PDF file at first!";
             return;
         }
-       
+            // Activate your license here
+			// SautinSoft.PdfFocus.SetLicense("1234567890");
         SautinSoft.PdfFocus f = new SautinSoft.PdfFocus();
-		//this property is necessary only for registered version
-		//f.Serial = "XXXXXXXXXXX";
+		
         f.OpenPdf(FileUpload1.FileBytes);
 
         if (f.PageCount > 0)

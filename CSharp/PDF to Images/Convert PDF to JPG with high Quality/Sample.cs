@@ -7,11 +7,12 @@ namespace Sample
     {
         static void Main(string[] args)
         {
+			// Activate your license here
+			// SautinSoft.PdfFocus.SetLicense("1234567890");
+			
             // Convert PDF to JPG with high Quality
             SautinSoft.PdfFocus f = new SautinSoft.PdfFocus();
 
-            // This property is necessary only for registered version
-            // f.Serial = "XXXXXXXXXXX";
             string pdfFile = Path.GetFullPath(@"..\..\..\Potato Beetle.pdf");
             string jpegDir = new DirectoryInfo(Directory.GetCurrentDirectory()).CreateSubdirectory("Result").FullName;
 

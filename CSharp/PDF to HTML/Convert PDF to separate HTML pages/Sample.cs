@@ -13,11 +13,12 @@ namespace Sample
             DirectoryInfo htmlDir = new DirectoryInfo("htmls");
             if (!htmlDir.Exists)
                 htmlDir.Create();
-            
+
+			// Activate your license here
+			// SautinSoft.PdfFocus.SetLicense("1234567890");            
+
             SautinSoft.PdfFocus f = new SautinSoft.PdfFocus();
 
-            // This property is necessary only for licensed version.
-            //f.Serial = "XXXXXXXXXXX";
             f.HtmlOptions.IncludeImageInHtml = false;
             
             // Path (must exist) to a directory to store images after converting.             

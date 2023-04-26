@@ -21,10 +21,11 @@ Partial Public Class _Default
         End If
 
         Dim rtf() As Byte = Nothing
-
+		' Activate your license here
+		' SautinSoft.PdfFocus.SetLicense("1234567890")
+		
         Dim f As New SautinSoft.PdfFocus()
-        'this property is necessary only for registered version
-        'f.Serial = "XXXXXXXXXXX"
+
         f.OpenPdf(FileUpload1.FileBytes)
 
         If f.PageCount > 0 Then

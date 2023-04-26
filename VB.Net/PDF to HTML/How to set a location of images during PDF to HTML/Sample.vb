@@ -8,12 +8,11 @@ Namespace Sample
             ' Here you will find how to keep images in the resulting HTML document.
             Dim pdfFile As String = Path.GetFullPath("..\..\..\simple text.pdf")
             Dim htmlFile As String = "Result.html"
-
+			' Activate your license here
+			' SautinSoft.PdfFocus.SetLicense("1234567890")
+		
             ' Convert PDF file to HTML file
             Dim f As New SautinSoft.PdfFocus()
-
-            ' After purchasing the license, please insert your serial number here to activate the component:
-            'f.Serial = "XXXXXXXXXXX"
 
             ' Way 1 (default): Images will be stored inside HTML document as base64, jpeg images.
             'f.HtmlOptions.IncludeImageInHtml = True

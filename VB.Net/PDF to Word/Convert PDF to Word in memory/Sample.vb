@@ -15,11 +15,12 @@ Module Sample
         ' Assume that we already have a PDF document as array of bytes.
         Dim pdf() As Byte = File.ReadAllBytes(pdfFile)
         Dim docx() As Byte = Nothing
-
+		' Activate your license here
+		' SautinSoft.PdfFocus.SetLicense("1234567890")
+		
         ' Convert PDF to word in memory
         Dim f As New SautinSoft.PdfFocus()
-        'this property is necessary only for registered version
-        'f.Serial = "XXXXXXXXXXX"
+
 
         f.OpenPdf(pdf)
 

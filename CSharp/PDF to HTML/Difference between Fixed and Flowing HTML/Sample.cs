@@ -23,12 +23,12 @@ namespace Sample
             string pdfFile = Path.GetFullPath(@"..\..\..\License.pdf");
             string htmlFileFixed = "Fixed.html";
             string htmlFileFlowing = "Flowing.html";
-
+			
+			// Activate your license here
+			// SautinSoft.PdfFocus.SetLicense("1234567890");
+			
             // Convert PDF file to HTML (Fixed and Flowing) file
             SautinSoft.PdfFocus f = new SautinSoft.PdfFocus();
-
-            // After purchasing the license, please insert your serial number here to activate the component:
-            //f.Serial = "XXXXXXXXXXX";
 
             // How to store images: Inside HTML document as base64 images or as linked separate image files.
             f.HtmlOptions.IncludeImageInHtml = true;

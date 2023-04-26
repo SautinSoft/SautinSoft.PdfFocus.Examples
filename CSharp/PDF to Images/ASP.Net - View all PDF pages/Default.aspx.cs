@@ -25,8 +25,7 @@ public partial class _Default : System.Web.UI.Page
         }
         
         SautinSoft.PdfFocus f = new SautinSoft.PdfFocus();
-		//this property is necessary only for registered version
-		//f.Serial = "XXXXXXXXXXX";
+		
 		
         f.OpenPdf(FileUpload1.FileBytes);
 

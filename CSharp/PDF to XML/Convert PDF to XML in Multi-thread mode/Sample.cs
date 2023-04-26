@@ -48,7 +48,9 @@ namespace Sample
             int page = targum.PageNumber;
 
             string xmlFile = Path.GetFileNameWithoutExtension(pdfFile) + ".xml";
-
+			// Activate your license here
+			// SautinSoft.PdfFocus.SetLicense("1234567890");
+			
             SautinSoft.PdfFocus f = new SautinSoft.PdfFocus();
 
             // Let's convert all data (textual and tabular) to XML.

@@ -18,11 +18,12 @@ namespace Sample
             // Assume that we already have a PDF document as array of bytes.
             byte[] pdf = File.ReadAllBytes(pdfFile);
             byte[] docx = null;
-
+			// Activate your license here
+			// SautinSoft.PdfFocus.SetLicense("1234567890");
+			
             // Convert PDF to word in memory
             SautinSoft.PdfFocus f = new SautinSoft.PdfFocus();
-            //this property is necessary only for registered version
-            //f.Serial = "XXXXXXXXXXX";
+            
 
             f.OpenPdf(pdf);
 
@@ -46,9 +47,11 @@ namespace Sample
             string pdfFile = Path.GetFullPath(@"..\..\..\simple text.pdf");
             MemoryStream rtfStream = new MemoryStream();
             // Convert PDF to word in memory
+			// Activate your license here
+			// SautinSoft.PdfFocus.SetLicense("1234567890");
+			
             SautinSoft.PdfFocus f = new SautinSoft.PdfFocus();
-            //this property is necessary only for registered version
-            //f.Serial = "XXXXXXXXXXX";
+            
 
             // Assume that we already have a PDF document as stream.
             using (FileStream pdfStream = new FileStream(pdfFile, FileMode.Open, FileAccess.Read))

@@ -12,12 +12,11 @@ namespace Sample
 
             byte[] pdf = File.ReadAllBytes(pathToPdf);
             string xml = null;
-
+			// Activate your license here
+			// SautinSoft.PdfFocus.SetLicense("1234567890");
+			
             // Convert PDF file to XML file.
             SautinSoft.PdfFocus f = new SautinSoft.PdfFocus();
-
-            // This property is necessary only for registered version.
-            //f.Serial = "XXXXXXXXXXX";
 
             // Let's convert all data (textual and tabular) to XML.
             f.XmlOptions.ConvertNonTabularDataToSpreadsheet = true;

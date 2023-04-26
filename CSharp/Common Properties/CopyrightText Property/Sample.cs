@@ -7,14 +7,15 @@ namespace Sample
     {
         static void Main(string[] args)
         {
+			// Activate your license here
+			// SautinSoft.PdfFocus.SetLicense("1234567890");
+
             string pdfFile = Path.GetFullPath(@"..\..\..\text and graphics.pdf");
             string wordFile = "Result.docx";
 
             //Convert PDF file to Text file
             SautinSoft.PdfFocus f = new SautinSoft.PdfFocus();
-            //this property is necessary only for registered version
-            //f.Serial = "XXXXXXXXXXX";
-
+           
             f.OpenPdf(pdfFile);
 
             //This property doesn't affect into XML and Excel conversion.

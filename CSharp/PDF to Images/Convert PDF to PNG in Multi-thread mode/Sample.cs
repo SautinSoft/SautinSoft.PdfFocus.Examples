@@ -48,7 +48,10 @@ namespace Sample
             int page = targum.PageNumber;
 
             string pngFile = Path.GetFileNameWithoutExtension(pdfFile) + ".png";
-
+			
+			// Activate your license here
+			// SautinSoft.PdfFocus.SetLicense("1234567890");
+			
             SautinSoft.PdfFocus f = new SautinSoft.PdfFocus();
 
             f.ImageOptions.ImageFormat = System.Drawing.Imaging.ImageFormat.Png;

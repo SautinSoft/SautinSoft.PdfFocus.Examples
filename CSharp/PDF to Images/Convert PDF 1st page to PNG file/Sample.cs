@@ -12,7 +12,6 @@ namespace Sample
 
 		   // Convert PDF 1st page to PNG file.
             SautinSoft.PdfFocus f = new SautinSoft.PdfFocus();
-          
 
             string pdfPath = Path.GetFullPath(@"..\..\..\Excel.pdf");
             string imagePath = "Result.png";

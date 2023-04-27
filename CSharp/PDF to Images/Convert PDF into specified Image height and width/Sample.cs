@@ -15,7 +15,6 @@ namespace Sample
             //Convert PDF into specified Image height & width
             SautinSoft.PdfFocus f = new SautinSoft.PdfFocus();
             
-
             // Set initial values
             string pdfPath = Path.GetFullPath(@"..\..\..\Potato Beetle.pdf");
             string imageFolder = new DirectoryInfo(Directory.GetCurrentDirectory()).CreateSubdirectory("Result").FullName;

@@ -15,7 +15,6 @@ namespace Sample
             //Convert PDF file to Text file
             SautinSoft.PdfFocus f = new SautinSoft.PdfFocus();
             
-
             f.OpenPdf(pdfFile);
 
             if (f.PageCount > 0)

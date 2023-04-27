@@ -21,7 +21,6 @@ Module Sample
         ' Convert PDF to word in memory
         Dim f As New SautinSoft.PdfFocus()
 
-
         f.OpenPdf(pdf)
 
         If f.PageCount > 0 Then

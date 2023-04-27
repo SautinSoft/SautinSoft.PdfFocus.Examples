@@ -15,7 +15,6 @@ namespace Sample
             // Convert a PDF file to a Word file
             SautinSoft.PdfFocus f = new SautinSoft.PdfFocus();
             
-
             f.OpenPdf(pdfFile);
 
             if (f.PageCount > 0)

@@ -14,8 +14,6 @@ Module Sample
         ' Convert only tables from PDF to XLS spreadsheet and skip all textual data.
         Dim f As New SautinSoft.PdfFocus()
 
-
-
         ' 'true' = Convert all data to spreadsheet (tabular and even textual).
         ' 'false' = Skip textual data and convert only tabular (tables) data.
         f.ExcelOptions.ConvertNonTabularDataToSpreadsheet = False

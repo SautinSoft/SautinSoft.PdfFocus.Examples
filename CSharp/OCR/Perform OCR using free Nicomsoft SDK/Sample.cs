@@ -35,6 +35,7 @@ namespace Sample
             NsOCR.Engine_InitializeAdvanced(out CfgObj, out OcrObj, out ImgObj);
 			// Activate your license here
 			// SautinSoft.PdfFocus.SetLicense("1234567890");
+			
             SautinSoft.PdfFocus f = new SautinSoft.PdfFocus();
             f.OCROptions.Method += PerformOCRNicomsoft;
             f.OCROptions.Mode = PdfFocus.COCROptions.eOCRMode.AllImages;
@@ -104,9 +105,6 @@ namespace Sample
                 if (res > TNSOCR.ERROR_FIRST)
                     return null;
 
-
-
-
                 res = NsOCR.Svr_AddPage(SvrObj, ImgObj, TNSOCR.FMT_EXACTCOPY);
                 if (res > TNSOCR.ERROR_FIRST) return null;
 
@@ -130,7 +128,7 @@ namespace Sample
             // The library is freeware and can be used in commercial application.
 
             PdfConverter converter = new PdfConverter();
-            string inpFile = Path.GetFullPath(@"..\..\scan.pdf");
+            string inpFile = Path.GetFullPath(@"..\..\..\scan.pdf");
             converter.ConvertPdfToAllWithOCR(inpFile);
 
             // You are trying to compile this code sample and see the errors: 

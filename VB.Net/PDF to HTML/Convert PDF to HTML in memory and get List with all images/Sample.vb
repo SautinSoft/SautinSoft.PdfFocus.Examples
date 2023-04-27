@@ -30,7 +30,6 @@ Namespace Sample
             f.HtmlOptions.IncludeImageInHtml = True
             f.HtmlOptions.Title = "Simple text"
 
-
             ' Read a PDF document to byte array.
             ' Assume that we already have the  PDF as array of bytes.
             Dim pdf() As Byte = File.ReadAllBytes(pdfFile)

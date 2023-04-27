@@ -12,7 +12,6 @@ Namespace Sample
 			'Convert PDF file to Text file
 			Dim f As New SautinSoft.PdfFocus()
 
-
 			f.OpenPdf(pdfFile)
 
 			If f.PageCount > 0 Then

@@ -12,7 +12,6 @@ Namespace Sample
 			'Convert PDF file to Text file
 			Dim f As New SautinSoft.PdfFocus()
 
-
 			f.OpenPdf(pdfFile)
 
 			'This property doesn't affect into XML and Excel conversion.

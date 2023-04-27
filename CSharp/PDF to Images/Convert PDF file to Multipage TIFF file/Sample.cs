@@ -15,7 +15,6 @@ namespace Sample
             //Convert PDF file to Multipage TIFF file
             SautinSoft.PdfFocus f = new SautinSoft.PdfFocus();
 	    	
-
             string pdfPath = Path.GetFullPath(@"..\..\..\Excel.pdf");
             string tiffPath = "Result.tiff";
 

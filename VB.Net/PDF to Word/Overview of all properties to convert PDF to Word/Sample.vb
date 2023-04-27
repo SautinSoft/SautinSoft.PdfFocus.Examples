@@ -14,7 +14,6 @@ Module Sample
         ' In this sample you will find a short overview of all properties of WordOptions.
         Dim f As New SautinSoft.PdfFocus()
 
-
         f.OpenPdf(pdfFile)
 
         If f.PageCount > 0 Then

@@ -12,7 +12,6 @@ Module Sample
         'Convert custom PDF page to Image object
         Dim f As New SautinSoft.PdfFocus()
 
-
         Dim pdfPath As String = Path.GetFullPath("..\..\..\Excel.pdf")
         Dim imagePath As String = "Result.png"
 

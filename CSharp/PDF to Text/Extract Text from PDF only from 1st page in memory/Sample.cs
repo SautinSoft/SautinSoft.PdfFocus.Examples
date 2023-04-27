@@ -17,7 +17,6 @@ namespace Sample
             // Extract Text from PDF only from 1st page
             SautinSoft.PdfFocus f = new SautinSoft.PdfFocus();
 	    	
-
             f.OpenPdf(pdfFile);
 
             if (f.PageCount > 0)

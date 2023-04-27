@@ -12,7 +12,6 @@ Module Sample
         'Convert PDF file to Multipage TIFF file
         Dim f As New SautinSoft.PdfFocus()
 
-
         Dim pdfPath As String = Path.GetFullPath("..\..\..\Excel.pdf")
         Dim tiffPath As String = "Result.tiff"
 

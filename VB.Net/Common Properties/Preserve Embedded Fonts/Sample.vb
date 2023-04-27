@@ -12,7 +12,6 @@ Namespace Sample
 			'Convert PDF file to Text file
 			Dim f As New SautinSoft.PdfFocus()
 
-
 			f.OpenPdf(pdfFile)
 
 			'This property indicating whether to load embedded fonts from PDF and store them in document or skip them and use similar. Default value: Auto.

@@ -4,10 +4,10 @@
     <TargetFrameworks>net48;net6.0</TargetFrameworks>
   </PropertyGroup>
 <Choose>
-  <When Condition="Exists('..\..\..\..\Bin\.NET Framework 4.8\SautinSoft.PdfFocus.dll')">
+  <When Condition="Exists('..\..\..\Bin\.NET Framework 4.8\SautinSoft.PdfFocus.dll')">
    <ItemGroup>
     <Reference Include="SautinSoft.PdfFocus">
-     <HintPath>..\..\..\..\Bin\.NET Framework 4.8\SautinSoft.PdfFocus.dll</HintPath>
+     <HintPath>..\..\..\Bin\.NET Framework 4.8\SautinSoft.PdfFocus.dll</HintPath>
     </Reference>
 	<PackageReference Include="System.Drawing.Common" Version="4.7.0" />
     <PackageReference Include="System.IO.Packaging" Version="4.4.0" />
@@ -15,10 +15,10 @@
     <PackageReference Include="System.Xml.XPath.XmlDocument" Version="4.3.0" />
 	</ItemGroup>
   </When>
-  <When Condition="Exists('..\..\..\..\..\Bin\.NET Framework 4.8\SautinSoft.PdfFocus.dll')">
+  <When Condition="Exists('..\..\..\..\Bin\.NET Framework 4.8\SautinSoft.PdfFocus.dll')">
    <ItemGroup>
     <Reference Include="SautinSoft.PdfFocus">
-     <HintPath>..\..\..\..\..\Bin\.NET Framework 4.8\SautinSoft.PdfFocus.dll</HintPath>
+     <HintPath>..\..\..\..\Bin\.NET Framework 4.8\SautinSoft.PdfFocus.dll</HintPath>
     </Reference>
 	<PackageReference Include="System.Drawing.Common" Version="4.7.0" />
     <PackageReference Include="System.IO.Packaging" Version="4.4.0" />

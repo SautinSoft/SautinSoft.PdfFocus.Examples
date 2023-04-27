@@ -15,7 +15,6 @@ namespace Sample
             // In this sample you will find a short overview of all properties of WordOptions.
             SautinSoft.PdfFocus f = new SautinSoft.PdfFocus();
             
-
             f.OpenPdf(pdfFile);
 
             if (f.PageCount > 0)

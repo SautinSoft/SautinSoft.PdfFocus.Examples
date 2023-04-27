@@ -32,7 +32,7 @@ Namespace Example
 			' 3. Be sure that the folder "tessdata" also contains "pdf.ttf" file.
 
 			' Let's start:
-			Dim inpFile As String = "..\..\scan.pdf"
+			Dim inpFile As String = "..\..\..\scan.pdf"
 			Dim outFile As String = "Result.docx"
 
 			Dim f As New PdfFocus()

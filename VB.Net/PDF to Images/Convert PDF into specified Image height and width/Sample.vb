@@ -13,7 +13,6 @@ Module Sample
         'Convert PDF into specified Image height & width
         Dim f As New SautinSoft.PdfFocus()
 
-
         ' Set initial values
         Dim pdfPath As String = Path.GetFullPath("..\..\..\Potato Beetle.pdf")
         Dim imageFolder As String = (New DirectoryInfo(Directory.GetCurrentDirectory())).CreateSubdirectory("Result").FullName

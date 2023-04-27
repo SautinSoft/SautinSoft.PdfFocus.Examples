@@ -20,8 +20,6 @@ namespace Sample
 			
             SautinSoft.PdfFocus f = new SautinSoft.PdfFocus();
 
-            
-
             f.OpenPdf(pdfFile);
 
             if (f.PageCount > 0)
@@ -44,8 +42,6 @@ namespace Sample
 			// SautinSoft.PdfFocus.SetLicense("1234567890");
 			
             SautinSoft.PdfFocus f = new SautinSoft.PdfFocus();
-
-            
 
             f.OpenPdf(pdfFile);
 

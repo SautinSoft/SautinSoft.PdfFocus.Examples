@@ -11,6 +11,7 @@ namespace Sample
             string pathToExcel = "Result.xls";
 			// Activate your license here
 			// SautinSoft.PdfFocus.SetLicense("1234567890");
+			
             // Convert only tables from PDF to XLS spreadsheet and skip all textual data.
             SautinSoft.PdfFocus f = new SautinSoft.PdfFocus();
 

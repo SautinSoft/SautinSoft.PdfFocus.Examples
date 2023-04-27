@@ -11,6 +11,7 @@ namespace Sample
         {
 			// Activate your license here
 			// SautinSoft.PdfFocus.SetLicense("1234567890");
+			
             // Extract all images with width and height more than 200px
             SautinSoft.PdfFocus f = new SautinSoft.PdfFocus();
 

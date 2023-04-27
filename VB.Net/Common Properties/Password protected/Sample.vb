@@ -12,7 +12,6 @@ Namespace Sample
 			'Convert PDF file to Text file
 			Dim f As New SautinSoft.PdfFocus()
 
-
 			'Set a password for password-protected PDF documents. You need to set this option before "f.OpenPdf"
 			f.Password = "123456789"
 

@@ -23,7 +23,6 @@ namespace Sample
 			
             // Convert PDF to word in memory
             SautinSoft.PdfFocus f = new SautinSoft.PdfFocus();
-            
 
             f.OpenPdf(pdf);
 
@@ -51,7 +50,6 @@ namespace Sample
 			// SautinSoft.PdfFocus.SetLicense("1234567890");
 			
             SautinSoft.PdfFocus f = new SautinSoft.PdfFocus();
-            
 
             // Assume that we already have a PDF document as stream.
             using (FileStream pdfStream = new FileStream(pdfFile, FileMode.Open, FileAccess.Read))

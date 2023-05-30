@@ -121,7 +121,7 @@ Namespace Sample
 			' The library is freeware and can be used in commercial application.
 
 			Dim converter As New PdfConverter()
-			Dim inpFile As String = Path.GetFullPath("..\..\scan.pdf")
+			Dim inpFile As String = Path.GetFullPath("..\..\..\scan.pdf")
 			converter.ConvertPdfToAllWithOCR(inpFile)
 
 			' You are trying to compile this code sample and see the errors: 

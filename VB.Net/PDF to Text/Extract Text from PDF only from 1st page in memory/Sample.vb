@@ -1,4 +1,4 @@
-mports System.IO
+Imports System.IO
 Imports System.Drawing.Imaging
 Imports System.Collections.Generic
 Imports SautinSoft

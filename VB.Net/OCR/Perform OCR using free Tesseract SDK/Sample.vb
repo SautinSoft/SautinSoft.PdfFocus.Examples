@@ -62,7 +62,7 @@ Namespace Example
 			' or
 			' Best and slow: https://github.com/tesseract-ocr/tessdata_best
 			' Also this folder must have write permissions.
-			Dim tesseractData As String = Path.GetFullPath("..\..\tessdata\")
+			Dim tesseractData As String = Path.GetFullPath("..\..\..\tessdata\")
 
 			' A path for a temporary PDF file (because Tesseract returns OCR result as PDF document)
 			Dim tempFile As String = Path.Combine(tesseractData, Path.GetRandomFileName())

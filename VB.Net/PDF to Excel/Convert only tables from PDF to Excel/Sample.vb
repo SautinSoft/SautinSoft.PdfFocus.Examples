@@ -7,13 +7,18 @@ Module Sample
 
     Sub Main()
         Dim pathToPdf As String = Path.GetFullPath("..\..\..\Table.pdf")
-        Dim pathToExcel As String = "Result.xls"
+        Dim pathToExcel As String = "Result.xlsx"
 		' Activate your license here
 		' SautinSoft.PdfFocus.SetLicense("1234567890")
 		
         ' Convert only tables from PDF to XLS spreadsheet and skip all textual data.
         Dim f As New SautinSoft.PdfFocus()
+		
+		' The output result will be in XLSX (Excel modern format) or in XLS (Excel 97-2003 Workbook)
+        f.ExcelOptions.Format = SautinSoft.PdfFocus.Format.Xlsx
+        ' f.ExcelOptions.Format = SautinSoft.PdfFocus.Format.Xls
 
+		
         ' 'true' = Convert all data to spreadsheet (tabular and even textual).
         ' 'false' = Skip textual data and convert only tabular (tables) data.
         f.ExcelOptions.ConvertNonTabularDataToSpreadsheet = False

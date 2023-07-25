@@ -8,7 +8,7 @@ namespace Sample
         static void Main(string[] args)
         {
             string pathToPdf = Path.GetFullPath(@"..\..\..\Table.pdf");
-            string pathToExcel = "Result.xls";
+            string pathToExcel = "Result.xlsx";
 
             // Here we have our PDF and Excel docs as byte arrays
             byte[] pdf = File.ReadAllBytes(pathToPdf);
@@ -19,11 +19,12 @@ namespace Sample
             // Convert PDF document to Excel workbook in memory
 			
             SautinSoft.PdfFocus f = new SautinSoft.PdfFocus();
+			
+			 // The output result will be in XLSX (Excel modern format) or in XLS (Excel 97-2003 Workbook)
+            f.ExcelOptions.Format = SautinSoft.PdfFocus.Format.Xlsx;
+            // f.ExcelOptions.Format = SautinSoft.PdfFocus.Format.Xls;
             
-	    	// This property is necessary only for registered version
-		    //f.Serial = "XXXXXXXXXXX";
-
-            // The information includes the names for the culture, the writing system, 
+	    	// The information includes the names for the culture, the writing system, 
             // the calendar used, the sort order of strings, and formatting for dates and numbers.
             System.Globalization.CultureInfo ci = new System.Globalization.CultureInfo("en-US");
             ci.NumberFormat.NumberDecimalSeparator = ",";

@@ -40,11 +40,15 @@ Module Sample
         Dim pdfFile As String = targum.PdfFile
         Dim page As Integer = targum.PageNumber
 
-        Dim excelFile As String = Path.GetFileNameWithoutExtension(pdfFile) + ".xls"
+        Dim excelFile As String = Path.GetFileNameWithoutExtension(pdfFile) + ".xlsx"
 		' Activate your license here
 		' SautinSoft.PdfFocus.SetLicense("1234567890")
 		
         Dim f As New SautinSoft.PdfFocus()
+
+		' The output result will be in XLSX (Excel modern format) or in XLS (Excel 97-2003 Workbook)
+        f.ExcelOptions.Format = SautinSoft.PdfFocus.Format.Xlsx
+        ' f.ExcelOptions.Format = SautinSoft.PdfFocus.Format.Xls
 
         ' 'true' = Convert all data to spreadsheet (tabular and even textual).
         ' 'false' = Skip textual data and convert only tabular (tables) data.

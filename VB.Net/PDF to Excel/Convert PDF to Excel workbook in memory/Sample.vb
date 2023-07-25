@@ -7,7 +7,7 @@ Module Sample
 
     Sub Main()
         Dim pathToPdf As String = Path.GetFullPath("..\..\..\Table.pdf")
-        Dim pathToExcel As String = "Result.xls"
+        Dim pathToExcel As String = "Result.xlsx"
 
         ' Here we have our PDF and Excel docs as byte arrays
         Dim pdf() As Byte = File.ReadAllBytes(pathToPdf)
@@ -17,6 +17,10 @@ Module Sample
 		
         ' Convert PDF document to Excel workbook in memory
         Dim f As New SautinSoft.PdfFocus()
+
+		' The output result will be in XLSX (Excel modern format) or in XLS (Excel 97-2003 Workbook)
+        f.ExcelOptions.Format = SautinSoft.PdfFocus.Format.Xlsx
+        ' f.ExcelOptions.Format = SautinSoft.PdfFocus.Format.Xls
 
         ' The information includes the names for the culture, the writing system, 
         ' the calendar used, the sort order of strings, and formatting for dates and numbers.

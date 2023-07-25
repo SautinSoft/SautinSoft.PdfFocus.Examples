@@ -13,7 +13,11 @@ Module Sample
 		
 		' Convert PDF file to Excel file
 		Dim f As New SautinSoft.PdfFocus()
-
+		
+		' The output result will be in XLSX (Excel modern format) or in XLS (Excel 97-2003 Workbook)
+        f.ExcelOptions.Format = SautinSoft.PdfFocus.Format.Xlsx
+        ' f.ExcelOptions.Format = SautinSoft.PdfFocus.Format.Xls
+		
 			' 'true' = Convert all data to spreadsheet (tabular and even textual).
 			' 'false' = Skip textual data and convert only tabular (tables) data.
 			f.ExcelOptions.ConvertNonTabularDataToSpreadsheet = True

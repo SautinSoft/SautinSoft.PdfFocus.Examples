@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>How to use SautinSoft.PdfFocus.dll with Optical Character Recognition (OCR)</title>
+<style type="text/css">
+.SimpleText {
+    color: #000;    
+	//color: #4c4c4c;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+	font-size: 16.5px;
+	font-weight: normal;	
+}
+.SimpleBoldText {
+    color: #000;    
+	//color: #4c4c4c;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+	font-size: 16.5px;
+	font-weight: bold;	
+}
+h1{
+	font-family: "Helvetica Neue", Arial, sans-serif;
+	font-weight: bold;
+	font-size: 26px;
+}
+
+h2,h3,h4,h5,h6 {
+	font-family: "Helvetica Neue", Arial, sans-serif;
+	font-weight: bold;
+	font-size: 22px;
+}
+</style>
+</head>
+
+<body style="margin-left: 15px;">
+<h1>How to use SautinSoft.PdfFocus.dll with Optical Character Recognition (OCR)</h1>
+<div><img src="images/pdffocus-scheme.png" /></div>
+<h2>Introduction</h2>
+<p class="SimpleText">Since version 7.0, PDF Focus .Net can work with OCR. To perform OCR we'll use free OCR library by Nicomsoft (<a href="https://www.nicomsoft.com/products/ocr/download/" target="_blank">https://www.nicomsoft.com/products/ocr/download/</a><a href="https://www.nicomsoft.com/products/ocr/download/"></a>).<br>
+The library is freeware and can be used in commercial application.</p>
+<h2>You need to a few steps:</h2>
+<h2>You are trying to compile our code sample and see the errors:  NSOCRClass: Engine_SetLicenseKey,  PdfFocus: OCROptions, etc.<br>
+<span class="SimpleText"><img src="images/ocr1.png" width="1024" height="768" alt=""/></span></h2>
+<h2>1. <strong></strong>Download Nicomsoft OCR SDK from: <a href="http://www.nicomsoft.com/files/ocr/free_NSOCR_v70_build885_full.exe" target="_blank">http://www.nicomsoft.com/files/ocr/free_NSOCR_v70_build885_full.exe</a><br>
+<p class="SimpleText">Important note. We guarantee, this code example will work with the NicomSoft OCR version 7.0.<br> If you downloaded version 6.X or 7.1 - perhaps, it may not work! We are making every effort to update our engine and ensure, that it works for all versions of the NicomSoft OCR.</p>
+  <br>
+<img src="images/ocr2.png" width="1024" height="713" alt=""/><br>
+<br>
+2. <strong></strong>Install it on your PC or server-side.<br>
+</h2>
+
+<p class="SimpleText"><img src="images/ocr4.png" width="499" height="387" alt=""/>
+<p class="SimpleText"><strong>Notice</strong>: <span jsaction="mouseup:BR6jm" jsname="jqKxS" lang="en"><span jsaction="agoMJf:PFBcW;usxOmf:aWLT7;jhKsnd:P7O7bd,F8DmGf;Q4AGo:Gm7gYd,qAKMYb;uFUCPb:pvnm0e,pfE8Hb,PFBcW;f56efd:dJXsye;EnoYf:KNzws,ZJsZZ,JgVSJc;zdMJQc:cCQNKb,ZJsZZ,zchEXc;Ytrrj:JJDvdc;tNR8yc:GeFvjb;oFN6Ye:hij5Wb" jscontroller="Zl5N8" jsmodel="SsMkhd" jsname="txFAF" data-language-for-alternatives="en" data-language-to-translate-into="ru" data-phrase-index="0" jsdata="uqLsIf;_;$118"><span jsaction="click:qtZ4nf,GFf3ac,tMZCfe; contextmenu:Nqw7Te,QP7LD; mouseout:Nqw7Te; mouseover:qtZ4nf,c2aHje" jsname="W297wb">Please make sure, that you have installed this package (Nicomsoft OCR SDK) on your computer.</span></span> <span jsaction="agoMJf:PFBcW;usxOmf:aWLT7;jhKsnd:P7O7bd,F8DmGf;Q4AGo:Gm7gYd,qAKMYb;uFUCPb:pvnm0e,pfE8Hb,PFBcW;f56efd:dJXsye;EnoYf:KNzws,ZJsZZ,JgVSJc;zdMJQc:cCQNKb,ZJsZZ,zchEXc;Ytrrj:JJDvdc;tNR8yc:GeFvjb;oFN6Ye:hij5Wb" jscontroller="Zl5N8" jsmodel="SsMkhd" jsname="txFAF" data-language-for-alternatives="en" data-language-to-translate-into="ru" data-phrase-index="1" jsdata="uqLsIf;_;$119"><span jsaction="click:qtZ4nf,GFf3ac,tMZCfe; contextmenu:Nqw7Te,QP7LD; mouseout:Nqw7Te; mouseover:qtZ4nf,c2aHje" jsname="W297wb"><br>
+  And also, when creating your solution, you must place the file "NSOCR.cs" from C:\Program Files (x86)\Nicomsoft OCR\Samples in the directory of your solution.<br>
+  After copying "NSOCR.cs", there will be no errors with the "using NSOCR_NameSpace". In some cases, you need to reboot your PC (Server.)</span></span></span><br>
+<h2>3. Close Visual Studio and Launch code sample again. <br>
+  <br>
+  <img src="images/ocr3.png" width="1024" height="768" alt=""/><br>
+Enjoy!</h2>
+<p class="SimpleText">IMPORTANT: PDF Focus .Net supports OCR since version 7.0. <br>
+  Please download the latest version from our website: 
+<a href="https://www.sautinsoft.com/products/pdf-focus/download.php" target="_blank">https://www.sautinsoft.com/products/pdf-focus/download.php</a>
+<p class="SimpleText"><br>
+</body>
+</html>

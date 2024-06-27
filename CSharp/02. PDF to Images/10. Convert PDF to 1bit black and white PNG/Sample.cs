@@ -21,7 +21,7 @@ namespace Sample
             if (f.PageCount > 0)
             {
                 //save 1st page to png file, 200 dpi
-                f.ImageOptions.ImageFormat = System.Drawing.Imaging.ImageFormat.Png;
+                f.ImageOptions.ImageFormat = SautinSoft.PdfFocus.CImageOptions.ImageFormats.Png;
                 f.ImageOptions.Dpi = 200;
                 //Make "Black and White 1-bit indexed" image
                 f.ImageOptions.ColorDepth = SautinSoft.PdfFocus.CImageOptions.eColorDepth.BlackWhite1bpp;

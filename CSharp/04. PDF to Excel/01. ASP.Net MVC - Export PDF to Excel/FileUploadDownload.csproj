@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="SautinSoft.PdfFocus">
+      <HintPath>..\..\..\..\Bin\.NET 6.0\SautinSoft.PdfFocus.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

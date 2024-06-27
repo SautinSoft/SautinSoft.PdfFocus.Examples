@@ -21,11 +21,11 @@ namespace Sample
             if (f.PageCount > 0)
             {
                 // Set image properties: Jpeg, 200 dpi
-                f.ImageOptions.ImageFormat = System.Drawing.Imaging.ImageFormat.Jpeg;
+                f.ImageOptions.ImageFormat = SautinSoft.PdfFocus.CImageOptions.ImageFormats.Jpeg;
                 f.ImageOptions.Dpi = 200;
 
                 // Set 95 as JPEG quality
-                f.ImageOptions.JpegQuality = 95;
+                f.ImageOptions.JpegQuality = 50;
 
                 //Save all PDF pages to image folder, each file will have name Page 1.jpg, Page 2.jpg, Page N.jpg
                 for (int page = 1; page <= f.PageCount; page++)

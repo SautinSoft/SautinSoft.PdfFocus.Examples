@@ -15,7 +15,7 @@ namespace Sample
             // Convert PDF file to BlackAndWhite Multipage-TIFF.
             SautinSoft.PdfFocus f = new SautinSoft.PdfFocus();
 
-            string pdfPath = Path.GetFullPath(@"..\..\..\Excel.pdf");
+            string pdfPath = Path.GetFullPath(@"..\..\..\simple text.pdf");
             string tiffPath = "Result.tiff";
 
             f.OpenPdf(pdfPath);

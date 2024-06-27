@@ -33,7 +33,7 @@ namespace Sample
                     for (int i = 0; i < pdfImages.Count; i++)
                     {
                         string imageFile = Path.Combine(imageDir, String.Format("img{0}.png", i + 1));
-                        pdfImages[i].Picture.Save(imageFile);
+                        pdfImages[i].Picture.Encode(new FileStream(imageFile, FileMode.Create), SkiaSharp.SKEncodedImageFormat.Png, 100);
                     }
                     System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo(imageDir) { UseShellExecute = true });
                 }

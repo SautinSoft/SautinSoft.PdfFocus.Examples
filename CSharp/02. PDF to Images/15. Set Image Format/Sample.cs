@@ -10,7 +10,7 @@ namespace Sample
         {
 
             string pdfPath = Path.GetFullPath(@"..\..\..\Excel.pdf");
-            string imagePath = "Result.gif";
+            string imagePath = "Result.bmp";
                                   // Get your free 30-day key here:   
 			 // https://sautinsoft.com/start-for-free/
 			
@@ -20,8 +20,8 @@ namespace Sample
 
             if (f.PageCount > 0)
             {
-                //Set "GIF" format for image
-                f.ImageOptions.ImageFormat = System.Drawing.Imaging.ImageFormat.Gif;
+                //Set "BMP" format for image
+                f.ImageOptions.ImageFormat = SautinSoft.PdfFocus.CImageOptions.ImageFormats.Bmp;
                 
                 //Convert 1st page from PDF to image file
                 if (f.ToImage(imagePath, 1) == 0)

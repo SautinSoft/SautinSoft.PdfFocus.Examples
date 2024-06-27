@@ -7,7 +7,7 @@ namespace Sample
     {
         static void Main(string[] args)
         {
-            string remotePdfUrl = @"https://www.sautinsoft.net/samples/simple%20text.pdf";
+            string remotePdfUrl = @"https://www.sautinsoft.net/Download/Samples/simple-text.pdf";
             string pathToWord = @"Result.docx";
                                   // Get your free 30-day key here:   
 			 // https://sautinsoft.com/start-for-free/

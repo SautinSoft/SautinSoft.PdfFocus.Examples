@@ -26,7 +26,7 @@ namespace Sample
             {
                 // Specify to extract only images which have width and height
                 // more than 200px
-                f.ImageExtractionOptions.MinSize = new System.Drawing.Size(200, 200);
+                f.ImageExtractionOptions.MinSize = new SkiaSharp.SKSize(200, 200);
 
                 pdfImages = f.ExtractImages();                
 
@@ -37,7 +37,7 @@ namespace Sample
                     for (int i = 0; i < pdfImages.Count; i++)
                     {
                         string imageFile = Path.Combine(imageDir, String.Format("img{0}.png", i + 1));
-                        pdfImages[i].Picture.Save(imageFile);			
+                        pdfImages[i].Picture.Encode(new FileStream(imageFile, FileMode.Create), SkiaSharp.SKEncodedImageFormat.Png, 100);			
                     }
                     System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo(imageDir) { UseShellExecute = true });
                 }

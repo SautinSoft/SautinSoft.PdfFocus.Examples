@@ -1,7 +1,7 @@
 using System;
 using System.IO;
 using System.Drawing;
-using System.Drawing.Imaging;
+using SkiaSharp;
 
 namespace Sample
 {
@@ -22,8 +22,8 @@ namespace Sample
             int height = 1900; // Height in Px
 
             //Set image options
-            f.ImageOptions.ImageFormat = ImageFormat.Png;
-            f.ImageOptions.Resize(new Size { Width = width, Height = height }, false);
+            f.ImageOptions.ImageFormat = SautinSoft.PdfFocus.CImageOptions.ImageFormats.Png;
+            f.ImageOptions.Resize(new SKSize { Width = width, Height = height }, false);
 
             f.OpenPdf(pdfPath);
             if (f.PageCount > 0)

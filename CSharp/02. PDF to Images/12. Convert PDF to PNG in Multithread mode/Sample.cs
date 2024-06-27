@@ -54,7 +54,7 @@ namespace Sample
 			
             SautinSoft.PdfFocus f = new SautinSoft.PdfFocus();
 
-            f.ImageOptions.ImageFormat = System.Drawing.Imaging.ImageFormat.Png;
+            f.ImageOptions.ImageFormat = PdfFocus.CImageOptions.ImageFormats.Png;
             f.ImageOptions.Dpi = 300;
 
             f.OpenPdf(pdfFile);

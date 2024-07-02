@@ -7,15 +7,6 @@
   <TargetFramework>net6.0</TargetFramework>
   </PropertyGroup>
    <ItemGroup>
-        <PackageReference Include="SkiaSharp" Version="2.88.6" />
-	    <PackageReference Include="Svg.Skia" Version="1.0.0.3" />
 		<PackageReference Include="SautinSoft.PdfFocus" Version="*" />
-		<PackageReference Include="System.IO.Packaging" Version="4.4.0" />
-		<PackageReference Include="System.Text.Encoding.CodePages" Version="4.5.0" />
-		<PackageReference Include="System.Xml.XPath.XmlDocument" Version="4.3.0" />
-        <PackageReference Include="System.Drawing.Common" Version="4.7.3" />
-		<PackageReference Include="Microsoft.IO.RecyclableMemoryStream" Version="2.3.2" />
-		<PackageReference Include="System.Security.Cryptography.Pkcs" Version="7.0.3" />
-		<PackageReference Include="System.Configuration.ConfigurationManager" Version="4.7.0" />	
    </ItemGroup>
   </Project>

@@ -11,7 +11,7 @@ namespace Sample
 
             string pdfPath = Path.GetFullPath(@"..\..\..\Excel.pdf");
             string imagePath = "Result.png";
-            // Get your free 30-day key here:   
+            // Get your free 100-day key here:   
             // https://sautinsoft.com/start-for-free/
 
             SautinSoft.PdfFocus f = new SautinSoft.PdfFocus();

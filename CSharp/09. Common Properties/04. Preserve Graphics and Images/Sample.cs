@@ -10,7 +10,7 @@ namespace Sample
             string pdfFile = Path.GetFullPath(@"..\..\..\text and graphics.pdf");
             string wordFile = "Result.docx";
 			
-                                                         // Get your free 30-day key here:   
+                                                         // Get your free 100-day key here:   
 			 // https://sautinsoft.com/start-for-free/
 			
             //Convert PDF file to Text file

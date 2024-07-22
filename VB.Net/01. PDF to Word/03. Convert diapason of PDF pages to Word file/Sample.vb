@@ -8,7 +8,7 @@ Module Sample
     Sub Main()
 		Dim inpFile As String = Path.GetFullPath("..\..\..\Potato Beetle.pdf")
 		Dim outFile As String = "Result.rtf"
-                                ' Get your free 30-day key here: 
+                                ' Get your free 100-day key here: 
                                 ' https://sautinsoft.com/start-for-free/
 		
 		Dim f As New SautinSoft.PdfFocus()

@@ -11,7 +11,7 @@ namespace Sample
             string pdfFile = Path.GetFullPath(@"..\..\..\simple text.pdf");
             string htmlFile = "Result.html";
 			
-                                  // Get your free 30-day key here:   
+                                  // Get your free 100-day key here:   
 			 // https://sautinsoft.com/start-for-free/
 			
             // Convert PDF file to HTML file

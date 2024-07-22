@@ -8,7 +8,7 @@ Module Sample
     Sub Main()
         Dim pdfFile As String = Path.GetFullPath("..\..\..\Potato Beetle.pdf")
         Dim textFile As String = "Result.txt"
-                                ' Get your free 30-day key here: 
+                                ' Get your free 100-day key here: 
                                 ' https://sautinsoft.com/start-for-free/
 		
         'Convert PDF file to Text file

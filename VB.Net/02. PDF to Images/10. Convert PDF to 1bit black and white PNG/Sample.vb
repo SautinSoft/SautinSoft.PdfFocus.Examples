@@ -4,7 +4,7 @@ Imports System.IO
 Namespace Sample
 	Friend Class Sample
 		Shared Sub Main(ByVal args() As String)
-								  ' Get your free 30-day key here:   
+								  ' Get your free 100-day key here:   
 			 ' https://sautinsoft.com/start-for-free/
 
 			'How to convert PDF to 1-bit black and white PNG

@@ -8,7 +8,7 @@ Module Sample
     Sub Main()
         Dim pathToPdf As String = Path.GetFullPath("..\..\..\Table.pdf")
 		Dim pathToExcel As String = "Result.xls"
-                                ' Get your free 30-day key here: 
+                                ' Get your free 100-day key here: 
                                 ' https://sautinsoft.com/start-for-free/
 		
 		' Convert PDF file to Excel file

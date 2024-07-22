@@ -12,7 +12,7 @@ Module Sample
         ' Here we have our PDF and Excel docs as byte arrays
         Dim pdf() As Byte = File.ReadAllBytes(pathToPdf)
         Dim xls() As Byte = Nothing
-                                ' Get your free 30-day key here: 
+                                ' Get your free 100-day key here: 
                                 ' https://sautinsoft.com/start-for-free/
 		
         ' Convert PDF document to Excel workbook in memory

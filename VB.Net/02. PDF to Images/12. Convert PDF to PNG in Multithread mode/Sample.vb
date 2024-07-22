@@ -45,7 +45,7 @@ Namespace Sample
 
 			Dim pngFile As String = Path.GetFileNameWithoutExtension(pdfFile) & ".png"
 
-								  ' Get your free 30-day key here:   
+								  ' Get your free 100-day key here:   
 			 ' https://sautinsoft.com/start-for-free/
 
 			Dim f As New SautinSoft.PdfFocus()

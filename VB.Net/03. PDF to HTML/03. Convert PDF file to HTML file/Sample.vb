@@ -8,7 +8,7 @@ Namespace Sample
             Dim pdfFile As String = Path.GetFullPath("..\..\..\simple text.pdf")
             Dim htmlFile As String = "Result.html"
 			
-	                                ' Get your free 30-day key here: 
+	                                ' Get your free 100-day key here: 
 		    ' SautinSoft.PdfFocus.SetLicense("1234567890")
 		
             ' Convert PDF file to HTML file

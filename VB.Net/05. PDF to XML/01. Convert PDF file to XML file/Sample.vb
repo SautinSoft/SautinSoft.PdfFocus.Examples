@@ -8,7 +8,7 @@ Module Sample
     Sub Main()
         Dim pathToPdf As String = Path.GetFullPath("..\..\..\Table.pdf")
         Dim pathToXml As String = "Result.xml"
-                                ' Get your free 30-day key here: 
+                                ' Get your free 100-day key here: 
                                 ' https://sautinsoft.com/start-for-free/
 		
         ' Convert PDF file to XML file.

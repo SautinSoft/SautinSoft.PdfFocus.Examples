@@ -13,7 +13,7 @@ Namespace Sample
             ' The whole conversion process will be done in memory.
             Dim pdfFile As String = Path.GetFullPath("..\..\..\simple text.pdf")
             Dim htmlFile As String = "Result.html"
-	                                ' Get your free 30-day key here: 
+	                                ' Get your free 100-day key here: 
 	                                ' https://sautinsoft.com/start-for-free/
 		
             ' Convert PDF to HTML in memory
@@ -52,7 +52,7 @@ Namespace Sample
             ' The whole conversion process will be done in memory.
             Dim pdfFile As String = Path.GetFullPath("..\..\..\simple text.pdf")
             Dim htmlFile As String = "Result.html"
-	                                ' Get your free 30-day key here: 
+	                                ' Get your free 100-day key here: 
 	                                ' https://sautinsoft.com/start-for-free/
 		
             ' Convert PDF to HTML in memory

@@ -25,7 +25,7 @@ namespace Sample
             DirectoryInfo htmlDirectory = new DirectoryInfo(@"htmls");
             if (!htmlDirectory.Exists)
                 htmlDirectory.Create();
-                                  // Get your free 30-day key here:   
+                                  // Get your free 100-day key here:   
 			 // https://sautinsoft.com/start-for-free/
             
 			PdfFocus f = new PdfFocus();

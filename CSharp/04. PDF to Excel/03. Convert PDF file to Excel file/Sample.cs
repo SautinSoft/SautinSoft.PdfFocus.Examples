@@ -9,7 +9,7 @@ namespace Sample
         {
             string pathToPdf = Path.GetFullPath(@"..\..\..\Table.pdf");
             string pathToExcel = "Result.xlsx";
-                                  // Get your free 30-day key here:   
+                                  // Get your free 100-day key here:   
 			 // https://sautinsoft.com/start-for-free/
             
 			// Convert PDF file to Excel file

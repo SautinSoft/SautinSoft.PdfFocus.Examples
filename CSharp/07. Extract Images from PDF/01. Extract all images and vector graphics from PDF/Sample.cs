@@ -12,7 +12,7 @@ namespace Sample
             // Extract all images from PDF
             SautinSoft.PdfFocus f = new SautinSoft.PdfFocus();
 
-                                                         // Get your free 30-day key here:   
+                                                         // Get your free 100-day key here:   
 			 // https://sautinsoft.com/start-for-free/
 			
             string pdfFile = Path.GetFullPath(@"..\..\..\simple text.pdf");

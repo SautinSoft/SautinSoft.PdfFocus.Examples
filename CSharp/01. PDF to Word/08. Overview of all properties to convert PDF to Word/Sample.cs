@@ -9,7 +9,7 @@ namespace Sample
         {
             string pdfFile = Path.GetFullPath(@"..\..\..\simple text.pdf");
             string wordFile = "Result.docx";
-             // Get your free 30-day key here:   
+             // Get your free 100-day key here:   
 			 // https://sautinsoft.com/start-for-free/
 			
             // In this sample you will find a short overview of all properties of WordOptions.

@@ -37,7 +37,7 @@ namespace Example
             string inpFile = Path.GetFullPath(@"..\..\..\ARGW64125SX.pdf");
             string outFile = "Result.docx";
 
-            // Get your free 30-day key here:   
+            // Get your free 100-day key here:   
             // https://sautinsoft.com/start-for-free/
 
             PdfFocus f = new PdfFocus();

@@ -24,7 +24,7 @@ namespace Sample
             string htmlFileFixed = "Fixed.html";
             string htmlFileFlowing = "Flowing.html";
 			
-                                  // Get your free 30-day key here:   
+                                  // Get your free 100-day key here:   
 			 // https://sautinsoft.com/start-for-free/
 			
             // Convert PDF file to HTML (Fixed and Flowing) file

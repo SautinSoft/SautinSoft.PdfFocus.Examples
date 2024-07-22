@@ -6,7 +6,7 @@ Imports SautinSoft
 Namespace Sample
 	Friend Class Sample
 		Shared Sub Main(ByVal args() As String)
-			  ' Get your free 30-day key here:   
+			  ' Get your free 100-day key here:   
 			 ' https://sautinsoft.com/start-for-free/
 
 			' Extract all images with width and height more than 200px

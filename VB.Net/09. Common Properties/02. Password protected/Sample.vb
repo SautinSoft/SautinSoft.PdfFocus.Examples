@@ -6,7 +6,7 @@ Namespace Sample
 		Shared Sub Main(ByVal args() As String)
 			Dim pdfFile As String = Path.GetFullPath("..\..\..\Example.pdf")
 			Dim wordFile As String = "Result.docx"
-	                                ' Get your free 30-day key here: 
+	                                ' Get your free 100-day key here: 
 	                                ' https://sautinsoft.com/start-for-free/
 			
 			'Convert PDF file to Text file

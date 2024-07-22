@@ -48,7 +48,7 @@ namespace Sample
             int page = targum.PageNumber;
 
             string textFile = Path.GetFileNameWithoutExtension(pdfFile) + ".txt";
-                                  // Get your free 30-day key here:   
+                                  // Get your free 100-day key here:   
 			 // https://sautinsoft.com/start-for-free/
 			
             SautinSoft.PdfFocus f = new SautinSoft.PdfFocus();

@@ -53,7 +53,7 @@ Namespace Sample
             Dim page As Integer = targum.PageNumber
 
             Dim htmlFile As String = targum.HtmlFile
-	                                ' Get your free 30-day key here: 
+	                                ' Get your free 100-day key here: 
 	                                ' https://sautinsoft.com/start-for-free/
 		
             Dim f As New SautinSoft.PdfFocus()

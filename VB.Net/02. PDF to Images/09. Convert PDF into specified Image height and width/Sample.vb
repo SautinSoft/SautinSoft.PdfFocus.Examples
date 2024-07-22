@@ -6,7 +6,7 @@ Imports SkiaSharp
 Namespace Sample
 	Friend Class Sample
 		Shared Sub Main(ByVal args() As String)
-								  ' Get your free 30-day key here:   
+								  ' Get your free 100-day key here:   
 			 ' https://sautinsoft.com/start-for-free/
 
 			'Convert PDF into specified Image height & width

@@ -18,7 +18,7 @@ namespace Sample
             // Assume that we already have a PDF document as array of bytes.
             byte[] pdf = File.ReadAllBytes(pdfFile);
             byte[] docx = null;
-                                             // Get your free 30-day key here:   
+                                             // Get your free 100-day key here:   
             // https://sautinsoft.com/start-for-free/
 			
             // Convert PDF to word in memory
@@ -46,7 +46,7 @@ namespace Sample
             string pdfFile = Path.GetFullPath(@"..\..\..\simple text.pdf");
             MemoryStream rtfStream = new MemoryStream();
             // Convert PDF to word in memory
-                                             // Get your free 30-day key here:   
+                                             // Get your free 100-day key here:   
             // https://sautinsoft.com/start-for-free/
 			
             SautinSoft.PdfFocus f = new SautinSoft.PdfFocus();

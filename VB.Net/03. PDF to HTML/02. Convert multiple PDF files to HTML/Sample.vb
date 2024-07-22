@@ -23,7 +23,7 @@ Namespace Sample
             If Not htmlDirectory.Exists Then
                 htmlDirectory.Create()
             End If
-	                                ' Get your free 30-day key here: 
+	                                ' Get your free 100-day key here: 
 	                                ' https://sautinsoft.com/start-for-free/
 		
             Dim f As New PdfFocus()
@@ -87,7 +87,7 @@ Namespace Sample
             singleHtml.Append("<html>" & vbCrLf & "<head>" & vbCrLf)
             singleHtml.Append("<meta http-equiv = ""Content-Type"" content=""text/html; charset=utf-8"" />")
             singleHtml.Append(vbCrLf & "</head>" & vbCrLf & "<body>")
-	                                ' Get your free 30-day key here: 
+	                                ' Get your free 100-day key here: 
 	                                ' https://sautinsoft.com/start-for-free/
 		
             Dim f As New PdfFocus()

@@ -8,7 +8,7 @@ Module Sample
     Sub Main()
         Dim remotePdfUrl As String = "https://www.sautinsoft.net/Download/Samples/simple-text.pdf"
         Dim pathToWord As String = "Result.docx"
-                                ' Get your free 30-day key here: 
+                                ' Get your free 100-day key here: 
                                 ' https://sautinsoft.com/start-for-free/
 		
         'Convert URL-PDF from Internet to a Word file

@@ -23,7 +23,7 @@ namespace Sample
             // It will be filled by images after the conversion.
             List<Image> imgCollection = new List<Image>();
 			
-                                  // Get your free 30-day key here:   
+                                  // Get your free 100-day key here:   
 			 // https://sautinsoft.com/start-for-free/
 			
             // Convert PDF to HTML in memory

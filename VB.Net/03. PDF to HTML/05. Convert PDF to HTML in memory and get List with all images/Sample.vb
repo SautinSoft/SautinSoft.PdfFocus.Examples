@@ -19,7 +19,7 @@ Namespace Sample
             ' This is the list with extracted images.
             ' It will be filled by images after the conversion.
             Dim imgCollection As New List(Of Image)()
-	                                ' Get your free 30-day key here: 
+	                                ' Get your free 100-day key here: 
 	                                ' https://sautinsoft.com/start-for-free/
 		
             ' Convert PDF to HTML in memory

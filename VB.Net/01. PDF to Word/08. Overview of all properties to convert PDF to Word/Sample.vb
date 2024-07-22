@@ -8,7 +8,7 @@ Module Sample
     Sub Main()
         Dim pdfFile As String = Path.GetFullPath("..\..\..\simple text.pdf")
         Dim wordFile As String = "Result.docx"
-                                ' Get your free 30-day key here: 
+                                ' Get your free 100-day key here: 
                                 ' https://sautinsoft.com/start-for-free/
 		
         ' In this sample you will find a short overview of all properties of WordOptions.

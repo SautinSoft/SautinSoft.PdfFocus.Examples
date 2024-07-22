@@ -9,7 +9,7 @@ namespace Sample
         {
             string remotePdfUrl = @"https://www.sautinsoft.net/Download/Samples/simple-text.pdf";
             string pathToWord = @"Result.docx";
-                                  // Get your free 30-day key here:   
+                                  // Get your free 100-day key here:   
 			 // https://sautinsoft.com/start-for-free/
 			
             //Convert URL-PDF from Internet to a Word file

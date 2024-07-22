@@ -14,7 +14,7 @@ Module Sample
 
         ' Directory to store Word documents.
         Dim docxDir As String = Directory.GetCurrentDirectory()
-                                ' Get your free 30-day key here: 
+                                ' Get your free 100-day key here: 
                                 ' https://sautinsoft.com/start-for-free/
 		
         Dim f As New SautinSoft.PdfFocus()

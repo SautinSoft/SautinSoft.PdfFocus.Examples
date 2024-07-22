@@ -11,7 +11,7 @@ Namespace Sample
             If Not htmlDir.Exists Then
                 htmlDir.Create()
             End If
-	                                ' Get your free 30-day key here: 
+	                                ' Get your free 100-day key here: 
 		    ' SautinSoft.PdfFocus.SetLicense("1234567890")
             Dim f As New SautinSoft.PdfFocus()
 

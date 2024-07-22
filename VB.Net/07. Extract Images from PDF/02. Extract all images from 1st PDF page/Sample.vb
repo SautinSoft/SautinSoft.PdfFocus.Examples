@@ -8,7 +8,7 @@ Namespace Sample
 		Shared Sub Main(ByVal args() As String)
 			' Extract all images from 1st PDF page
 
-			 ' Get your free 30-day key here:   
+			 ' Get your free 100-day key here:   
 			 ' https://sautinsoft.com/start-for-free/
 
 			Dim f As New SautinSoft.PdfFocus()

@@ -8,7 +8,7 @@ Module Sample
     Sub Main()
         Dim pdfFile As String = Path.GetFullPath("..\..\..\text and graphics.pdf")
         Dim wordFile As String = "Result.docx"
-                                ' Get your free 30-day key here: 
+                                ' Get your free 100-day key here: 
                                 ' https://sautinsoft.com/start-for-free/
 		
         ' Convert a PDF file to a Word file

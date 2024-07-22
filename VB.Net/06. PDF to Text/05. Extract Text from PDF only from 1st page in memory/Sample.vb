@@ -10,7 +10,7 @@ Module Sample
 
         ' Assume that we already have PDF as byte array
         Dim pdfBytes() As Byte = File.ReadAllBytes(pdfFile)
-                                ' Get your free 30-day key here: 
+                                ' Get your free 100-day key here: 
                                 ' https://sautinsoft.com/start-for-free/
 		
         ' Extract Text from PDF only from 1st page

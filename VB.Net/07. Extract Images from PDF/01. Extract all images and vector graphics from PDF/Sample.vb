@@ -9,7 +9,7 @@ Namespace Sample
 			' Extract all images from PDF
 			Dim f As New SautinSoft.PdfFocus()
 
-			 ' Get your free 30-day key here:   
+			 ' Get your free 100-day key here:   
 			 ' https://sautinsoft.com/start-for-free/
 
 			Dim pdfFile As String = Path.GetFullPath("..\..\..\simple text.pdf")

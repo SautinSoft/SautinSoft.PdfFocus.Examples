@@ -9,8 +9,11 @@ namespace Sample
     {
         static void Main(string[] args)
         {
-                                  // Get your free 100-day key here:   
-			 // https://sautinsoft.com/start-for-free/
+            // Before starting, we recommend to get a free 100-day key:
+            // https://sautinsoft.com/start-for-free/
+            
+            // Apply the key here:
+            // SautinSoft.PdfFocus.SetLicense("...");
 			
             // Extract all images with width and height more than 200px
             SautinSoft.PdfFocus f = new SautinSoft.PdfFocus();

@@ -7,12 +7,16 @@ namespace Sample
     {
         static void Main(string[] args)
         {
+            // Before starting, we recommend to get a free 100-day key:
+            // https://sautinsoft.com/start-for-free/
+            
+            // Apply the key here:
+            // SautinSoft.PdfFocus.SetLicense("...");
+			
             string pdfFile = Path.GetFullPath(@"..\..\..\Potato Beetle.pdf");
 
             // Assume that we already have PDF as byte array
             byte[] pdfBytes = File.ReadAllBytes(pdfFile);            
-                                  // Get your free 100-day key here:   
-			 // https://sautinsoft.com/start-for-free/
 			
             // Extract Text from PDF only from 1st page
             SautinSoft.PdfFocus f = new SautinSoft.PdfFocus();

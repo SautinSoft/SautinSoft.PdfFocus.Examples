@@ -43,13 +43,17 @@ namespace Sample
 
         public static void ConvertToWord(object targ)
         {
+            // Before starting, we recommend to get a free 100-day key:
+            // https://sautinsoft.com/start-for-free/
+            
+            // Apply the key here:
+            // SautinSoft.PdfFocus.SetLicense("...");
+			
             TArgument targum = (TArgument)targ;
             string pdfFile = targum.PdfFile;
             int page = targum.PageNumber;
 
             string docxFile = Path.GetFileNameWithoutExtension(pdfFile) + ".docx";
-                                             // Get your free 100-day key here:   
-            // https://sautinsoft.com/start-for-free/
 			
             SautinSoft.PdfFocus f = new SautinSoft.PdfFocus();
 

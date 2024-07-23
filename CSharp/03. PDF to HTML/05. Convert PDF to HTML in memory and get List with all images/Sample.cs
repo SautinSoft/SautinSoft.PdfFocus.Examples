@@ -9,6 +9,12 @@ namespace Sample
     {
         static void Main(string[] args)
         {
+            // Before starting, we recommend to get a free 100-day key:
+            // https://sautinsoft.com/start-for-free/
+            
+            // Apply the key here:
+            // SautinSoft.PdfFocus.SetLicense("...");
+			
             ConvertPdfBytesToHtml();
         }
 
@@ -22,9 +28,6 @@ namespace Sample
             // This is the list with extracted images.
             // It will be filled by images after the conversion.
             List<Image> imgCollection = new List<Image>();
-			
-                                  // Get your free 100-day key here:   
-			 // https://sautinsoft.com/start-for-free/
 			
             // Convert PDF to HTML in memory
             SautinSoft.PdfFocus f = new SautinSoft.PdfFocus();

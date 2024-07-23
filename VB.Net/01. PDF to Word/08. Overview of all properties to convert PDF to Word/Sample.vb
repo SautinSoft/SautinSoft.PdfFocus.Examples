@@ -6,10 +6,14 @@ Imports SautinSoft
 Module Sample
 
     Sub Main()
+        ' Before starting, we recommend to get a free 100-day key:
+        ' https://sautinsoft.com/start-for-free/
+
+        ' Apply the key here
+        ' SautinSoft.PdfFocus.SetLicense("...");
+
         Dim pdfFile As String = Path.GetFullPath("..\..\..\simple text.pdf")
         Dim wordFile As String = "Result.docx"
-                                ' Get your free 100-day key here: 
-                                ' https://sautinsoft.com/start-for-free/
 		
         ' In this sample you will find a short overview of all properties of WordOptions.
         Dim f As New SautinSoft.PdfFocus()

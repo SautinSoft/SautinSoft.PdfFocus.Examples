@@ -7,6 +7,12 @@ Imports SautinSoft
 Module Sample
 
     Sub Main()
+		' Before starting, we recommend to get a free 100-day key:
+		' https://sautinsoft.com/start-for-free/
+
+		' Apply the key here
+		' SautinSoft.PdfFocus.SetLicense("...");
+
         ConvertPdfToTextInThread()
     End Sub
     Public Class TArgument
@@ -41,8 +47,6 @@ Module Sample
         Dim page As Integer = targum.PageNumber
 
         Dim textFile As String = Path.GetFileNameWithoutExtension(pdfFile) + ".txt"
-                                ' Get your free 100-day key here: 
-                                ' https://sautinsoft.com/start-for-free/
 		
         Dim f As New SautinSoft.PdfFocus()
 

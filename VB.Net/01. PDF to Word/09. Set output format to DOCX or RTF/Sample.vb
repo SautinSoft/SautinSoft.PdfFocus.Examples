@@ -6,6 +6,12 @@ Imports SautinSoft
 Module Sample
 
     Sub Main()
+        ' Before starting, we recommend to get a free 100-day key:
+        ' https://sautinsoft.com/start-for-free/
+
+        ' Apply the key here
+        ' SautinSoft.PdfFocus.SetLicense("...");
+
         ConvertPdfToDocx()
         'ConvertPdfToRtf()
     End Sub
@@ -13,8 +19,6 @@ Module Sample
     Private Sub ConvertPdfToDocx()
         Dim pdfFile As String = Path.GetFullPath("..\..\..\text and graphics.pdf")
         Dim wordFile As String = "Result.docx"
-                                ' Get your free 100-day key here: 
-                                ' https://sautinsoft.com/start-for-free/
 		
         Dim f As New SautinSoft.PdfFocus()
 
@@ -35,9 +39,6 @@ Module Sample
         Dim wordFile As String = "Result.rtf"
 
         Dim f As New SautinSoft.PdfFocus()
-
-        'this property is necessary only for registered version
-        'f.Serial = "XXXXXXXXXXX"
 
         f.OpenPdf(pdfFile)
 

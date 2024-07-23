@@ -5,11 +5,14 @@ Imports SautinSoft
 Namespace Sample
     Friend Class Sample
         Shared Sub Main(ByVal args() As String)
+			' Before starting, we recommend to get a free 100-day key:
+			' https://sautinsoft.com/start-for-free/
+
+			' Apply the key here
+			' SautinSoft.PdfFocus.SetLicense("...");
+
             Dim pdfFile As String = Path.GetFullPath("..\..\..\simple text.pdf")
             Dim htmlFile As String = "Result.html"
-			
-	                                ' Get your free 100-day key here: 
-		    ' SautinSoft.PdfFocus.SetLicense("1234567890")
 		
             ' Convert PDF file to HTML file
             Dim f As New SautinSoft.PdfFocus()

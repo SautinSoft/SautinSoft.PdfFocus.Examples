@@ -8,6 +8,12 @@ Imports SautinSoft
 Namespace Sample
     Friend Class Sample
         Shared Sub Main(ByVal args() As String)
+			' Before starting, we recommend to get a free 100-day key:
+			' https://sautinsoft.com/start-for-free/
+
+			' Apply the key here
+			' SautinSoft.PdfFocus.SetLicense("...");
+
             'ConvertMultiplePdfToHtmls()
             ConvertMultiplePdfToSingleHtml()
         End Sub
@@ -23,12 +29,8 @@ Namespace Sample
             If Not htmlDirectory.Exists Then
                 htmlDirectory.Create()
             End If
-	                                ' Get your free 100-day key here: 
-	                                ' https://sautinsoft.com/start-for-free/
 		
             Dim f As New PdfFocus()
-            ' After purchasing the license, please insert your serial number here to activate the component:
-            'f.Serial = "XXXXXXXXXXX"
 
             Dim success As Integer = 0
             Dim total As Integer = 0
@@ -87,8 +89,6 @@ Namespace Sample
             singleHtml.Append("<html>" & vbCrLf & "<head>" & vbCrLf)
             singleHtml.Append("<meta http-equiv = ""Content-Type"" content=""text/html; charset=utf-8"" />")
             singleHtml.Append(vbCrLf & "</head>" & vbCrLf & "<body>")
-	                                ' Get your free 100-day key here: 
-	                                ' https://sautinsoft.com/start-for-free/
 		
             Dim f As New PdfFocus()
 

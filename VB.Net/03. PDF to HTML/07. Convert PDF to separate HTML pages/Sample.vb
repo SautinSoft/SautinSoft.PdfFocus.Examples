@@ -4,6 +4,12 @@ Imports System.IO
 Namespace Sample
     Friend Class Sample
         Shared Sub Main(ByVal args() As String)
+			' Before starting, we recommend to get a free 100-day key:
+			' https://sautinsoft.com/start-for-free/
+
+			' Apply the key here
+			' SautinSoft.PdfFocus.SetLicense("...");
+
             ' Convert PDF to separate HTMLs.
             ' Each PDF page will be converted to a single HTML document.
             Dim pdfFile As String = Path.GetFullPath("..\..\..\simple text.pdf")
@@ -11,8 +17,6 @@ Namespace Sample
             If Not htmlDir.Exists Then
                 htmlDir.Create()
             End If
-	                                ' Get your free 100-day key here: 
-		    ' SautinSoft.PdfFocus.SetLicense("1234567890")
             Dim f As New SautinSoft.PdfFocus()
 
             f.HtmlOptions.IncludeImageInHtml = False

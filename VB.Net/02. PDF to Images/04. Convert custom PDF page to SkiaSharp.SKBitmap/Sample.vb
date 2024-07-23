@@ -5,8 +5,11 @@ Imports System.IO
 Namespace Sample
 	Friend Class Sample
 		Shared Sub Main(ByVal args() As String)
-			' Get your free 100-day key here:   
+			' Before starting, we recommend to get a free 100-day key:
 			' https://sautinsoft.com/start-for-free/
+
+			' Apply the key here
+			' SautinSoft.PdfFocus.SetLicense("...");
 
 			'Convert custom PDF page to Image object
 			Dim f As New SautinSoft.PdfFocus()

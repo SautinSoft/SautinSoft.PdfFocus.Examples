@@ -5,11 +5,15 @@ Imports SautinSoft
 Namespace Sample
     Friend Class Sample
         Shared Sub Main(ByVal args() As String)
+			' Before starting, we recommend to get a free 100-day key:
+			' https://sautinsoft.com/start-for-free/
+
+			' Apply the key here
+			' SautinSoft.PdfFocus.SetLicense("...");
+
             ' Here you will find how to keep images in the resulting HTML document.
             Dim pdfFile As String = Path.GetFullPath("..\..\..\simple text.pdf")
             Dim htmlFile As String = "Result.html"
-	                                ' Get your free 100-day key here: 
-	                                ' https://sautinsoft.com/start-for-free/
 		
             ' Convert PDF file to HTML file
             Dim f As New SautinSoft.PdfFocus()

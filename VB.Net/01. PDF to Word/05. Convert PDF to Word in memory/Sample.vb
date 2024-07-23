@@ -6,6 +6,12 @@ Imports SautinSoft
 Module Sample
 
     Sub Main()
+        ' Before starting, we recommend to get a free 100-day key:
+        ' https://sautinsoft.com/start-for-free/
+
+        ' Apply the key here
+        ' SautinSoft.PdfFocus.SetLicense("...");
+
         ConvertPdfToDocxBytes()
         'ConvertPdfToRtfStream()
     End Sub
@@ -15,8 +21,6 @@ Module Sample
         ' Assume that we already have a PDF document as array of bytes.
         Dim pdf() As Byte = File.ReadAllBytes(pdfFile)
         Dim docx() As Byte = Nothing
-                                ' Get your free 100-day key here: 
-                                ' https://sautinsoft.com/start-for-free/
 		
         ' Convert PDF to word in memory
         Dim f As New SautinSoft.PdfFocus()

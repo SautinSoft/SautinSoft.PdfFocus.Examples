@@ -7,15 +7,18 @@ namespace Sample
     {
         static void Main(string[] args)
         {
+            // Before starting, we recommend to get a free 100-day key:
+            // https://sautinsoft.com/start-for-free/
+            
+            // Apply the key here:
+            // SautinSoft.PdfFocus.SetLicense("...");
+			
             // Convert PDF to separate HTMLs.
             // Each PDF page will be converted to a single HTML document.
             string pdfFile = Path.GetFullPath(@"..\..\..\simple text.pdf");            
             DirectoryInfo htmlDir = new DirectoryInfo("htmls");
             if (!htmlDir.Exists)
                 htmlDir.Create();
-
-                                  // Get your free 100-day key here:   
-			 // https://sautinsoft.com/start-for-free/            
 
             SautinSoft.PdfFocus f = new SautinSoft.PdfFocus();
 

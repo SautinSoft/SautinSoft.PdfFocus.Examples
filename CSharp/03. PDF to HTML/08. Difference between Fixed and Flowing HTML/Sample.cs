@@ -8,6 +8,12 @@ namespace Sample
     {
         static void Main(string[] args)
         {
+            // Before starting, we recommend to get a free 100-day key:
+            // https://sautinsoft.com/start-for-free/
+            
+            // Apply the key here:
+            // SautinSoft.PdfFocus.SetLicense("...");
+			
             // Here we'll show you two modes of converting PDF to HTML:
             // PDF Focus .Net offers you the Fixed and Flowing modes by your choice.
 
@@ -23,9 +29,6 @@ namespace Sample
             string pdfFile = Path.GetFullPath(@"..\..\..\License.pdf");
             string htmlFileFixed = "Fixed.html";
             string htmlFileFlowing = "Flowing.html";
-			
-                                  // Get your free 100-day key here:   
-			 // https://sautinsoft.com/start-for-free/
 			
             // Convert PDF file to HTML (Fixed and Flowing) file
             SautinSoft.PdfFocus f = new SautinSoft.PdfFocus();

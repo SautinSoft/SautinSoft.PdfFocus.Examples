@@ -13,13 +13,17 @@ namespace Sample
 
         private static void ConvertPdfToDocxBytes()
         {
+            // Before starting, we recommend to get a free 100-day key:
+            // https://sautinsoft.com/start-for-free/
+            
+            // Apply the key here:
+            // SautinSoft.PdfFocus.SetLicense("...");
+			
             string pdfFile = Path.GetFullPath(@"..\..\..\simple text.pdf");
 
             // Assume that we already have a PDF document as array of bytes.
             byte[] pdf = File.ReadAllBytes(pdfFile);
             byte[] docx = null;
-                                             // Get your free 100-day key here:   
-            // https://sautinsoft.com/start-for-free/
 			
             // Convert PDF to word in memory
             SautinSoft.PdfFocus f = new SautinSoft.PdfFocus();

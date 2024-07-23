@@ -4,13 +4,16 @@ Imports System.Collections.Generic
 Imports SautinSoft
 
 Module Sample
-
     Sub Main()
-        Dim remotePdfUrl As String = "https://www.sautinsoft.net/Download/Samples/simple-text.pdf"
+        ' Before starting, we recommend to get a free 100-day key:
+        ' https://sautinsoft.com/start-for-free/
+
+        ' Apply the key here
+        ' SautinSoft.PdfFocus.SetLicense("...");
+
+        Dim remotePdfUrl As String = "https://sautinsoft.com/products/pdf-focus/help/net/developer-guide/data/files/parkmap.pdf"
         Dim pathToWord As String = "Result.docx"
-                                ' Get your free 100-day key here: 
-                                ' https://sautinsoft.com/start-for-free/
-		
+
         'Convert URL-PDF from Internet to a Word file
         Dim f As New SautinSoft.PdfFocus()
 

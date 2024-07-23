@@ -7,10 +7,14 @@ namespace Sample
     {
         static void Main(string[] args)
         {
+            // Before starting, we recommend to get a free 100-day key:
+            // https://sautinsoft.com/start-for-free/
+            
+            // Apply the key here:
+            // SautinSoft.PdfFocus.SetLicense("...");
+			
             string pathToPdf = Path.GetFullPath(@"..\..\..\Table.pdf");
             string pathToXml = "Result.xml";
-                                  // Get your free 100-day key here:   
-			 // https://sautinsoft.com/start-for-free/
 			
             // Convert PDF file to XML file.
             SautinSoft.PdfFocus f = new SautinSoft.PdfFocus();

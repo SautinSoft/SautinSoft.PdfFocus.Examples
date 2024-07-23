@@ -7,14 +7,18 @@ namespace Sample
     {
         static void Main(string[] args)
         {
-            string remotePdfUrl = @"https://www.sautinsoft.net/Download/Samples/simple-text.pdf";
+            // Before starting, we recommend to get a free 100-day key:
+            // https://sautinsoft.com/start-for-free/
+            
+            // Apply the key here:
+            // SautinSoft.PdfFocus.SetLicense("...");
+
+            string remotePdfUrl = @"https://sautinsoft.com/products/pdf-focus/help/net/developer-guide/data/files/parkmap.pdf";
             string pathToWord = @"Result.docx";
-                                  // Get your free 100-day key here:   
-			 // https://sautinsoft.com/start-for-free/
-			
+
             //Convert URL-PDF from Internet to a Word file
             SautinSoft.PdfFocus f = new SautinSoft.PdfFocus();
-            
+
             Uri uri = new Uri(remotePdfUrl);
 
             f.OpenPdf(uri);

@@ -4,6 +4,12 @@ Imports System.IO
 Namespace Sample
     Friend Class Sample
         Shared Sub Main(ByVal args() As String)
+			' Before starting, we recommend to get a free 100-day key:
+			' https://sautinsoft.com/start-for-free/
+
+			' Apply the key here
+			' SautinSoft.PdfFocus.SetLicense("...");
+
             ConvertPdfBytesToHtml()
             'ConvertPdfStreamToHtml()
         End Sub
@@ -13,14 +19,9 @@ Namespace Sample
             ' The whole conversion process will be done in memory.
             Dim pdfFile As String = Path.GetFullPath("..\..\..\simple text.pdf")
             Dim htmlFile As String = "Result.html"
-	                                ' Get your free 100-day key here: 
-	                                ' https://sautinsoft.com/start-for-free/
 		
             ' Convert PDF to HTML in memory
             Dim f As New SautinSoft.PdfFocus()
-
-            ' This property is necessary only for licensed version.
-            'f.Serial = "XXXXXXXXXXX"
 
             ' Let's force the component to store images inside HTML document
             ' using base-64 encoding.

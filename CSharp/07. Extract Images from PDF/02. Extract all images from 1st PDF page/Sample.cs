@@ -9,11 +9,13 @@ namespace Sample
     {
         static void Main(string[] args)
         {
-            // Extract all images from 1st PDF page
+            // Before starting, we recommend to get a free 100-day key:
+            // https://sautinsoft.com/start-for-free/
+            
+            // Apply the key here:
+            // SautinSoft.PdfFocus.SetLicense("...");
 			
-                                  // Get your free 100-day key here:   
-			 // https://sautinsoft.com/start-for-free/
-			
+            // Extract all images from 1st PDF page			
             SautinSoft.PdfFocus f = new SautinSoft.PdfFocus();
 
             string pdfFile = Path.GetFullPath(@"..\..\..\simple text.pdf");

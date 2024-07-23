@@ -10,6 +10,12 @@ namespace Sample
     {
         static void Main(string[] args)
         {
+            // Before starting, we recommend to get a free 100-day key:
+            // https://sautinsoft.com/start-for-free/
+            
+            // Apply the key here:
+            // SautinSoft.PdfFocus.SetLicense("...");
+			
             ConvertMultiplePdfToHtmls();
             //ConvertMultiplePdfToSingleHtml();
         }
@@ -25,8 +31,6 @@ namespace Sample
             DirectoryInfo htmlDirectory = new DirectoryInfo(@"htmls");
             if (!htmlDirectory.Exists)
                 htmlDirectory.Create();
-                                  // Get your free 100-day key here:   
-			 // https://sautinsoft.com/start-for-free/
             
 			PdfFocus f = new PdfFocus();
             
@@ -93,7 +97,6 @@ namespace Sample
             singleHtml.Append("\r\n</head>\r\n<body>");
 
             PdfFocus f = new PdfFocus();
-            //f.Serial = "XXXXXXXXXXX";
 
             int success = 0;
             int total = 0;

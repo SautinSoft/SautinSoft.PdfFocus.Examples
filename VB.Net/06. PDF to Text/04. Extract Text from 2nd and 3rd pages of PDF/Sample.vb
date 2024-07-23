@@ -6,10 +6,14 @@ Imports SautinSoft
 Module Sample
 
     Sub Main()
+		' Before starting, we recommend to get a free 100-day key:
+		' https://sautinsoft.com/start-for-free/
+
+		' Apply the key here
+		' SautinSoft.PdfFocus.SetLicense("...");
+
         Dim pdfFile As String = Path.GetFullPath("..\..\..\Potato Beetle.pdf")
         Dim textFile As String = "Result.txt"
-                                ' Get your free 100-day key here: 
-                                ' https://sautinsoft.com/start-for-free/
 		
         'Extract Text from 2nd-3rd pages of PDF
         Dim f As New SautinSoft.PdfFocus()

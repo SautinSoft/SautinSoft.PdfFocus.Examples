@@ -6,10 +6,12 @@ Imports SkiaSharp
 Namespace Sample
 	Friend Class Sample
 		Shared Sub Main(ByVal args() As String)
-								  ' Get your free 100-day key here:   
-			 ' https://sautinsoft.com/start-for-free/
+			' Before starting, we recommend to get a free 100-day key:
+			' https://sautinsoft.com/start-for-free/
 
-			'Convert PDF into specified Image height & width
+			' Apply the key here
+			' SautinSoft.PdfFocus.SetLicense("...");
+
 			Dim f As New SautinSoft.PdfFocus()
 
 			' Set initial values

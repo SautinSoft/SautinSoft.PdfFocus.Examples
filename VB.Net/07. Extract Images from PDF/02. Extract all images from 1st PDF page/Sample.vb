@@ -6,11 +6,13 @@ Imports SautinSoft
 Namespace Sample
 	Friend Class Sample
 		Shared Sub Main(ByVal args() As String)
+			' Before starting, we recommend to get a free 100-day key:
+			' https://sautinsoft.com/start-for-free/
+
+			' Apply the key here
+			' SautinSoft.PdfFocus.SetLicense("...");
+
 			' Extract all images from 1st PDF page
-
-			 ' Get your free 100-day key here:   
-			 ' https://sautinsoft.com/start-for-free/
-
 			Dim f As New SautinSoft.PdfFocus()
 
 			Dim pdfFile As String = Path.GetFullPath("..\..\..\simple text.pdf")

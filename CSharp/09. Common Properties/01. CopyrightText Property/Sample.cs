@@ -7,9 +7,12 @@ namespace Sample
     {
         static void Main(string[] args)
         {
-                                  // Get your free 100-day key here:   
-			 // https://sautinsoft.com/start-for-free/
-
+            // Before starting, we recommend to get a free 100-day key:
+            // https://sautinsoft.com/start-for-free/
+            
+            // Apply the key here:
+            // SautinSoft.PdfFocus.SetLicense("...");
+			
             string pdfFile = Path.GetFullPath(@"..\..\..\text and graphics.pdf");
             string wordFile = "Result.docx";
 

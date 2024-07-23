@@ -6,10 +6,14 @@ Imports SautinSoft
 Module Sample
 
     Sub Main()
+        ' Before starting, we recommend to get a free 100-day key:
+        ' https://sautinsoft.com/start-for-free/
+
+        ' Apply the key here
+        ' SautinSoft.PdfFocus.SetLicense("...");
+
         Dim pdfFile As String = Path.GetFullPath("..\..\..\text and graphics.pdf")
         Dim wordFile As String = "Result.docx"
-                                ' Get your free 100-day key here: 
-                                ' https://sautinsoft.com/start-for-free/
 		
         ' Convert a PDF file to a Word file
         Dim f As New SautinSoft.PdfFocus()

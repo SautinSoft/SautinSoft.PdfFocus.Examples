@@ -57,9 +57,6 @@ namespace Sample
 			
             SautinSoft.PdfFocus f = new SautinSoft.PdfFocus();
 
-            // Let's convert all data (textual and tabular) to XML.
-            f.XmlOptions.ConvertNonTabularDataToSpreadsheet = true;
-
             f.OpenPdf(pdfFile);
 
             bool done = false;

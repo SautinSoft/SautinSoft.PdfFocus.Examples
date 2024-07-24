@@ -18,9 +18,6 @@ Module Sample
         ' Convert PDF file to XML file.
         Dim f As New SautinSoft.PdfFocus()
 
-        ' Let's convert only tables to XML and skip all textual data.
-        f.XmlOptions.ConvertNonTabularDataToSpreadsheet = False
-
         f.OpenPdf(pathToPdf)
 
         If f.PageCount > 0 Then

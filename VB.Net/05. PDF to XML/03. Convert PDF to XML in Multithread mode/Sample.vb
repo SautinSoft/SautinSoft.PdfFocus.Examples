@@ -50,9 +50,6 @@ Module Sample
 		
         Dim f As New SautinSoft.PdfFocus()
 
-        ' Let's convert all data (textual and tabular) to XML.
-        f.XmlOptions.ConvertNonTabularDataToSpreadsheet = True
-
         f.OpenPdf(pdfFile)
 
         Dim done As Boolean = False

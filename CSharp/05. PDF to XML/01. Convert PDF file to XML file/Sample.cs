@@ -19,9 +19,6 @@ namespace Sample
             // Convert PDF file to XML file.
             SautinSoft.PdfFocus f = new SautinSoft.PdfFocus();
 
-            // Let's convert only tables to XML and skip all textual data.
-            f.XmlOptions.ConvertNonTabularDataToSpreadsheet = false;
-
             f.OpenPdf(pathToPdf);
 
             if (f.PageCount > 0)

@@ -65,7 +65,8 @@ Namespace Sample
 					page = 1
 				End If
 
-				If f.ToImage(pngFile, page) = 0 Then
+				f.ImageOptions.PageIndex = page - 1
+				If f.ToImage(pngFile) = 0 Then
 					done = True
 				End If
 				f.ClosePdf()

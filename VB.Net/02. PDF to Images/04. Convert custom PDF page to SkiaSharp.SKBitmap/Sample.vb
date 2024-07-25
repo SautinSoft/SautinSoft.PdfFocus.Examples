@@ -8,22 +8,23 @@ Namespace Sample
 			' Before starting, we recommend to get a free 100-day key:
 			' https://sautinsoft.com/start-for-free/
 
-			' Apply the key here
+			' Apply the key here:
 			' SautinSoft.PdfFocus.SetLicense("...");
 
 			'Convert custom PDF page to Image object
 			Dim f As New SautinSoft.PdfFocus()
 
 
-			Dim pdfPath As String = Path.GetFullPath("..\..\..\text and graphics.pdf")
+			Dim pdfPath As String = Path.GetFullPath("..\..\..\parkmap.pdf")
 			Dim imagePath As String = "Result.jpg"
 
 			f.OpenPdf(pdfPath)
 
 			If f.PageCount > 0 Then
-				'Let's convert 1st page into System.Drawing.Image object, 120 dpi
-				f.ImageOptions.Dpi = 120
-				Dim img As SkiaSharp.SKBitmap = f.ToDrawingImage(1)
+				'Let's convert 1st page into SKBitmap object, 300 dpi
+				f.ImageOptions.Dpi = 300
+				f.ImageOptions.SelectedPages = New Integer() { 0 }
+				Dim img As SkiaSharp.SKBitmap = f.ToSKBitmap()
 
 				'Save to file
 				If img IsNot Nothing Then

@@ -1,7 +1,5 @@
 Imports System
 Imports System.IO
-Imports System.Drawing
-Imports System.Drawing.Imaging
 
 Namespace Sample
 	Friend Class Sample
@@ -9,9 +7,10 @@ Namespace Sample
 			' Before starting, we recommend to get a free 100-day key:
 			' https://sautinsoft.com/start-for-free/
 
-			' Apply the key here
+			' Apply the key here:
 			' SautinSoft.PdfFocus.SetLicense("...");
 
+			'Convert PDF file to Multipage TIFF file
 			Dim f As New SautinSoft.PdfFocus()
 
 			Dim pdfPath As String = Path.GetFullPath("..\..\..\simple text.pdf")
@@ -20,8 +19,10 @@ Namespace Sample
 			f.OpenPdf(pdfPath)
 
 			If f.PageCount > 0 Then
-				f.ImageOptions.Dpi = 200
-				If f.ToMultipageTiff(tiffPath) = 0 Then
+				f.ImageOptions.ImageFormat = SautinSoft.PdfFocus.CImageOptions.ImageFormats.Tif
+				f.ImageOptions.Dpi = 300
+
+				If f.ToImage(tiffPath) = 0 Then
 					System.Diagnostics.Process.Start(New System.Diagnostics.ProcessStartInfo(tiffPath) With {.UseShellExecute = True})
 				End If
 			End If

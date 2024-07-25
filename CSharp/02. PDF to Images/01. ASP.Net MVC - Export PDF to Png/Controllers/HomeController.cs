@@ -75,10 +75,13 @@ namespace FileUploadDownload.Controllers
                 f.OpenPdf(item);
                 if (f.PageCount > 0)
                 {
-                    //Let's whole PDF document to Images (PNG)
+                    
                  
                     byte[] img = null;
-                    img = f.ToImage(1);
+					f.ImageOptions.ImageFormat = SautinSoft.PdfFocus.CImageOptions.ImageFormats.Png;
+					f.ImageOptions.SelectedPages = new int[] { 0 };
+                    
+					img = f.ToImage();
                     
                     if (img != null)
                     {return File(img, "application/images", "Result.png");
@@ -87,7 +90,7 @@ namespace FileUploadDownload.Controllers
             }
             return View(model);
         }
-     //   public static void SaveByteArrayToFileWithStaticMethod(byte[] data, string filePath)=> File.WriteAllBytes(filePath, data);
+  
         public async Task<IActionResult> Download(string filename)
         {
             if (filename == null)

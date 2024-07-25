@@ -69,7 +69,8 @@ namespace Sample
                 if (page >= f.PageCount)
                     page = 1;
 
-                if (f.ToImage(pngFile, page) == 0)
+                f.ImageOptions.PageIndex = page - 1;
+                if (f.ToImage(pngFile) == 0)
                     done = true;
                 f.ClosePdf();
             }

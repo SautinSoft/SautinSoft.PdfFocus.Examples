@@ -25,9 +25,12 @@ namespace Sample
             {
                 //Set "BMP" format for image
                 f.ImageOptions.ImageFormat = SautinSoft.PdfFocus.CImageOptions.ImageFormats.Bmp;
-                
+                f.ImageOptions.Dpi = 300;
+
                 //Convert 1st page from PDF to image file
-                if (f.ToImage(imagePath, 1) == 0)
+                f.ImageOptions.PageIndex = 0;
+
+                if (f.ToImage(imagePath) == 0)
                 {
                     // 0 - converting successfully                
                     // 2 - can't create output file, check the output path

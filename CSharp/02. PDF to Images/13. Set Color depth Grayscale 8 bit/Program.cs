@@ -27,7 +27,9 @@ namespace Sample
                 f.ImageOptions.ColorDepth = SautinSoft.PdfFocus.CImageOptions.eColorDepth.Grayscale8bpp;
 
                 //Convert 1st page from PDF to image file
-                if (f.ToImage(imagePath, 1) == 0)
+                f.ImageOptions.PageIndex = 0;
+
+                if (f.ToImage(imagePath) == 0)
                 {
                     // 0 - converting successfully                
                     // 2 - can't create output file, check the output path

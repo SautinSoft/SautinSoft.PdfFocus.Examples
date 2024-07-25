@@ -1,6 +1,5 @@
 Imports System
 Imports System.IO
-Imports System.Drawing
 Imports SkiaSharp
 
 Namespace Sample
@@ -9,9 +8,10 @@ Namespace Sample
 			' Before starting, we recommend to get a free 100-day key:
 			' https://sautinsoft.com/start-for-free/
 
-			' Apply the key here
+			' Apply the key here:
 			' SautinSoft.PdfFocus.SetLicense("...");
 
+			'Convert PDF into specified Image height & width
 			Dim f As New SautinSoft.PdfFocus()
 
 			' Set initial values
@@ -30,7 +30,7 @@ Namespace Sample
 			f.OpenPdf(pdfPath)
 			If f.PageCount > 0 Then
 				' Convert all pages to PNG images
-				f.ToImage(imageFolder, "Page")
+				f.ToImages(imageFolder, "Page")
 
 				'Show image
 				System.Diagnostics.Process.Start(New System.Diagnostics.ProcessStartInfo(imageFolder) With {.UseShellExecute = True})

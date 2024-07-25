@@ -1,7 +1,5 @@
 Imports System
 Imports System.IO
-Imports System.Drawing
-Imports System.Drawing.Imaging
 
 Namespace Sample
 	Friend Class Sample
@@ -9,9 +7,10 @@ Namespace Sample
 			' Before starting, we recommend to get a free 100-day key:
 			' https://sautinsoft.com/start-for-free/
 
-			' Apply the key here
+			' Apply the key here:
 			' SautinSoft.PdfFocus.SetLicense("...");
 
+			'Convert PDF files to 300-dpi JPG files
 			Dim f As New SautinSoft.PdfFocus()
 
 			Dim pdfFiles() As String = Directory.GetFiles("..\..\..\", "*.pdf")
@@ -26,7 +25,7 @@ Namespace Sample
 					f.ImageOptions.ImageFormat = SautinSoft.PdfFocus.CImageOptions.ImageFormats.Jpeg
 
 					'Save all pages to jpeg files with 300 dpi
-					f.ToImage(folderWithJPGs, Path.GetFileNameWithoutExtension(pdffile))
+					f.ToImages(folderWithJPGs, Path.GetFileNameWithoutExtension(pdffile))
 				End If
 				f.ClosePdf()
 			Next pdffile

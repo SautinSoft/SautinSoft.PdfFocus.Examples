@@ -78,7 +78,8 @@ namespace FileUploadDownload.Controllers
                     //Let's whole PDF document to Images (PNG)
                  
                     byte[] img = null;
-                    img = f.ToImage(1);
+					f.ImageOptions.SelectedPages = new int[] { 0 };
+                    img = f.ToImage();
                     
                     if (img != null)
                     {return File(img, "application/images", "Result.png");

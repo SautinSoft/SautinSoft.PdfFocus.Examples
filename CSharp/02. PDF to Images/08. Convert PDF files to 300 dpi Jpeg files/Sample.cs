@@ -1,7 +1,5 @@
 using System;
 using System.IO;
-using System.Drawing;
-using System.Drawing.Imaging;
 
 namespace Sample
 {
@@ -32,7 +30,7 @@ namespace Sample
                     f.ImageOptions.ImageFormat = SautinSoft.PdfFocus.CImageOptions.ImageFormats.Jpeg;
 
                     //Save all pages to jpeg files with 300 dpi
-                    f.ToImage(folderWithJPGs, Path.GetFileNameWithoutExtension(pdffile));
+                    f.ToImages(folderWithJPGs, Path.GetFileNameWithoutExtension(pdffile));
                 }
                 f.ClosePdf();
             }

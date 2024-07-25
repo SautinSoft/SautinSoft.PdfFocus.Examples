@@ -10,24 +10,25 @@ namespace Sample
         {
             // Before starting, we recommend to get a free 100-day key:
             // https://sautinsoft.com/start-for-free/
-            
+
             // Apply the key here:
             // SautinSoft.PdfFocus.SetLicense("...");
-			
+
             //Convert custom PDF page to Image object
             SautinSoft.PdfFocus f = new SautinSoft.PdfFocus();
 
 
-            string pdfPath = Path.GetFullPath(@"..\..\..\text and graphics.pdf");
+            string pdfPath = Path.GetFullPath(@"..\..\..\parkmap.pdf");
             string imagePath = "Result.jpg";
 
             f.OpenPdf(pdfPath);
 
             if (f.PageCount > 0)
             {
-                //Let's convert 1st page into System.Drawing.Image object, 120 dpi
-                f.ImageOptions.Dpi = 120;
-                SKBitmap img = f.ToDrawingImage(1);
+                //Let's convert 1st page into SKBitmap object, 300 dpi
+                f.ImageOptions.Dpi = 300;
+                f.ImageOptions.SelectedPages = new int[] { 0 };
+                SKBitmap img = f.ToSKBitmap();
 
                 //Save to file
                 if (img != null)

@@ -1,6 +1,5 @@
 using System;
 using System.IO;
-using System.Drawing;
 using SkiaSharp;
 
 namespace Sample
@@ -32,7 +31,7 @@ namespace Sample
             if (f.PageCount > 0)
             {
                 // Convert all pages to PNG images
-                f.ToImage(imageFolder, "Page");
+                f.ToImages(imageFolder, "Page");
 
                 //Show image
                 System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo(imageFolder) { UseShellExecute = true });

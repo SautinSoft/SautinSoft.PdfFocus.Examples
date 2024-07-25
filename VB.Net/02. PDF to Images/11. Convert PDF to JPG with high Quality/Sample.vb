@@ -7,9 +7,10 @@ Namespace Sample
 			' Before starting, we recommend to get a free 100-day key:
 			' https://sautinsoft.com/start-for-free/
 
-			' Apply the key here
+			' Apply the key here:
 			' SautinSoft.PdfFocus.SetLicense("...");
 
+			' Convert PDF to JPG with high Quality
 			Dim f As New SautinSoft.PdfFocus()
 
 			Dim pdfFile As String = Path.GetFullPath("..\..\..\Potato Beetle.pdf")
@@ -18,12 +19,12 @@ Namespace Sample
 			f.OpenPdf(pdfFile)
 
 			If f.PageCount > 0 Then
-				' Set image properties: Jpeg, 200 dpi
+				' Set image properties: Jpeg, 300 dpi
 				f.ImageOptions.ImageFormat = SautinSoft.PdfFocus.CImageOptions.ImageFormats.Jpeg
-				f.ImageOptions.Dpi = 200
+				f.ImageOptions.Dpi = 300
 
 				' Set 95 as JPEG quality
-				f.ImageOptions.JpegQuality = 50
+				f.ImageOptions.JpegQuality = 95
 
 				'Save all PDF pages to image folder, each file will have name Page 1.jpg, Page 2.jpg, Page N.jpg
 				For page As Integer = 1 To f.PageCount
@@ -32,7 +33,8 @@ Namespace Sample
 					' 0 - converted successfully                
 					' 2 - can't create output file, check the output path
 					' 3 - conversion failed
-					Dim result As Integer = f.ToImage(jpegFile, page)
+					f.ImageOptions.PageIndex = page - 1
+					Dim result As Integer = f.ToImage(jpegFile)
 
 					' Show only 1st page
 					If page = 1 AndAlso result = 0 Then

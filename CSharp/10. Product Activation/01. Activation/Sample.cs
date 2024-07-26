@@ -13,7 +13,7 @@ namespace Sample
             // If you will have any questions, email us to sales@sautinsoft.com or ask at online chat https://www.sautinsoft.com.
             // Let us say, you have this key: 1234567890.            
 
-            PdfFocus.SetLicense("1234567890");
+            SautinSoft.PdfFocus.SetLicense("1234567890");
             // Activation of PDF Focus .Net after purchasing.
             SautinSoft.PdfFocus f = new SautinSoft.PdfFocus();
 
@@ -29,7 +29,9 @@ namespace Sample
                 // 2 - can't create output file, check the output path
                 // 3 - converting failed
                 f.ImageOptions.Dpi = 300;
-                if (f.ToMultipageTiff(tiffPath) == 0)
+                f.ImageOptions.ImageFormat = PdfFocus.CImageOptions.ImageFormats.Tif;
+
+                if (f.ToImage(tiffPath) == 0)
                 {
 					System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo(tiffPath) { UseShellExecute = true });
                 }

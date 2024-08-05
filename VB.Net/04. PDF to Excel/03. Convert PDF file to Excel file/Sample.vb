@@ -13,8 +13,8 @@ Module Sample
 		' SautinSoft.PdfFocus.SetLicense("...");
 
         Dim pathToPdf As String = Path.GetFullPath("..\..\..\Table.pdf")
-		Dim pathToExcel As String = "Result.xls"
-		
+		Dim pathToExcel As String = "Result.xlsx"
+
 		' Convert PDF file to Excel file
 		Dim f As New SautinSoft.PdfFocus()
 		

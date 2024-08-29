@@ -27,17 +27,21 @@ namespace Sample
 
             if (f.PageCount > 0)
             {
-                pdfImages = f.ExtractImages(1, 1);
-
-                // Show all extracted images.
-                if (pdfImages != null && pdfImages.Count > 0)
+                for (int page = 1; page <= f.PageCount; page++)
                 {
-                    for (int i = 0; i < pdfImages.Count; i++)
+
+                    pdfImages = f.ExtractImages();
+
+                    // Show all extracted images.
+                    if (pdfImages != null && pdfImages.Count > 0)
                     {
-                        string imageFile = Path.Combine(imageDir, String.Format("img{0}.png", i + 1));
-                        pdfImages[i].Picture.Encode(new FileStream(imageFile, FileMode.Create), SkiaSharp.SKEncodedImageFormat.Png, 100);
+                        for (int i = 0; i < pdfImages.Count; i++)
+                        {
+                            string imageFile = Path.Combine(imageDir, String.Format("img{0}.png", i + 1));
+                            pdfImages[i].Picture.Encode(new FileStream(imageFile, FileMode.Create), SkiaSharp.SKEncodedImageFormat.Png, 100);
+                        }
+                        System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo(imageDir) { UseShellExecute = true });
                     }
-                    System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo(imageDir) { UseShellExecute = true });
                 }
             }
         }

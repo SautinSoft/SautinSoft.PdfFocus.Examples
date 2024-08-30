@@ -27,8 +27,8 @@ namespace Sample
 
             if (f.PageCount > 0)
             {
-                for (int page = 1; page <= f.PageCount; page++)
-                {
+               f.ImageOptions.SelectedPages = new int[] {0};
+               
 
                     pdfImages = f.ExtractImages();
 
@@ -40,9 +40,9 @@ namespace Sample
                             string imageFile = Path.Combine(imageDir, String.Format("img{0}.png", i + 1));
                             pdfImages[i].Picture.Encode(new FileStream(imageFile, FileMode.Create), SkiaSharp.SKEncodedImageFormat.Png, 100);
                         }
-                        System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo(imageDir) { UseShellExecute = true });
+                        //System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo(imageDir) { UseShellExecute = true });
                     }
-                }
+               
             }
         }
     }

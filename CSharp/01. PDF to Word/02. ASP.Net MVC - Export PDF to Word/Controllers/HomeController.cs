@@ -24,7 +24,16 @@ namespace FileUploadDownload.Controllers
         {
             // Get files from the server
             var model = new FilesViewModel();
-            foreach (var item in Directory.GetFiles(Path.Combine(Directory.GetCurrentDirectory(), "upload")))
+
+            string currentDirectory = Directory.GetCurrentDirectory();
+            string uploadDirectory = Path.Combine(currentDirectory, "upload");
+
+            if (!Directory.Exists(uploadDirectory))
+            {
+                Directory.CreateDirectory(uploadDirectory);
+            }
+
+            foreach (var item in Directory.GetFiles(Path.Combine(Directory.GetCurrentDirectory(), uploadDirectory)))
             {
                 model.Files.Add(
                     new FileDetails { Name = System.IO.Path.GetFileName(item), Path = item });

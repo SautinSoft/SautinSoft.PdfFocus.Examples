@@ -5,9 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Reference Include="SautinSoft.PdfFocus">
-      <HintPath>..\..\..\..\Bin\.NET 6.0\SautinSoft.PdfFocus.dll</HintPath>
-    </Reference>
+    <PackageReference Include="SautinSoft.PdfFocus" Version="*" />
   </ItemGroup>
 
 </Project>

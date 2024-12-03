@@ -22,11 +22,7 @@
 
 ## System Requirement
 
-<<<<<<< HEAD
 * .NET Framework 4.6.2 - 4.8
-=======
-* .NET Framework 4.6.2- 4.8
->>>>>>> d6ddb565deb2ad14e453fe7491a1349f17fe0c6a
 * .NET 6, 8
 * Windows, Linux, macOS, Android, iOS.
 

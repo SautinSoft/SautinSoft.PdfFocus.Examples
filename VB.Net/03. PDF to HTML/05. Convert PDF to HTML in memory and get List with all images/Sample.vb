@@ -1,17 +1,17 @@
-Imports Microsoft.VisualBasic
 Imports System
 Imports System.IO
 Imports System.Collections.Generic
 Imports System.Drawing
+Imports SkiaSharp
 
 Namespace Sample
     Friend Class Sample
-        Shared Sub Main(ByVal args() As String)
-			' Before starting, we recommend to get a free 100-day key:
-			' https://sautinsoft.com/start-for-free/
+        Shared Sub Main(args As String())
+            ' Before starting, we recommend to get a free 100-day key:
+            ' https://sautinsoft.com/start-for-free/
 
-			' Apply the key here
-			' SautinSoft.PdfFocus.SetLicense("...");
+            ' Apply the key here:
+            ' SautinSoft.PdfFocus.SetLicense("...")
 
             ConvertPdfBytesToHtml()
         End Sub
@@ -24,10 +24,11 @@ Namespace Sample
 
             ' This is the list with extracted images.
             ' It will be filled by images after the conversion.
-            Dim imgCollection As New List(Of Image)()
-		
+            Dim imgCollection As New List(Of SKBitmap)()
+
             ' Convert PDF to HTML in memory
             Dim f As New SautinSoft.PdfFocus()
+
             ' Let's force the component to store images inside HTML document
             ' using base-64 encoding.
             ' Thus the component will not use HDD.
@@ -36,7 +37,7 @@ Namespace Sample
 
             ' Read a PDF document to byte array.
             ' Assume that we already have the  PDF as array of bytes.
-            Dim pdf() As Byte = File.ReadAllBytes(pdfFile)
+            Dim pdf As Byte() = File.ReadAllBytes(pdfFile)
 
             f.OpenPdf(pdf)
 
@@ -54,12 +55,14 @@ Namespace Sample
                     End If
 
                     Dim count As Integer = 1
-                    For Each img As Image In imgCollection
+                    For Each img As SKBitmap In imgCollection
                         Console.WriteLine(vbTab & " {0,4} x {1,4} px", img.Width, img.Height)
                         Dim imageFileName As String = Path.Combine(imgDir.FullName, String.Format($"pict{count}.jpg"))
-                        img.Save(imageFileName, System.Drawing.Imaging.ImageFormat.Jpeg)
+                        Dim file As New FileStream(imageFileName, FileMode.Create)
+                        img.Encode(file, SKEncodedImageFormat.Jpeg, 100)
                         count += 1
-                    Next img
+                    Next
+
                     ' Open the result for demonstration purposes.
                     File.WriteAllText(htmlFile, htmlString)
                     System.Diagnostics.Process.Start(New System.Diagnostics.ProcessStartInfo(htmlFile) With {.UseShellExecute = True})
@@ -69,3 +72,4 @@ Namespace Sample
         End Sub
     End Class
 End Namespace
+

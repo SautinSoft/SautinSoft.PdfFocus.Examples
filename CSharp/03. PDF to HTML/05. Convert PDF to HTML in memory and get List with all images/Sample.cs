@@ -2,6 +2,7 @@ using System;
 using System.IO;
 using System.Collections.Generic;
 using System.Drawing;
+using SkiaSharp;
 
 namespace Sample
 {
@@ -27,7 +28,7 @@ namespace Sample
 
             // This is the list with extracted images.
             // It will be filled by images after the conversion.
-            List<Image> imgCollection = new List<Image>();
+            List<SKBitmap> imgCollection = new List<SKBitmap>();
 			
             // Convert PDF to HTML in memory
             SautinSoft.PdfFocus f = new SautinSoft.PdfFocus();
@@ -61,11 +62,12 @@ namespace Sample
                         imgDir.Create();
 
                     int count = 1;
-                    foreach (Image img in imgCollection)
+                    foreach (SKBitmap img in imgCollection)
                     {
                         Console.WriteLine("\t {0,4} x {1,4} px", img.Width, img.Height);
                         string imageFileName = Path.Combine(imgDir.FullName, String.Format($"pict{count}.jpg"));
-                        img.Save(imageFileName, System.Drawing.Imaging.ImageFormat.Jpeg);
+                        FileStream file = new FileStream(imageFileName, FileMode.Create);
+                        img.Encode(file, SKEncodedImageFormat.Jpeg, 100);
                         count++;
                     }
                     // Open the result for demonstration purposes.

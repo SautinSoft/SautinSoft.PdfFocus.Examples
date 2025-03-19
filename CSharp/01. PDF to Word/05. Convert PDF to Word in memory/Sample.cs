@@ -13,7 +13,7 @@ namespace Sample
 
         private static void ConvertPdfToDocxBytes()
         {
-            // Before starting, we recommend to get a free 100-day key:
+            // Before starting, we recommend to get a free key:
             // https://sautinsoft.com/start-for-free/
             
             // Apply the key here:
@@ -50,7 +50,7 @@ namespace Sample
             string pdfFile = Path.GetFullPath(@"..\..\..\simple text.pdf");
             MemoryStream rtfStream = new MemoryStream();
             // Convert PDF to word in memory
-                                             // Get your free 100-day key here:   
+                                             // Get your free key here:   
             // https://sautinsoft.com/start-for-free/
 			
             SautinSoft.PdfFocus f = new SautinSoft.PdfFocus();

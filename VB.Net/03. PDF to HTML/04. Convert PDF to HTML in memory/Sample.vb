@@ -4,7 +4,7 @@ Imports System.IO
 Namespace Sample
     Friend Class Sample
         Shared Sub Main(ByVal args() As String)
-			' Before starting, we recommend to get a free 100-day key:
+			' Before starting, we recommend to get a free key:
 			' https://sautinsoft.com/start-for-free/
 
 			' Apply the key here
@@ -53,7 +53,7 @@ Namespace Sample
             ' The whole conversion process will be done in memory.
             Dim pdfFile As String = Path.GetFullPath("..\..\..\simple text.pdf")
             Dim htmlFile As String = "Result.html"
-	                                ' Get your free 100-day key here: 
+	                                ' Get your free key here: 
 	                                ' https://sautinsoft.com/start-for-free/
 		
             ' Convert PDF to HTML in memory

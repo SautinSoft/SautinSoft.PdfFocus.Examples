@@ -23,7 +23,7 @@
 ## System Requirement
 
 * .NET Framework 4.6.2 - 4.8
-* .NET 6, 8
+* .NET 6, 8, 9
 * Windows, Linux, macOS, Android, iOS.
 
 ## Getting Started with PDF Focus .Net

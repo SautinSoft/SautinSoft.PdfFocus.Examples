@@ -1,0 +1,33 @@
+  <Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+  <PackageId>PDF Focus .Net</PackageId>
+  <OutputType>Exe</OutputType>
+  <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+   <ItemGroup>
+        <PackageReference Include="SautinSoft.PdfFocus" Version="*" />	
+		<!--for Images-->
+		<PackageReference Include="SkiaSharp" Version="2.88.7" />
+		<PackageReference Include="SkiaSharp.HarfBuzz" Version="2.88.7" />
+		<PackageReference Include="Svg.Skia" Version="1.0.0.18" />
+		<!--for Pdf.Net Security-->
+		<PackageReference Include="Pkcs11Interop" Version="5.1.2" />
+		<!--for Pdf.Net Signature-->
+		<PackageReference Include="Portable.BouncyCastle" Version="1.9.0" />
+		<!--for Read/Write Docx/Excel files-->
+		<PackageReference Include="System.IO.Packaging" Version="4.5.0" />
+		<!--for get Encodings-->
+		<PackageReference Include="System.Text.Encoding.CodePages" Version="4.5.0" />
+		<!--for OCR-->
+		<PackageReference Include="Tesseract" Version="5.2.0" />
+		<PackageReference Include="Tesseract.Data.English" Version="4.0.0" />
+		<!--for OCR Linux/MacOs-->
+        <PackageReference Include="SkiaSharp.NativeAssets.Linux" Version="2.88.7" />
+        <PackageReference Include="SkiaSharp.NativeAssets.macOS" Version="2.88.7" />
+        <PackageReference Include="HarfBuzzSharp.NativeAssets.Linux" Version="*" />
+		<PackageReference Include="HarfBuzzSharp.NativeAssets.macOS" Version="*" />
+        <PackageReference Include="System.Reflection.Emit" Version="*" />	
+   </ItemGroup>
+  </Project>
+
+	

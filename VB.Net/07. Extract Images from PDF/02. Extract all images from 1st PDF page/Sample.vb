@@ -23,7 +23,7 @@ Namespace Sample
 			f.OpenPdf(pdfFile)
 
 			If f.PageCount > 0 Then
-				pdfImages = f.ExtractImages(1, 1)
+				pdfImages = f.ExtractImages()
 
 				' Show all extracted images.
 				If pdfImages IsNot Nothing AndAlso pdfImages.Count > 0 Then

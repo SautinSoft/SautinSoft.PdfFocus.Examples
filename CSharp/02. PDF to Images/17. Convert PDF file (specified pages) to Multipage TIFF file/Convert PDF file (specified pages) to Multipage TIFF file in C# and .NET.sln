@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35514.174 d17.12
+VisualStudioVersion = 17.14.36310.24 d17.14
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Convert PDF file (specified pages) to Multipage TIFF file in C# and .NET", "Convert PDF file (specified pages) to Multipage TIFF file in C# and .NET.csproj", "{8C0A8EFE-E9C4-4393-AD0A-C6E377D537BD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Convert PDF file (specified pages) to Multipage TIFF file in C# and .NET", "Convert PDF file (specified pages) to Multipage TIFF file in C# and .NET.csproj", "{13A35E2A-7D22-4131-B6BC-E367666E4E28}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,12 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{8C0A8EFE-E9C4-4393-AD0A-C6E377D537BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8C0A8EFE-E9C4-4393-AD0A-C6E377D537BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8C0A8EFE-E9C4-4393-AD0A-C6E377D537BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8C0A8EFE-E9C4-4393-AD0A-C6E377D537BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13A35E2A-7D22-4131-B6BC-E367666E4E28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13A35E2A-7D22-4131-B6BC-E367666E4E28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13A35E2A-7D22-4131-B6BC-E367666E4E28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13A35E2A-7D22-4131-B6BC-E367666E4E28}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6CC07888-24BB-41DD-8CAC-00526CEB9007}
 	EndGlobalSection
 EndGlobal
